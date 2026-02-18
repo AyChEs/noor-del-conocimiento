@@ -1,0 +1,2579 @@
+
+[
+  {
+    "id": 1,
+    "question": {
+      "es": "¿Cuántas Suras hay en el Corán?",
+      "en": "How many Surahs are in the Quran?",
+      "ma": "شحال كاينة من سورة فالقرآن؟"
+    },
+    "options": {
+      "es": ["112", "114", "116", "110"],
+      "en": ["112", "114", "116", "110"],
+      "ma": ["112", "114", "116", "110"]
+    },
+    "correctAnswer": {
+      "es": "114",
+      "en": "114",
+      "ma": "114"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El Corán se compone de 114 capítulos, conocidos como Suras, que varían en longitud.",
+      "en": "The Quran is composed of 114 chapters, known as Surahs, which vary in length.",
+      "ma": "القرآن فيه 114 سورة، و كل سورة عندها طول مختلف."
+    }
+  },
+  {
+    "id": 2,
+    "question": {
+      "es": "¿Quién fue el primer Califa del Islam después del Profeta Muhammad (ﷺ)?",
+      "en": "Who was the first Caliph of Islam after Prophet Muhammad (ﷺ)?",
+      "ma": "شكون كان أول خليفة فالإسلام من بعد النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Umar ibn Al-Khattab", "Ali ibn Abi Talib", "Uthman ibn Affan", "Abu Bakr Al-Siddiq"],
+      "en": ["Umar ibn Al-Khattab", "Ali ibn Abi Talib", "Uthman ibn Affan", "Abu Bakr Al-Siddiq"],
+      "ma": ["عمر بن الخطاب", "علي بن أبي طالب", "عثمان بن عفان", "أبو بكر الصديق"]
+    },
+    "correctAnswer": {
+      "es": "Abu Bakr Al-Siddiq",
+      "en": "Abu Bakr Al-Siddiq",
+      "ma": "أبو بكر الصديق"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Abu Bakr, un compañero cercano del Profeta, fue el primero de los cuatro Califas Rashidun (Rectamente Guiados).",
+      "en": "Abu Bakr, a close companion of the Prophet, was the first of the four Rashidun (Rightly Guided) Caliphs.",
+      "ma": "أبو بكر، الصاحب المقرب للنبي، كان هو أول الخلفاء الراشدين الأربعة."
+    }
+  },
+  {
+    "id": 3,
+    "question": {
+      "es": "¿Qué Surah se conoce como el 'Corazón del Corán'?",
+      "en": "Which Surah is known as the 'Heart of the Quran'?",
+      "ma": "أشنو هي السورة اللي معروفة بـ 'قلب القرآن'؟"
+    },
+    "options": {
+      "es": ["Surah Al-Fatihah", "Surah Yasin", "Surah Al-Mulk", "Surah Al-Baqarah"],
+      "en": ["Surah Al-Fatihah", "Surah Yasin", "Surah Al-Mulk", "Surah Al-Baqarah"],
+      "ma": ["سورة الفاتحة", "سورة يس", "سورة الملك", "سورة البقرة"]
+    },
+    "correctAnswer": {
+      "es": "Surah Yasin",
+      "en": "Surah Yasin",
+      "ma": "سورة يس"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La Surah Yasin (Capítulo 36) a menudo se conoce como el 'Corazón del Corán' debido a su poderoso mensaje y temas.",
+      "en": "Surah Yasin (Chapter 36) is often referred to as the 'Heart of the Quran' due to its powerful message and themes.",
+      "ma": "سورة يس (الفصل 36) غالبا ما يشار إليها بأنها 'قلب القرآن' بسبب رسالتها ومواضيعها القوية."
+    }
+  },
+  {
+    "id": 4,
+    "question": {
+      "es": "La Batalla de Badr, la primera gran batalla en el Islam, ¿en qué año tuvo lugar?",
+      "en": "The Battle of Badr, the first major battle in Islam, took place in which year?",
+      "ma": "معركة بدر، أول معركة كبيرة فالإسلام، فأي عام وقعات؟"
+    },
+    "options": {
+      "es": ["622 d.C.", "624 d.C.", "628 d.C.", "630 d.C."],
+      "en": ["622 AD", "624 AD", "628 AD", "630 AD"],
+      "ma": ["622 م", "624 م", "628 م", "630 م"]
+    },
+    "correctAnswer": {
+      "es": "624 d.C.",
+      "en": "624 AD",
+      "ma": "624 م"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La Batalla de Badr ocurrió en el segundo año de la Hégira (2 AH), que corresponde al 624 d.C., y fue una victoria decisiva para los primeros musulmanes.",
+      "en": "The Battle of Badr occurred in the second year of the Hijra (2 AH), which corresponds to 624 AD, and was a decisive victory for the early Muslims.",
+      "ma": "معركة بدر وقعات فالعام الثاني من الهجرة (2 هـ)، اللي كيوافق 624 م، و كانت نصر حاسم للمسلمين الأوائل."
+    }
+  },
+  {
+    "id": 5,
+    "question": {
+      "es": "¿Qué Profeta era conocido por su habilidad para interpretar sueños?",
+      "en": "Which Prophet was known for his ability to interpret dreams?",
+      "ma": "أشنو هو النبي اللي كان معروف بالقدرة ديالو على تفسير الأحلام؟"
+    },
+    "options": {
+      "es": ["Profeta Musa (Moisés)", "Profeta Ibrahim (Abraham)", "Profeta Yusuf (José)", "Profeta Isa (Jesús)"],
+      "en": ["Prophet Musa (Moses)", "Prophet Ibrahim (Abraham)", "Prophet Yusuf (Joseph)", "Prophet Isa (Jesus)"],
+      "ma": ["النبي موسى", "النبي إبراهيم", "النبي يوسف", "النبي عيسى"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Yusuf (José)",
+      "en": "Prophet Yusuf (Joseph)",
+      "ma": "النبي يوسف"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "arabicVerse": "إِذ قالَ يوسُفُ لِأَبيهِ يا أَبَتِ إِنّي رَأَيتُ أَحَدَ عَشَرَ كَوكَبًا وَالشَّمسَ وَالقَمَرَ رَأَيتُهُم لي ساجِدينَ",
+    "explanation": {
+      "es": "La historia del Profeta Yusuf, detallada en la Surah Yusuf, destaca su talento dado por Dios para interpretar sueños.",
+      "en": "The story of Prophet Yusuf, detailed in Surah Yusuf, highlights his God-given talent for interpreting dreams.",
+      "ma": "القصة ديال النبي يوسف، اللي مشروحة ف سورة يوسف، كتبين الموهبة اللي عطاه الله ف تفسير الأحلام."
+    }
+  },
+  {
+    "id": 6,
+    "question": {
+      "es": "¿En qué cueva recibió el Profeta Muhammad (ﷺ) la primera revelación?",
+      "en": "In which cave did Prophet Muhammad (ﷺ) receive the first revelation?",
+      "ma": "فأشمن غار تلقى النبي محمد (ﷺ) أول وحي؟"
+    },
+    "options": {
+      "es": ["Cueva de Thawr", "Cueva de Hira", "Cueva de Uhud", "Cueva de Safa"],
+      "en": ["Cave of Thawr", "Cave of Hira", "Cave of Uhud", "Cave of Safa"],
+      "ma": ["غار ثور", "غار حراء", "غار أحد", "غار الصفا"]
+    },
+    "correctAnswer": {
+      "es": "Cueva de Hira",
+      "en": "Cave of Hira",
+      "ma": "غار حراء"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Profeta Muhammad (ﷺ) solía retirarse a la Cueva de Hira para meditar, donde recibió la primera revelación divina del Ángel Jibril.",
+      "en": "Prophet Muhammad (ﷺ) used to retreat to the Cave of Hira to meditate, where he received the first divine revelation from Angel Jibril.",
+      "ma": "النبي محمد (ﷺ) كان كيمشي لغار حراء باش يتأمل، و تما فين جاه أول وحي من عند الملاك جبريل."
+    }
+  },
+  {
+    "id": 7,
+    "question": {
+      "es": "¿Cuál es la Surah más larga del Corán?",
+      "en": "What is the longest Surah in the Quran?",
+      "ma": "أشنو هي أطول سورة فالقرآن؟"
+    },
+    "options": {
+      "es": ["Surah Al-Imran", "Surah An-Nisa", "Surah Al-Baqarah", "Surah Al-Ma'idah"],
+      "en": ["Surah Al-Imran", "Surah An-Nisa", "Surah Al-Baqarah", "Surah Al-Ma'idah"],
+      "ma": ["سورة آل عمران", "سورة النساء", "سورة البقرة", "سورة المائدة"]
+    },
+    "correctAnswer": {
+      "es": "Surah Al-Baqarah",
+      "en": "Surah Al-Baqarah",
+      "ma": "سورة البقرة"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La Surah Al-Baqarah (La Vaca) es el segundo y más largo capítulo del Corán, con 286 versos.",
+      "en": "Surah Al-Baqarah (The Cow) is the second and longest chapter in the Quran, containing 286 verses.",
+      "ma": "سورة البقرة هي ثاني وأطول سورة فالقرآن، و فيها 286 آية."
+    }
+  },
+  {
+    "id": 8,
+    "question": {
+      "es": "El 'Año de la Tristeza' ('Aam al-Huzn) fue llamado así por la muerte de ¿qué dos personas cercanas al Profeta (ﷺ)?",
+      "en": "The 'Year of Sorrow' ('Aam al-Huzn) was named after the death of which two people close to the Prophet (ﷺ)?",
+      "ma": "عام الحزن تسمّى بهاد الإسم بسبب الموت ديال أشمن جوج ناس قراب من النبي (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Su hijo Ibrahim y su tío Hamza", "Su esposa Jadiya y su tío Abu Talib", "Sus hijas Ruqayyah y Umm Kulthum", "Sus compañeros Abu Bakr y Umar"],
+      "en": ["His son Ibrahim and his uncle Hamza", "His wife Khadijah and his uncle Abu Talib", "His daughters Ruqayyah and Umm Kulthum", "His companions Abu Bakr and Umar"],
+      "ma": ["ولدو إبراهيم و عمو حمزة", "مراتو خديجة و عمو أبو طالب", "بناتو رقية و أم كلثوم", "صحابتو أبو بكر و عمر"]
+    },
+    "correctAnswer": {
+      "es": "Su esposa Jadiya y su tío Abu Talib",
+      "en": "His wife Khadijah and his uncle Abu Talib",
+      "ma": "مراتو خديجة و عمو أبو طالب"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El 'Año de la Tristeza' fue un período de profundo dolor para el Profeta Muhammad (ﷺ) tras el fallecimiento de su amada esposa, Jadiya, y su protector tío, Abu Talib, en el mismo año.",
+      "en": "The 'Year of Sorrow' was a period of deep grief for Prophet Muhammad (ﷺ) following the passing of his beloved wife, Khadijah, and his protective uncle, Abu Talib, in the same year.",
+      "ma": "عام الحزن كان واحد الفترة ديال الحزن كبير عند النبي (ﷺ) من بعد ما ماتت الزوجة ديالو خديجة و عمو اللي كان كيحميه أبو طالب فنفس العام."
+    }
+  },
+  {
+    "id": 9,
+    "question": {
+      "es": "¿Qué compañero del Profeta es conocido como 'La Espada de Alá' (Saifullah)?",
+      "en": "Which companion of the Prophet is known as 'The Sword of Allah' (Saifullah)?",
+      "ma": "أشمن صحابي معروف بلقب 'سيف الله المسلول'؟"
+    },
+    "options": {
+      "es": ["Ali ibn Abi Talib", "Hamza ibn Abd al-Muttalib", "Khalid ibn al-Walid", "Zubayr ibn al-Awwam"],
+      "en": ["Ali ibn Abi Talib", "Hamza ibn Abd al-Muttalib", "Khalid ibn al-Walid", "Zubayr ibn al-Awwam"],
+      "ma": ["علي بن أبي طالب", "حمزة بن عبد المطلب", "خالد بن الوليد", "الزبير بن العوام"]
+    },
+    "correctAnswer": {
+      "es": "Khalid ibn al-Walid",
+      "en": "Khalid ibn al-Walid",
+      "ma": "خالد بن الوليد"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "A Khalid ibn al-Walid, un brillante comandante militar, el Profeta Muhammad (ﷺ) le dio el título de 'Saifullah' (La Espada de Alá) por su inigualable habilidad en la batalla.",
+      "en": "Khalid ibn al-Walid, a brilliant military commander, was given the title 'Saifullah' (The Sword of Allah) by Prophet Muhammad (ﷺ) for his unmatched skill in battle.",
+      "ma": "خالد بن الوليد، واحد القائد عسكري فذ، عطاه النبي (ﷺ) لقب 'سيف الله' بسبب المهارة ديالو اللي ماعندهاش مثيل فالمعارك."
+    }
+  },
+  {
+    "id": 10,
+    "question": {
+      "es": "Los cinco pilares del Islam son Shahada, Salat, Zakat, Sawm y...?",
+      "en": "The five pillars of Islam are Shahada, Salat, Zakat, Sawm, and...?",
+      "ma": "أركان الإسلام الخمسة هي الشهادة، الصلاة، الزكاة، الصوم و...؟"
+    },
+    "options": {
+      "es": ["Jihad", "Hajj", "Ihsan", "Taqwa"],
+      "en": ["Jihad", "Hajj", "Ihsan", "Taqwa"],
+      "ma": ["الجهاد", "الحج", "الإحسان", "التقوى"]
+    },
+    "correctAnswer": {
+      "es": "Hajj",
+      "en": "Hajj",
+      "ma": "الحج"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El Hajj, la peregrinación a La Meca, es el quinto pilar del Islam, obligatorio para todos los musulmanes sanos que puedan permitírselo al menos una vez en la vida.",
+      "en": "The Hajj, the pilgrimage to Mecca, is the fifth pillar of Islam, obligatory for all able-bodied Muslims who can afford it at least once in their lifetime.",
+      "ma": "الحج لمكة هو الركن الخامس فالإسلام، وهو واجب على كل مسلم قادر عليه مرة وحدة فالحياة."
+    }
+  },
+  {
+    "id": 11,
+    "question": {
+      "es": "¿Qué mes islámico es el mes del ayuno?",
+      "en": "Which Islamic month is the month of fasting?",
+      "ma": "أشمن شهر إسلامي هو شهر الصيام؟"
+    },
+    "options": {
+      "es": ["Rajab", "Sha'ban", "Ramadán", "Shawwal"],
+      "en": ["Rajab", "Sha'ban", "Ramadan", "Shawwal"],
+      "ma": ["رجب", "شعبان", "رمضان", "شوال"]
+    },
+    "correctAnswer": {
+      "es": "Ramadán",
+      "en": "Ramadan",
+      "ma": "رمضان"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Los musulmanes observan el Sawm (ayuno) desde el amanecer hasta el anochecer durante el mes sagrado de Ramadán, el noveno mes del calendario islámico.",
+      "en": "Muslims observe Sawm (fasting) from dawn until dusk during the holy month of Ramadan, the ninth month of the Islamic calendar.",
+      "ma": "المسلمين كيصومو من الفجر حتى المغرب فالشهر المقدس ديال رمضان، الشهر التاسع فالتقويم الإسلامي."
+    }
+  },
+  {
+    "id": 12,
+    "question": {
+      "es": "¿Quién fue la compañera que narró la mayor cantidad de hadices?",
+      "en": "Which female companion narrated the most hadiths?",
+      "ma": "شكون هي الصحابية اللي روات أكبر عدد من الأحاديث؟"
+    },
+    "options": {
+      "es": ["Fatimah bint Muhammad", "Aisha bint Abi Bakr", "Umm Salamah", "Hafsa bint Umar"],
+      "en": ["Fatimah bint Muhammad", "Aisha bint Abi Bakr", "Umm Salamah", "Hafsa bint Umar"],
+      "ma": ["فاطمة بنت محمد", "عائشة بنت أبي بكر", "أم سلمة", "حفصة بنت عمر"]
+    },
+    "correctAnswer": {
+      "es": "Aisha bint Abi Bakr",
+      "en": "Aisha bint Abi Bakr",
+      "ma": "عائشة بنت أبي بكر"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Aisha (RA), la esposa del Profeta (ﷺ), fue una gran erudita y se le atribuye la narración de más de 2,000 hadices, proporcionando profundos conocimientos sobre la vida y las enseñanzas del Profeta.",
+      "en": "Aisha (RA), the wife of the Prophet (ﷺ), was a great scholar and is credited with narrating over 2,000 hadiths, providing deep insights into the Prophet's life and teachings.",
+      "ma": "عائشة (رضي الله عنها)، زوجة النبي (ﷺ)، كانت عالمة كبيرة و ينسب لها رواية أكثر من 2000 حديث، وهادشي عطى نظرة عميقة على حياة و تعاليم النبي."
+    }
+  },
+  {
+    "id": 13,
+    "question": {
+      "es": "El 'Isra y Miraj' se refiere al viaje nocturno milagroso del Profeta a ¿dónde?",
+      "en": "The 'Isra and Miraj' refers to the Prophet's miraculous night journey to where?",
+      "ma": "الإسراء والمعراج كتشير للرحلة الليلية المعجزة ديال النبي لفين؟"
+    },
+    "options": {
+      "es": ["Medina y de regreso", "Jerusalén y luego a los cielos", "Ta'if y de regreso a La Meca", "Abisinia (Etiopía)"],
+      "en": ["Medina and back", "Jerusalem and then to the heavens", "Ta'if and back to Mecca", "Abyssinia (Ethiopia)"],
+      "ma": ["المدينة و الرجوع", "القدس و من بعد للسماوات", "الطائف و الرجوع لمكة", "الحبشة (إثيوبيا)"]
+    },
+    "correctAnswer": {
+      "es": "Jerusalén y luego a los cielos",
+      "en": "Jerusalem and then to the heavens",
+      "ma": "القدس و من بعد للسماوات"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Isra se refiere al viaje nocturno de La Meca a Jerusalén, y Miraj se refiere a la ascensión de Jerusalén a los cielos, donde el Profeta (ﷺ) se encontró con profetas anteriores y recibió el mandato de las cinco oraciones diarias.",
+      "en": "Isra refers to the night journey from Mecca to Jerusalem, and Miraj refers to the ascension from Jerusalem to the heavens, where the Prophet (ﷺ) met previous prophets and received the command for the five daily prayers.",
+      "ma": "الإسراء هي الرحلة الليلية من مكة للقدس، و المعراج هو الصعود من القدس للسماوات، فين تلاقى النبي (ﷺ) مع الأنبياء اللي قبل منو و تفرضات عليه الصلوات الخمس."
+    }
+  },
+  {
+    "id": 14,
+    "question": {
+      "es": "¿Cuál de los tíos del Profeta fue un feroz oponente del Islam?",
+      "en": "Which of the Prophet's uncles was a fierce opponent of Islam?",
+      "ma": "شكون من أعمام النبي كان من أشد أعداء الإسلام؟"
+    },
+    "options": {
+      "es": ["Hamza", "Al-Abbas", "Abu Lahab", "Abu Talib"],
+      "en": ["Hamza", "Al-Abbas", "Abu Lahab", "Abu Talib"],
+      "ma": ["حمزة", "العباس", "أبو لهب", "أبو طالب"]
+    },
+    "correctAnswer": {
+      "es": "Abu Lahab",
+      "en": "Abu Lahab",
+      "ma": "أبو لهب"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Abu Lahab era un tío paterno del Profeta Muhammad, pero fue uno de sus más acérrimos enemigos. Una Sura completa (Al-Masad) está dedicada a condenarlo a él y a su esposa.",
+      "en": "Abu Lahab was a paternal uncle of Prophet Muhammad, but he was one of his staunchest enemies. An entire Surah (Al-Masad) is dedicated to condemning him and his wife.",
+      "ma": "أبو لهب كان عم النبي محمد، و لكن كان من أشد أعدائه. كاينة سورة كاملة (المسد) كتذمو هو و مراتو."
+    }
+  },
+  {
+    "id": 15,
+    "question": {
+      "es": "En el contexto del Hadiz, ¿qué significa 'Sahih'?",
+      "en": "In the context of Hadith, what does 'Sahih' mean?",
+      "ma": "فالسياق ديال الحديث، أشنو كتعني كلمة 'صحيح'؟"
+    },
+    "options": {
+      "es": ["Débil o no confiable", "Bueno o aceptable", "Auténtico y sólido", "Fabricado"],
+      "en": ["Weak or unreliable", "Good or acceptable", "Authentic and sound", "Fabricated"],
+      "ma": ["ضعيف أو غير موثوق", "حسن أو مقبول", "صحيح و سليم", "مكذوب"]
+    },
+    "correctAnswer": {
+      "es": "Auténtico y sólido",
+      "en": "Authentic and sound",
+      "ma": "صحيح و سليم"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "'Sahih' es el grado más alto de autenticidad para un hadiz, lo que indica que su cadena de narradores es ininterrumpida y todos los narradores son dignos de confianza y fiables.",
+      "en": "'Sahih' is the highest grade of authenticity for a hadith, indicating that its chain of narrators is unbroken and all narrators are trustworthy and reliable.",
+      "ma": "'صحيح' هي أعلى درجة ديال الصحة ديال الحديث، و كتعني أن سلسلة الرواة ديالو متصلة و كاع الرواة ثقة و موثوقين."
+    }
+  },
+  {
+    "id": 16,
+    "question": {
+      "es": "¿Cómo se llama la caridad obligatoria que dan los musulmanes?",
+      "en": "What is the name for the obligatory charity given by Muslims?",
+      "ma": "أشنو سميت الصدقة الواجبة اللي كيعطيو المسلمين؟"
+    },
+    "options": {
+      "es": ["Sadaqa", "Zakat", "Waqf", "Fitra"],
+      "en": ["Sadaqa", "Zakat", "Waqf", "Fitra"],
+      "ma": ["صدقة", "زكاة", "وقف", "فطرة"]
+    },
+    "correctAnswer": {
+      "es": "Zakat",
+      "en": "Zakat",
+      "ma": "زكاة"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El Zakat es una forma de caridad obligatoria y se considera uno de los cinco pilares del Islam. Es una donación anual de un porcentaje de la riqueza de un musulmán a los necesitados.",
+      "en": "Zakat is a form of obligatory charity and is considered one of the five pillars of Islam. It is an annual donation of a percentage of a Muslim's wealth to those in need.",
+      "ma": "الزكاة هي صدقة واجبة و كتعتبر من أركان الإسلام الخمسة. هي تبرع سنوي بنسبة من ثروة المسلم للناس المحتاجين."
+    }
+  },
+  {
+    "id": 17,
+    "question": {
+      "es": "La Kaaba fue construida originalmente por ¿cuáles dos profetas?",
+      "en": "The Kaaba was originally built by which two prophets?",
+      "ma": "الكعبة بناوها فأصلها أشمن جوج أنبياء؟"
+    },
+    "options": {
+      "es": ["Adam y Nuh (Noé)", "Musa (Moisés) y Harun (Aarón)", "Ibrahim (Abraham) e Ismail (Ismael)", "Dawud (David) y Sulaiman (Salomón)"],
+      "en": ["Adam and Nuh (Noah)", "Musa (Moses) and Harun (Aaron)", "Ibrahim (Abraham) and Ismail (Ishmael)", "Dawud (David) and Sulaiman (Solomon)"],
+      "ma": ["آدم و نوح", "موسى و هارون", "إبراهيم و إسماعيل", "داوود و سليمان"]
+    },
+    "correctAnswer": {
+      "es": "Ibrahim (Abraham) e Ismail (Ismael)",
+      "en": "Ibrahim (Abraham) and Ismail (Ishmael)",
+      "ma": "إبراهيم و إسماعيل"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Según la tradición islámica, la Kaaba fue construida por el Profeta Ibrahim y su hijo, el Profeta Ismail, como una casa de adoración a Allah.",
+      "en": "According to Islamic tradition, the Kaaba was built by Prophet Ibrahim and his son, Prophet Ismail, as a house of worship to Allah.",
+      "ma": "حسب التقاليد الإسلامية، الكعبة بناها النبي إبراهيم و ولدو النبي إسماعيل كبيت لعبادة الله."
+    }
+  },
+  {
+    "id": 18,
+    "question": {
+      "es": "¿Quién es conocido como el 'León de Allah' (Asadullah)?",
+      "en": "Who is known as the 'Lion of Allah' (Asadullah)?",
+      "ma": "شكون معروف بـ 'أسد الله'؟"
+    },
+    "options": {
+      "es": ["Umar ibn Al-Khattab", "Khalid ibn al-Walid", "Ali ibn Abi Talib", "Hamza ibn Abd al-Muttalib"],
+      "en": ["Umar ibn Al-Khattab", "Khalid ibn al-Walid", "Ali ibn Abi Talib", "Hamza ibn Abd al-Muttalib"],
+      "ma": ["عمر بن الخطاب", "خالد بن الوليد", "علي بن أبي طالب", "حمزة بن عبد المطلب"]
+    },
+    "correctAnswer": {
+      "es": "Hamza ibn Abd al-Muttalib",
+      "en": "Hamza ibn Abd al-Muttalib",
+      "ma": "حمزة بن عبد المطلب"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Hamza ibn Abd al-Muttalib, tío del Profeta Muhammad, era conocido por su valentía y fuerza, lo que le valió el título de 'León de Allah' y 'León de Su Mensajero'.",
+      "en": "Hamza ibn Abd al-Muttalib, Prophet Muhammad's uncle, was known for his bravery and strength, earning him the title 'Lion of Allah' and 'Lion of His Messenger'.",
+      "ma": "حمزة بن عبد المطلب، عم النبي محمد، كان معروف بالشجاعة و القوة ديالو، و داكشي علاش تسمى 'أسد الله' و 'أسد رسوله'."
+    }
+  },
+  {
+    "id": 19,
+    "question": {
+      "es": "¿Cuál es la Surah más corta del Corán?",
+      "en": "What is the shortest Surah in the Quran?",
+      "ma": "أشنو هي أقصر سورة فالقرآن؟"
+    },
+    "options": {
+      "es": ["Surah Al-Asr", "Surah Al-Ikhlas", "Surah Al-Kawthar", "Surah An-Nasr"],
+      "en": ["Surah Al-Asr", "Surah Al-Ikhlas", "Surah Al-Kawthar", "Surah An-Nasr"],
+      "ma": ["سورة العصر", "سورة الإخلاص", "سورة الكوثر", "سورة النصر"]
+    },
+    "correctAnswer": {
+      "es": "Surah Al-Kawthar",
+      "en": "Surah Al-Kawthar",
+      "ma": "سورة الكوثر"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La Surah Al-Kawthar (Capítulo 108) es la más corta del Corán, con solo tres versos.",
+      "en": "Surah Al-Kawthar (Chapter 108) is the shortest in the Quran, consisting of only three verses.",
+      "ma": "سورة الكوثر (الفصل 108) هي أقصر سورة فالقرآن، و فيها غير ثلاثة ديال الآيات."
+    }
+  },
+  {
+    "id": 20,
+    "question": {
+      "es": "¿En qué batalla sufrieron los musulmanes un revés después del éxito inicial debido a la desobediencia?",
+      "en": "In which battle did the Muslims suffer a setback after initial success due to disobedience?",
+      "ma": "فأشمن معركة تعرض المسلمون لانتكاسة من بعد واحد النجاح فالبداية بسبب العصيان؟"
+    },
+    "options": {
+      "es": ["Batalla de Badr", "Batalla de Uhud", "Batalla de la Trinchera", "Conquista de La Meca"],
+      "en": ["Battle of Badr", "Battle of Uhud", "Battle of the Trench", "Conquest of Mecca"],
+      "ma": ["معركة بدر", "معركة أحد", "معركة الخندق", "فتح مكة"]
+    },
+    "correctAnswer": {
+      "es": "Batalla de Uhud",
+      "en": "Battle of Uhud",
+      "ma": "معركة أحد"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "En la Batalla de Uhud, un grupo de arqueros desobedeció las órdenes del Profeta, lo que llevó a un contraataque del enemigo y un día difícil para los musulmanes.",
+      "en": "In the Battle of Uhud, a group of archers disobeyed the Prophet's orders, which led to a counter-attack by the enemy and a difficult day for the Muslims.",
+      "ma": "فمعركة أحد، واحد المجموعة ديال الرماة عصاو الأوامر ديال النبي، و داكشي أدى لهجوم مضاد من العدو و كان نهار صعيب على المسلمين."
+    }
+  },
+  {
+    "id": 21,
+    "question": {
+      "es": "¿Quién fue la madre del Profeta Isa (Jesús)?",
+      "en": "Who was the mother of Prophet Isa (Jesus)?",
+      "ma": "شكون هي الأم ديال النبي عيسى؟"
+    },
+    "options": {
+      "es": ["Hajar (Agar)", "Sarah", "Maryam (María)", "Asiya"],
+      "en": ["Hajar (Hagar)", "Sarah", "Maryam (Mary)", "Asiya"],
+      "ma": ["هاجر", "سارة", "مريم", "آسية"]
+    },
+    "correctAnswer": {
+      "es": "Maryam (María)",
+      "en": "Maryam (Mary)",
+      "ma": "مريم"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Maryam (María), una mujer piadosa y justa, fue la madre del Profeta Isa (Jesús). Una Sura completa en el Corán lleva su nombre.",
+      "en": "Maryam (Mary), a pious and righteous woman, was the mother of Prophet Isa (Jesus). An entire Surah in the Quran is named after her.",
+      "ma": "مريم، واحد المرأة تقية و صالحة، كانت هي الأم ديال النبي عيسى. كاينة سورة كاملة فالقرآن مسمية عليها."
+    }
+  },
+  {
+    "id": 22,
+    "question": {
+      "es": "La 'Noche del Poder' o 'Noche del Decreto' se conoce como ¿qué en árabe?",
+      "en": "The 'Night of Power' or 'Night of Decree' is known as what in Arabic?",
+      "ma": "'ليلة القدر' أشنو سميتها بالعربية؟"
+    },
+    "options": {
+      "es": ["Laylat al-Bara'at", "Laylat al-Miraj", "Laylat al-Qadr", "Laylat al-Jumu'ah"],
+      "en": ["Laylat al-Bara'at", "Laylat al-Miraj", "Laylat al-Qadr", "Laylat al-Jumu'ah"],
+      "ma": ["ليلة البراءة", "ليلة المعراج", "ليلة القدر", "ليلة الجمعة"]
+    },
+    "correctAnswer": {
+      "es": "Laylat al-Qadr",
+      "en": "Laylat al-Qadr",
+      "ma": "ليلة القدر"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Laylat al-Qadr es la noche en que se revelaron los primeros versos del Corán al Profeta Muhammad. Se cree que la adoración en esta noche es mejor que mil meses de adoración.",
+      "en": "Laylat al-Qadr is the night when the first verses of the Quran were revealed to Prophet Muhammad. Worship on this night is considered better than a thousand months of worship.",
+      "ma": "ليلة القدر هي الليلة اللي نزلو فيها أول آيات من القرآن على النبي محمد. العبادة فهاد الليلة كتعتبر حسن من ألف شهر ديال العبادة."
+    }
+  },
+  {
+    "id": 23,
+    "question": {
+      "es": "¿Quién fue el primero en estandarizar la compilación del Corán en un solo libro (Mushaf)?",
+      "en": "Who was the first to standardize the compilation of the Quran into a single book (Mushaf)?",
+      "ma": "شكون هو أول واحد وحد جمع القرآن فكتاب واحد (مصحف)؟"
+    },
+    "options": {
+      "es": ["Profeta Muhammad (ﷺ)", "Califa Abu Bakr Al-Siddiq", "Califa Umar ibn Al-Khattab", "Califa Uthman ibn Affan"],
+      "en": ["Prophet Muhammad (ﷺ)", "Caliph Abu Bakr Al-Siddiq", "Caliph Umar ibn Al-Khattab", "Caliph Uthman ibn Affan"],
+      "ma": ["النبي محمد (ﷺ)", "الخليفة أبو بكر الصديق", "الخليفة عمر بن الخطاب", "الخليفة عثمان بن عفان"]
+    },
+    "correctAnswer": {
+      "es": "Califa Uthman ibn Affan",
+      "en": "Caliph Uthman ibn Affan",
+      "ma": "الخليفة عثمان بن عفان"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Aunque Abu Bakr inició la compilación, fue durante el califato de Uthman que se creó una versión estandarizada del Mushaf y se distribuyó a los principales centros musulmanes.",
+      "en": "Although Abu Bakr initiated the compilation, it was during the caliphate of Uthman that a standardized version of the Mushaf was created and distributed to major Muslim centers.",
+      "ma": "وخا أبو بكر هو اللي بدا الجمع، و لكن فالخلافة ديال عثمان هي فاش تصاوبات نسخة موحدة من المصحف و تفرقات على المراكز الإسلامية الكبرى."
+    }
+  },
+  {
+    "id": 24,
+    "question": {
+      "es": "¿Qué tratado importante firmó el Profeta Muhammad (ﷺ) con los Quraysh de La Meca?",
+      "en": "What important treaty did Prophet Muhammad (ﷺ) sign with the Quraysh of Mecca?",
+      "ma": "أشنو هو الصلح المهم اللي وقّع عليه النبي محمد (ﷺ) مع قريش فمكة؟"
+    },
+    "options": {
+      "es": ["Pacto de Medina", "Tratado de Hudaybiyyah", "Juramento de Aqaba", "Pacto de los Virtuosos"],
+      "en": ["Pact of Medina", "Treaty of Hudaybiyyah", "Pledge of Aqaba", "Pact of the Virtuous"],
+      "ma": ["ميثاق المدينة", "صلح الحديبية", "بيعة العقبة", "حلف الفضول"]
+    },
+    "correctAnswer": {
+      "es": "Tratado de Hudaybiyyah",
+      "en": "Treaty of Hudaybiyyah",
+      "ma": "صلح الحديبية"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El Tratado de Hudaybiyyah, aunque inicialmente parecía desfavorable, fue un punto de inflexión fundamental que allanó el camino para la eventual conquista de La Meca.",
+      "en": "The Treaty of Hudaybiyyah, though it seemed unfavorable at first, was a pivotal turning point that paved the way for the eventual conquest of Mecca.",
+      "ma": "صلح الحديبية، واخا كان كيبان ماشي فصالح المسلمين فاللول، كان نقطة تحول أساسية اللي مهدات الطريق لفتح مكة من بعد."
+    }
+  },
+  {
+    "id": 25,
+    "question": {
+      "es": "¿Quiénes eran los 'Ashab al-Kahf' mencionados en el Corán?",
+      "en": "Who were the 'Ashab al-Kahf' mentioned in the Quran?",
+      "ma": "شكون هوما 'أصحاب الكهف' اللي مذكورين فالقرآن؟"
+    },
+    "options": {
+      "es": ["Los Compañeros del Profeta", "La Gente del Elefante", "La Gente de la Cueva", "Los Dueños del Jardín"],
+      "en": ["The Companions of the Prophet", "The People of the Elephant", "The People of the Cave", "The Owners of the Garden"],
+      "ma": ["أصحاب النبي", "أصحاب الفيل", "أصحاب الكهف", "أصحاب الجنة"]
+    },
+    "correctAnswer": {
+      "es": "La Gente de la Cueva",
+      "en": "The People of the Cave",
+      "ma": "أصحاب الكهف"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La Surah Al-Kahf narra la historia de un grupo de jóvenes que buscaron refugio en una cueva para escapar de la persecución religiosa y durmieron milagrosamente durante cientos de años.",
+      "en": "Surah Al-Kahf narrates the story of a group of young men who sought refuge in a cave to escape religious persecution and miraculously slept for hundreds of years.",
+      "ma": "سورة الكهف كتعاود القصة ديال واحد المجموعة ديال الشباب اللي تخباو فواحد الغار باش يهربو من الإضطهاد الديني و نعسو بمعجزة لمئات السنين."
+    }
+  },
+  {
+    "id": 26,
+    "question": {
+      "es": "¿Qué significa la palabra 'Islam'?",
+      "en": "What does the word 'Islam' mean?",
+      "ma": "أشنو كتعني كلمة 'إسلام'؟"
+    },
+    "options": {
+      "es": ["Paz", "Fe", "Sumisión a Dios", "Adoración"],
+      "en": ["Peace", "Faith", "Submission to God", "Worship"],
+      "ma": ["السلام", "الإيمان", "الاستسلام لله", "العبادة"]
+    },
+    "correctAnswer": {
+      "es": "Sumisión a Dios",
+      "en": "Submission to God",
+      "ma": "الاستسلام لله"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La palabra árabe 'Islam' se deriva de la raíz 's-l-m', que significa sumisión, obediencia, entrega y paz. Significa la sumisión a la voluntad de Allah.",
+      "en": "The Arabic word 'Islam' is derived from the root 's-l-m', which means submission, obedience, surrender, and peace. It signifies submission to the will of Allah.",
+      "ma": "الكلمة العربية 'إسلام' جات من الجذر 'س-ل-م'، اللي كيعني الاستسلام، الطاعة، التسليم و السلام. كتعني الاستسلام لإرادة الله."
+    }
+  },
+  {
+    "id": 27,
+    "question": {
+      "es": "¿Quién fue el padre del Profeta Muhammad (ﷺ)?",
+      "en": "Who was the father of Prophet Muhammad (ﷺ)?",
+      "ma": "شكون هو الأب ديال النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Abu Talib", "Abd al-Muttalib", "Abdullah ibn Abd al-Muttalib", "Hamza ibn Abd al-Muttalib"],
+      "en": ["Abu Talib", "Abd al-Muttalib", "Abdullah ibn Abd al-Muttalib", "Hamza ibn Abd al-Muttalib"],
+      "ma": ["أبو طالب", "عبد المطلب", "عبد الله بن عبد المطلب", "حمزة بن عبد المطلب"]
+    },
+    "correctAnswer": {
+      "es": "Abdullah ibn Abd al-Muttalib",
+      "en": "Abdullah ibn Abd al-Muttalib",
+      "ma": "عبد الله بن عبد المطلب"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El padre del Profeta Muhammad (ﷺ) fue Abdullah. Falleció antes del nacimiento del Profeta.",
+      "en": "The father of Prophet Muhammad (ﷺ) was Abdullah. He passed away before the Prophet's birth.",
+      "ma": "الأب ديال النبي محمد (ﷺ) هو عبد الله. توفى قبل ما يتزاد النبي."
+    }
+  },
+  {
+    "id": 28,
+    "question": {
+      "es": "¿Qué erudito de la Edad de Oro islámica es conocido como 'el padre del álgebra'?",
+      "en": "Which scholar from the Islamic Golden Age is known as 'the father of algebra'?",
+      "ma": "شكون هو العالم فالعصر الذهبي الإسلامي اللي معروف بـ 'أبو الجبر'؟"
+    },
+    "options": {
+      "es": ["Ibn Sina (Avicena)", "Al-Kindi", "Muhammad ibn Musa al-Khwarizmi", "Ibn Rushd (Averroes)"],
+      "en": ["Ibn Sina (Avicenna)", "Al-Kindi", "Muhammad ibn Musa al-Khwarizmi", "Ibn Rushd (Averroes)"],
+      "ma": ["ابن سينا", "الكندي", "محمد بن موسى الخوارزمي", "ابن رشد"]
+    },
+    "correctAnswer": {
+      "es": "Muhammad ibn Musa al-Khwarizmi",
+      "en": "Muhammad ibn Musa al-Khwarizmi",
+      "ma": "محمد بن موسى الخوارزمي"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Al-Khwarizmi fue un matemático y astrónomo persa cuyo libro 'El libro compendioso sobre cálculo por compleción y equilibrio' introdujo métodos sistemáticos para resolver ecuaciones lineales y cuadráticas.",
+      "en": "Al-Khwarizmi was a Persian mathematician and astronomer whose book 'The Compendious Book on Calculation by Completion and Balancing' introduced systematic methods for solving linear and quadratic equations.",
+      "ma": "الخوارزمي كان عالم رياضيات و فلك فارسي، و الكتاب ديالو 'الكتاب المختصر في حساب الجبر والمقابلة' قدم طرق منهجية لحل المعادلات الخطية و التربيعية."
+    }
+  },
+  {
+    "id": 29,
+    "question": {
+      "es": "¿Quién fue el último profeta en el Islam?",
+      "en": "Who was the final prophet in Islam?",
+      "ma": "شكون هو آخر نبي فالإسلام؟"
+    },
+    "options": {
+      "es": ["Profeta Isa (Jesús)", "Profeta Musa (Moisés)", "Profeta Muhammad (ﷺ)", "Profeta Ibrahim (Abraham)"],
+      "en": ["Prophet Isa (Jesus)", "Prophet Musa (Moses)", "Prophet Muhammad (ﷺ)", "Prophet Ibrahim (Abraham)"],
+      "ma": ["النبي عيسى", "النبي موسى", "النبي محمد (ﷺ)", "النبي إبراهيم"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Muhammad (ﷺ)",
+      "en": "Prophet Muhammad (ﷺ)",
+      "ma": "النبي محمد (ﷺ)"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Los musulmanes creen que el Profeta Muhammad (ﷺ) es el 'Sello de los Profetas', el mensajero final de Dios a la humanidad.",
+      "en": "Muslims believe that Prophet Muhammad (ﷺ) is the 'Seal of the Prophets', the final messenger from God to mankind.",
+      "ma": "المسلمين كيآمنو بأن النبي محمد (ﷺ) هو 'خاتم الأنبياء'، آخر رسول من عند الله للبشرية."
+    }
+  },
+  {
+    "id": 30,
+    "question": {
+      "es": "¿Cuántas veces se menciona el nombre 'Muhammad' en el Corán?",
+      "en": "How many times is the name 'Muhammad' mentioned in the Quran?",
+      "ma": "شحال من مرة تذكرات سميت 'محمد' فالقرآن؟"
+    },
+    "options": {
+      "es": ["1", "4", "10", "25"],
+      "en": ["1", "4", "10", "25"],
+      "ma": ["1", "4", "10", "25"]
+    },
+    "correctAnswer": {
+      "es": "4",
+      "en": "4",
+      "ma": "4"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El nombre 'Muhammad' se menciona cuatro veces en el Corán. Sin embargo, también se le hace referencia por otros títulos como 'Mensajero' (Rasul) y 'Profeta' (Nabi).",
+      "en": "The name 'Muhammad' is mentioned four times in the Quran. However, he is also referred to by other titles such as 'Messenger' (Rasul) and 'Prophet' (Nabi).",
+      "ma": "سميت 'محمد' تذكرات أربع مرات فالقرآن. و لكن، كيتشار ليه بألقاب خرى بحال 'رسول' و 'نبي'."
+    }
+  },
+  {
+    "id": 31,
+    "question": {
+      "es": "¿Qué profeta construyó un arca para salvar a su familia y a los animales de una gran inundación?",
+      "en": "Which prophet built an ark to save his family and the animals from a great flood?",
+      "ma": "أشمن نبي بنى سفينة باش يعتق عائلتو و الحيوانات من واحد الفيضان كبير؟"
+    },
+    "options": {
+      "es": ["Profeta Hud", "Profeta Saleh", "Profeta Nuh (Noé)", "Profeta Lut"],
+      "en": ["Prophet Hud", "Prophet Saleh", "Prophet Nuh (Noah)", "Prophet Lut"],
+      "ma": ["النبي هود", "النبي صالح", "النبي نوح", "النبي لوط"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Nuh (Noé)",
+      "en": "Prophet Nuh (Noah)",
+      "ma": "النبي نوح"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Por mandato de Allah, el Profeta Nuh construyó un arca masiva para salvar a los creyentes y a parejas de cada especie animal de la inundación mundial.",
+      "en": "By Allah's command, Prophet Nuh built a massive ark to save the believers and pairs of every animal species from the worldwide flood.",
+      "ma": "بأمر من الله، النبي نوح بنى سفينة كبيرة باش يعتق المؤمنين و أزواج من كل أنواع الحيوانات من الفيضان اللي عم العالم."
+    }
+  },
+  {
+    "id": 32,
+    "question": {
+      "es": "¿Qué batalla también se conoce como la 'Batalla de los Confederados' (Ghazwat al-Ahzab)?",
+      "en": "Which battle is also known as the 'Battle of the Confederates' (Ghazwat al-Ahzab)?",
+      "ma": "أشمن معركة معروفة أيضا بـ'غزوة الأحزاب'؟"
+    },
+    "options": {
+      "es": ["Batalla de Badr", "Batalla de Uhud", "Batalla de la Trinchera", "Batalla de Hunayn"],
+      "en": ["Battle of Badr", "Battle of Uhud", "Battle of the Trench", "Battle of Hunayn"],
+      "ma": ["معركة بدر", "معركة أحد", "معركة الخندق", "معركة حنين"]
+    },
+    "correctAnswer": {
+      "es": "Batalla de la Trinchera",
+      "en": "Battle of the Trench",
+      "ma": "معركة الخندق"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "La Batalla de la Trinchera se llama 'Al-Ahzab' porque involucró a una confederación de varias tribus que se unieron para atacar Medina.",
+      "en": "The Battle of the Trench is called 'Al-Ahzab' because it involved a confederation of various tribes who joined together to attack Medina.",
+      "ma": "معركة الخندق تسمات 'الأحزاب' حيت شارك فيها تحالف ديال بزاف ديال القبائل اللي تجمعو باش يهجمو على المدينة."
+    }
+  },
+  {
+    "id": 33,
+    "question": {
+      "es": "¿Cuál es el término para la exégesis o interpretación del Corán?",
+      "en": "What is the term for the exegesis or interpretation of the Quran?",
+      "ma": "أشنو هو المصطلح اللي كيعني تفسير القرآن؟"
+    },
+    "options": {
+      "es": ["Tafsir", "Tajwid", "Tazkiyah", "Tarteel"],
+      "en": ["Tafsir", "Tajwid", "Tazkiyah", "Tarteel"],
+      "ma": ["تفسير", "تجويد", "تزكية", "ترتيل"]
+    },
+    "correctAnswer": {
+      "es": "Tafsir",
+      "en": "Tafsir",
+      "ma": "تفسير"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Tafsir es la ciencia de explicar el Corán, aclarar sus significados y derivar lecciones y sentencias de él.",
+      "en": "Tafsir is the science of explaining the Quran, clarifying its meanings, and deriving lessons and rulings from it.",
+      "ma": "التفسير هو العلم ديال شرح القرآن، و توضيح المعاني ديالو، و استخلاص الدروس و الأحكام منو."
+    }
+  },
+  {
+    "id": 34,
+    "question": {
+      "es": "¿Quién fue el profeta que fue tragado por un gran pez?",
+      "en": "Which prophet was swallowed by a large fish?",
+      "ma": "شكون هو النبي اللي سرطاتو واحد الحوتة كبيرة؟"
+    },
+    "options": {
+      "es": ["Profeta Ilyas (Elías)", "Profeta Al-Yasa (Eliseo)", "Profeta Yunus (Jonás)", "Profeta Zakariya (Zacarías)"],
+      "en": ["Prophet Ilyas (Elijah)", "Prophet Al-Yasa (Elisha)", "Prophet Yunus (Jonah)", "Prophet Zakariya (Zechariah)"],
+      "ma": ["النبي إلياس", "النبي اليسع", "النبي يونس", "النبي زكريا"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Yunus (Jonás)",
+      "en": "Prophet Yunus (Jonah)",
+      "ma": "النبي يونس"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Profeta Yunus abandonó a su pueblo con ira y fue tragado por un gran pez como prueba de Allah. Se arrepintió y fue salvado.",
+      "en": "Prophet Yunus left his people in anger and was swallowed by a large fish as a test from Allah. He repented and was saved.",
+      "ma": "النبي يونس خلى القوم ديالو و هو غضبان و سرطاتو حوتة كبيرة كابتلاء من عند الله. تاب الله عليه و نجاه."
+    }
+  },
+  {
+    "id": 35,
+    "question": {
+      "es": "¿Cuál fue el nombre de la madre del Profeta Muhammad (ﷺ)?",
+      "en": "What was the name of Prophet Muhammad's (ﷺ) mother?",
+      "ma": "أشنو كانت سميت الأم ديال النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Halimah al-Sa'diyah", "Fatimah bint Asad", "Aminah bint Wahb", "Thuwaybah"],
+      "en": ["Halimah al-Sa'diyah", "Fatimah bint Asad", "Aminah bint Wahb", "Thuwaybah"],
+      "ma": ["حليمة السعدية", "فاطمة بنت أسد", "آمنة بنت وهب", "ثويبة"]
+    },
+    "correctAnswer": {
+      "es": "Aminah bint Wahb",
+      "en": "Aminah bint Wahb",
+      "ma": "آمنة بنت وهب"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La madre del Profeta (ﷺ) fue Aminah bint Wahb. Falleció cuando él era un niño pequeño.",
+      "en": "The Prophet's (ﷺ) mother was Aminah bint Wahb. She passed away when he was a young child.",
+      "ma": "الأم ديال النبي (ﷺ) كانت هي آمنة بنت وهب. توفات فاش كان باقي طفل صغير."
+    }
+  },
+  {
+    "id": 36,
+    "question": {
+      "es": "Completar el pilar de la fe (Iman) es creer en Allah, Sus Ángeles, Sus Libros, Sus Mensajeros, el Último Día y...?",
+      "en": "Completing the pillar of faith (Iman) is to believe in Allah, His Angels, His Books, His Messengers, the Last Day, and...?",
+      "ma": "باش تكمل أركان الإيمان، خاص تآمن بالله، و ملائكتو، و كتبو، و رسلو، و اليوم الآخر، و...؟"
+    },
+    "options": {
+      "es": ["Qada' y Qadar (Decreto Divino)", "Los genios", "La muerte", "El Paraíso y el Infierno"],
+      "en": ["Qada' and Qadar (Divine Decree)", "The Jinn", "Death", "Paradise and Hell"],
+      "ma": ["القضاء و القدر", "الجن", "الموت", "الجنة و النار"]
+    },
+    "correctAnswer": {
+      "es": "Qada' y Qadar (Decreto Divino)",
+      "en": "Qada' and Qadar (Divine Decree)",
+      "ma": "القضاء و القدر"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El sexto pilar de Iman es la creencia en el Decreto Divino, que lo bueno y lo malo de ello provienen de Allah.",
+      "en": "The sixth pillar of Iman is the belief in the Divine Decree, that the good and bad of it come from Allah.",
+      "ma": "الركن السادس من الإيمان هو الإيمان بالقدر، خيره و شره من عند الله."
+    }
+  },
+  {
+    "id": 37,
+    "question": {
+      "es": "¿A qué profeta se le dio el milagro de convertir un bastón en una serpiente?",
+      "en": "Which prophet was given the miracle of turning a staff into a snake?",
+      "ma": "أشمن نبي تعطاتو المعجزة ديال تحويل عصا لثعبان؟"
+    },
+    "options": {
+      "es": ["Profeta Sulaiman (Salomón)", "Profeta Isa (Jesús)", "Profeta Musa (Moisés)", "Profeta Dawud (David)"],
+      "en": ["Prophet Sulaiman (Solomon)", "Prophet Isa (Jesus)", "Prophet Musa (Moses)", "Prophet Dawud (David)"],
+      "ma": ["النبي سليمان", "النبي عيسى", "النبي موسى", "النبي داوود"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Musa (Moisés)",
+      "en": "Prophet Musa (Moses)",
+      "ma": "النبي موسى"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Al confrontar al Faraón, Allah le dio al Profeta Musa el milagro de arrojar su bastón, que se convirtió en una serpiente real.",
+      "en": "When confronting the Pharaoh, Allah gave Prophet Musa the miracle of throwing his staff, which turned into a real snake.",
+      "ma": "فاش كان كيواجه فرعون، الله عطى للنبي موسى معجزة أنه يرمي العصا ديالو، و تحولات لثعبان حقيقي."
+    }
+  },
+  {
+    "id": 38,
+    "question": {
+      "es": "¿Quién fue el compañero cuya sugerencia de cavar una trinchera fue crucial en la Batalla de la Trinchera?",
+      "en": "Which companion's suggestion to dig a trench was crucial in the Battle of the Trench?",
+      "ma": "شكون هو الصحابي اللي الاقتراح ديالو بحفر خندق كان حاسم فمعركة الخندق؟"
+    },
+    "options": {
+      "es": ["Abu Ubaidah ibn al-Jarrah", "Sa'd ibn Mu'adh", "Salman al-Farisi", "Abd al-Rahman ibn Awf"],
+      "en": ["Abu Ubaidah ibn al-Jarrah", "Sa'd ibn Mu'adh", "Salman al-Farisi", "Abd al-Rahman ibn Awf"],
+      "ma": ["أبو عبيدة بن الجراح", "سعد بن معاذ", "سلمان الفارسي", "عبد الرحمن بن عوف"]
+    },
+    "correctAnswer": {
+      "es": "Salman al-Farisi",
+      "en": "Salman al-Farisi",
+      "ma": "سلمان الفارسي"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Salman el Persa, un compañero de Persia, sugirió una táctica defensiva desconocida para los árabes: cavar una gran trinchera para proteger Medina de los ejércitos confederados.",
+      "en": "Salman the Persian, a companion from Persia, suggested a defensive tactic unfamiliar to the Arabs: digging a large trench to protect Medina from the confederate armies.",
+      "ma": "سلمان الفارسي، صحابي من بلاد فارس، اقترح واحد التكتيك دفاعي ما كانوش كيعرفوه العرب: حفر خندق كبير باش يحميو المدينة من جيوش الأحزاب."
+    }
+  },
+  {
+    "id": 39,
+    "question": {
+      "es": "El ayuno en el Día de Arafah expía los pecados de ¿cuántos años?",
+      "en": "Fasting on the Day of Arafah expiates the sins of how many years?",
+      "ma": "الصيام ديال يوم عرفة كيكفر الذنوب ديال شحال من عام؟"
+    },
+    "options": {
+      "es": ["Un año", "Dos años (el anterior y el próximo)", "Siete años", "Toda una vida"],
+      "en": ["One year", "Two years (the previous and the next)", "Seven years", "A lifetime"],
+      "ma": ["عام واحد", "عامين (اللي فات و اللي جاي)", "سبع سنين", "حياة كاملة"]
+    },
+    "correctAnswer": {
+      "es": "Dos años (el anterior y el próximo)",
+      "en": "Two years (the previous and the next)",
+      "ma": "عامين (اللي فات و اللي جاي)"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Se narra que el Profeta (ﷺ) dijo que ayunar en el Día de Arafah expía los pecados del año anterior y del año venidero.",
+      "en": "It is narrated that the Prophet (ﷺ) said that fasting on the Day of Arafah expiates the sins of the preceding year and the coming year.",
+      "ma": "تروى عن النبي (ﷺ) أنه قال أن صيام يوم عرفة يكفر ذنوب العام اللي فات و العام اللي جاي."
+    }
+  },
+  {
+    "id": 40,
+    "question": {
+      "es": "¿Qué profeta era rey y se le dio la habilidad de hablar con los animales y los genios?",
+      "en": "Which prophet was a king and was given the ability to speak to animals and jinn?",
+      "ma": "أشمن نبي كان ملك و تعطاتو القدرة يهضر مع الحيوانات و الجن؟"
+    },
+    "options": {
+      "es": ["Profeta Yusuf (José)", "Profeta Sulaiman (Salomón)", "Profeta Dawud (David)", "Profeta Dhul-Kifl"],
+      "en": ["Prophet Yusuf (Joseph)", "Prophet Sulaiman (Solomon)", "Prophet Dawud (David)", "Prophet Dhul-Kifl"],
+      "ma": ["النبي يوسف", "النبي سليمان", "النبي داوود", "النبي ذو الكفل"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Sulaiman (Salomón)",
+      "en": "Prophet Sulaiman (Solomon)",
+      "ma": "النبي سليمان"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Profeta Sulaiman, hijo del Profeta Dawud, recibió un reino como ningún otro, con control sobre el viento, los genios y la capacidad de entender el lenguaje de los animales.",
+      "en": "Prophet Sulaiman, son of Prophet Dawud, was granted a kingdom like no other, with control over the wind, the jinn, and the ability to understand the language of animals.",
+      "ma": "النبي سليمان، ولد النبي داوود، تعطاتو واحد المملكة ما كايناش بحالها، مع تحكم فالريح، و الجن، و القدرة على فهم لغة الحيوانات."
+    }
+  },
+  {
+    "id": 41,
+    "question": {
+      "es": "¿Cuál fue el primer Qibla (dirección de la oración) para los musulmanes?",
+      "en": "What was the first Qibla (direction of prayer) for Muslims?",
+      "ma": "أشنو كانت أول قبلة للمسلمين؟"
+    },
+    "options": {
+      "es": ["La Kaaba en La Meca", "La Mezquita de Al-Aqsa en Jerusalén", "La Mezquita del Profeta en Medina", "El Monte Sinaí"],
+      "en": ["The Kaaba in Mecca", "Al-Aqsa Mosque in Jerusalem", "The Prophet's Mosque in Medina", "Mount Sinai"],
+      "ma": ["الكعبة فمكة", "المسجد الأقصى فالقدس", "المسجد النبوي فالمدينة", "جبل سيناء"]
+    },
+    "correctAnswer": {
+      "es": "La Mezquita de Al-Aqsa en Jerusalén",
+      "en": "Al-Aqsa Mosque in Jerusalem",
+      "ma": "المسجد الأقصى فالقدس"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Inicialmente, los musulmanes rezaban en dirección a la Mezquita de Al-Aqsa en Jerusalén antes de que Allah ordenara al Profeta Muhammad (ﷺ) que cambiara la Qibla hacia la Kaaba en La Meca.",
+      "en": "Initially, Muslims prayed facing the Al-Aqsa Mosque in Jerusalem before Allah commanded Prophet Muhammad (ﷺ) to change the Qibla towards the Kaaba in Mecca.",
+      "ma": "فالأول، المسلمين كانو كيصليو فإتجاه المسجد الأقصى فالقدس قبل ما يأمر الله النبي محمد (ﷺ) باش يبدل القبلة للكعبة فمكة."
+    }
+  },
+  {
+    "id": 42,
+    "question": {
+      "es": "¿Qué hija del Profeta Muhammad (ﷺ) fue llamada 'la madre de su padre' (Umm Abiha) por su gran cuidado hacia él?",
+      "en": "Which daughter of Prophet Muhammad (ﷺ) was called 'the mother of her father' (Umm Abiha) for her great care for him?",
+      "ma": "أشمن بنت للنبي محمد (ﷺ) تسمات 'أم أبيها' بسبب العناية الكبيرة ديالها به؟"
+    },
+    "options": {
+      "es": ["Zainab", "Ruqayyah", "Umm Kulthum", "Fatimah"],
+      "en": ["Zainab", "Ruqayyah", "Umm Kulthum", "Fatimah"],
+      "ma": ["زينب", "رقية", "أم كلثوم", "فاطمة"]
+    },
+    "correctAnswer": {
+      "es": "Fatimah",
+      "en": "Fatimah",
+      "ma": "فاطمة"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Fatimah (RA) tenía un profundo amor y devoción por su padre, el Profeta (ﷺ), y lo cuidaba inmensamente, especialmente después de la muerte de su madre, Jadiya, lo que le valió este entrañable apodo.",
+      "en": "Fatimah (RA) had a deep love and devotion for her father, the Prophet (ﷺ), and cared for him immensely, especially after the death of her mother, Khadijah, which earned her this endearing nickname.",
+      "ma": "فاطمة (رضي الله عنها) كان عندها حب و تفاني كبير لوالدها، النبي (ﷺ)، و كانت كتهلا فيه بزاف، خصوصا من بعد الموت ديال مها خديجة، و داكشي علاش خدات هاد اللقب."
+    }
+  },
+  {
+    "id": 43,
+    "question": {
+      "es": "¿Qué profeta fue enviado al pueblo de 'Ad?",
+      "en": "Which prophet was sent to the people of 'Ad?",
+      "ma": "أشمن نبي ترسل لقوم 'عاد'؟"
+    },
+    "options": {
+      "es": ["Profeta Saleh", "Profeta Shuaib", "Profeta Hud", "Profeta Lut"],
+      "en": ["Prophet Saleh", "Prophet Shuaib", "Prophet Hud", "Prophet Lut"],
+      "ma": ["النبي صالح", "النبي شعيب", "النبي هود", "النبي لوط"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Hud",
+      "en": "Prophet Hud",
+      "ma": "النبي هود"
+    },
+    "category": "Profetas",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El Profeta Hud fue enviado a la tribu de 'Ad, un pueblo poderoso y arrogante que fue destruido por un viento furioso y violento debido a su incredulidad.",
+      "en": "Prophet Hud was sent to the tribe of 'Ad, a powerful and arrogant people who were destroyed by a furious, violent wind due to their disbelief.",
+      "ma": "النبي هود ترسل لقبيلة 'عاد'، واحد القوم اللي كانو قويين و متكبرين و اللي تهلكو بواحد الريح قوية و عنيفة بسبب الكفر ديالهم."
+    }
+  },
+  {
+    "id": 44,
+    "question": {
+      "es": "En la terminología islámica, ¿qué es 'Fiqh'?",
+      "en": "In Islamic terminology, what is 'Fiqh'?",
+      "ma": "فالمصطلحات الإسلامية، أشنو هو 'الفقه'؟"
+    },
+    "options": {
+      "es": ["La creencia en la unidad de Dios", "La jurisprudencia islámica", "La recitación del Corán", "La biografía del Profeta"],
+      "en": ["The belief in the oneness of God", "Islamic jurisprudence", "The recitation of the Quran", "The biography of the Prophet"],
+      "ma": ["الإيمان بوحدانية الله", "الفقه الإسلامي", "تلاوة القرآن", "سيرة النبي"]
+    },
+    "correctAnswer": {
+      "es": "La jurisprudencia islámica",
+      "en": "Islamic jurisprudence",
+      "ma": "الفقه الإسلامي"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Fiqh es la comprensión humana y la práctica de la sharia, la ley islámica divina revelada en el Corán y la Sunnah. Se ocupa de la observancia de los rituales, la moral y la legislación social.",
+      "en": "Fiqh is the human understanding and practice of sharia, the divine Islamic law revealed in the Quran and the Sunnah. It deals with the observance of rituals, morals, and social legislation.",
+      "ma": "الفقه هو الفهم البشري و التطبيق ديال الشريعة، القانون الإلهي الإسلامي اللي نزل فالقرآن و السنة. كيعالج أمور العبادات، الأخلاق، و التشريعات الاجتماعية."
+    }
+  },
+  {
+    "id": 45,
+    "question": {
+      "es": "¿Cuál fue la profesión del Profeta Muhammad (ﷺ) antes de recibir la profecía?",
+      "en": "What was the profession of Prophet Muhammad (ﷺ) before he received prophethood?",
+      "ma": "أشنو كانت الحرفة ديال النبي محمد (ﷺ) قبل ما يتلقى النبوة؟"
+    },
+    "options": {
+      "es": ["Carpintero", "Pastor y comerciante", "Herrero", "Granjero"],
+      "en": ["Carpenter", "Shepherd and merchant", "Blacksmith", "Farmer"],
+      "ma": ["نجار", "راعي و تاجر", "حداد", "فلاح"]
+    },
+    "correctAnswer": {
+      "es": "Pastor y comerciante",
+      "en": "Shepherd and merchant",
+      "ma": "راعي و تاجر"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "En su juventud, el Profeta Muhammad (ﷺ) trabajó como pastor. Más tarde, se involucró en el comercio, ganándose la reputación de 'Al-Amin' (El Confiable).",
+      "en": "In his youth, Prophet Muhammad (ﷺ) worked as a shepherd. Later, he became involved in trade, earning the reputation of 'Al-Amin' (The Trustworthy).",
+      "ma": "فالشباب ديالو، النبي محمد (ﷺ) خدم راعي. من بعد، دخل فالتجارة، و خدا لقب 'الأمين'."
+    }
+  },
+  {
+    "id": 46,
+    "question": {
+      "es": "¿A qué profeta se le conoce como 'Khalilullah' (El Amigo de Allah)?",
+      "en": "Which prophet is known as 'Khalilullah' (The Friend of Allah)?",
+      "ma": "أشمن نبي معروف بـ'خليل الله'؟"
+    },
+    "options": {
+      "es": ["Profeta Musa (Moisés)", "Profeta Isa (Jesús)", "Profeta Muhammad (ﷺ)", "Profeta Ibrahim (Abraham)"],
+      "en": ["Prophet Musa (Moses)", "Prophet Isa (Jesus)", "Prophet Muhammad (ﷺ)", "Prophet Ibrahim (Abraham)"],
+      "ma": ["النبي موسى", "النبي عيسى", "النبي محمد (ﷺ)", "النبي إبراهيم"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Ibrahim (Abraham)",
+      "en": "Prophet Ibrahim (Abraham)",
+      "ma": "النبي إبراهيم"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Profeta Ibrahim recibió el título único de 'Khalilullah' debido a su sumisión inquebrantable, su profunda fe y su amor por Allah.",
+      "en": "Prophet Ibrahim was given the unique title 'Khalilullah' due to his unwavering submission, deep faith, and love for Allah.",
+      "ma": "النبي إبراهيم خدا اللقب الفريد ديال 'خليل الله' بسبب الاستسلام ديالو التام، و إيمانو العميق، و حبو لله."
+    }
+  },
+  {
+    "id": 47,
+    "question": {
+      "es": "¿Cuál es la peregrinación menor a La Meca que se puede realizar en cualquier época del año?",
+      "en": "What is the minor pilgrimage to Mecca that can be performed at any time of the year?",
+      "ma": "أشنو هي الحجة الصغيرة لمكة اللي يمكن تدار فأي وقت من العام؟"
+    },
+    "options": {
+      "es": ["Hajj", "Ziyarah", "Umrah", "Tawaf"],
+      "en": ["Hajj", "Ziyarah", "Umrah", "Tawaf"],
+      "ma": ["الحج", "الزيارة", "العمرة", "الطواف"]
+    },
+    "correctAnswer": {
+      "es": "Umrah",
+      "en": "Umrah",
+      "ma": "العمرة"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La Umrah, a diferencia del Hajj que tiene fechas específicas, es una peregrinación voluntaria a La Meca que los musulmanes pueden realizar en cualquier momento.",
+      "en": "The Umrah, unlike the Hajj which has specific dates, is a voluntary pilgrimage to Mecca that Muslims can undertake at any time.",
+      "ma": "العمرة، ماشي بحال الحج اللي عندو أوقات محددة، هي حج تطوعي لمكة يمكن للمسلمين يديروه فأي وقت."
+    }
+  },
+  {
+    "id": 48,
+    "question": {
+      "es": "El ángel encargado de traer la revelación de Allah a los profetas es...?",
+      "en": "The angel entrusted with bringing the revelation from Allah to the prophets is...?",
+      "ma": "الملاك المكلف يجيب الوحي من عند الله للأنبياء هو...؟"
+    },
+    "options": {
+      "es": ["Mikail (Miguel)", "Israfil", "Jibril (Gabriel)", "Malik"],
+      "en": ["Mikail (Michael)", "Israfil", "Jibril (Gabriel)", "Malik"],
+      "ma": ["ميكائيل", "إسرافيل", "جبريل", "مالك"]
+    },
+    "correctAnswer": {
+      "es": "Jibril (Gabriel)",
+      "en": "Jibril (Gabriel)",
+      "ma": "جبريل"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Jibril es el arcángel que sirvió como intermediario entre Allah y Sus profetas, transmitiendo las revelaciones divinas, incluido el Corán al Profeta Muhammad (ﷺ).",
+      "en": "Jibril is the archangel who served as the intermediary between Allah and His prophets, conveying the divine revelations, including the Quran to Prophet Muhammad (ﷺ).",
+      "ma": "جبريل هو رئيس الملائكة اللي كان الوسيط بين الله و الأنبياء ديالو، كيوصل ليهم الوحي الإلهي، بحال القرآن للنبي محمد (ﷺ)."
+    }
+  },
+  {
+    "id": 49,
+    "question": {
+      "es": "Después de la migración (Hégira) a Medina, ¿cuál fue una de las primeras acciones importantes del Profeta (ﷺ)?",
+      "en": "After the migration (Hijra) to Medina, what was one of the first major actions of the Prophet (ﷺ)?",
+      "ma": "من بعد الهجرة للمدينة، أشنو كان من أول الأعمال المهمة اللي دار النبي (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Lanzar una gran campaña militar", "Construir la Mezquita del Profeta (Masjid an-Nabawi)", "Escribir cartas a los reyes", "Establecer un mercado"],
+      "en": ["Launching a major military campaign", "Building the Prophet's Mosque (Masjid an-Nabawi)", "Writing letters to kings", "Establishing a marketplace"],
+      "ma": ["بداية حملة عسكرية كبيرة", "بناء المسجد النبوي", "كتابة رسائل للملوك", "تأسيس سوق"]
+    },
+    "correctAnswer": {
+      "es": "Construir la Mezquita del Profeta (Masjid an-Nabawi)",
+      "en": "Building the Prophet's Mosque (Masjid an-Nabawi)",
+      "ma": "بناء المسجد النبوي"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La construcción de la mezquita fue una prioridad. Sirvió no solo como un lugar de oración, sino como un centro comunitario, un tribunal de justicia y una escuela.",
+      "en": "The construction of the mosque was a priority. It served not only as a place of prayer but as a community center, a court of justice, and a school.",
+      "ma": "بناء المسجد كان من الأولويات. ماكانش غير بلاصة للصلاة، و لكن كان مركز للجماعة، و محكمة، و مدرسة."
+    }
+  },
+  {
+    "id": 50,
+    "question": {
+      "es": "¿Qué profeta fue enviado al pueblo de Thamud, quienes tallaban sus hogares en las montañas?",
+      "en": "Which prophet was sent to the people of Thamud, who carved their homes into the mountains?",
+      "ma": "أشمن نبي ترسل لقوم ثمود، اللي كانو كينحتو ديورهم فالجبال؟"
+    },
+    "options": {
+      "es": ["Profeta Hud", "Profeta Saleh", "Profeta Shuaib", "Profeta Lut"],
+      "en": ["Prophet Hud", "Prophet Saleh", "Prophet Shuaib", "Prophet Lut"],
+      "ma": ["النبي هود", "النبي صالح", "النبي شعيب", "النبي لوط"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Saleh",
+      "en": "Prophet Saleh",
+      "ma": "النبي صالح"
+    },
+    "category": "Profetas",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El Profeta Saleh fue enviado a los Thamud. Su milagro fue una camella milagrosa de Allah, pero la gente la hirió, lo que llevó a su destrucción.",
+      "en": "Prophet Saleh was sent to the Thamud. His miracle was a she-camel from Allah, but the people hamstrung her, leading to their destruction.",
+      "ma": "النبي صالح ترسل لثمود. المعجزة ديالو كانت ناقة من عند الله، و لكن القوم ديالو عقروها، و داكشي أدى للهلاك ديالهم."
+    }
+  },
+  {
+    "id": 51,
+    "question": {
+      "es": "¿Qué significa 'Allahu Akbar'?",
+      "en": "What does 'Allahu Akbar' mean?",
+      "ma": "أشنو كتعني 'الله أكبر'؟"
+    },
+    "options": {
+      "es": ["Alabado sea Allah", "Allah es el más grande", "En el nombre de Allah", "Si Allah quiere"],
+      "en": ["Praise be to Allah", "Allah is the greatest", "In the name of Allah", "If Allah wills"],
+      "ma": ["الحمد لله", "الله أكبر", "بسم الله", "إن شاء الله"]
+    },
+    "correctAnswer": {
+      "es": "Allah es el más grande",
+      "en": "Allah is the greatest",
+      "ma": "الله أكبر"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Es una declaración común en el Islam, conocida como el Takbir, que significa 'Allah es el más grande'.",
+      "en": "It is a common declaration in Islam, known as the Takbir, meaning 'Allah is the greatest'.",
+      "ma": "هي واحد العبارة شائعة فالإسلام، معروفة بالتكبير، و كتعني 'الله أكبر'."
+    }
+  },
+  {
+    "id": 52,
+    "question": {
+      "es": "¿Cuántas veces al día rezan los musulmanes obligatoriamente?",
+      "en": "How many times a day do Muslims perform obligatory prayers?",
+      "ma": "شحال من مرة فاليوم كيصليو المسلمين الصلوات المفروضة؟"
+    },
+    "options": {
+      "es": ["3", "5", "7", "1"],
+      "en": ["3", "5", "7", "1"],
+      "ma": ["3", "5", "7", "1"]
+    },
+    "correctAnswer": {
+      "es": "5",
+      "en": "5",
+      "ma": "5"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Los musulmanes realizan cinco oraciones obligatorias (Salat) al día: Fajr, Dhuhr, Asr, Maghrib e Isha.",
+      "en": "Muslims perform five obligatory prayers (Salat) a day: Fajr, Dhuhr, Asr, Maghrib, and Isha.",
+      "ma": "المسلمين كيصليو خمس صلوات مفروضة فاليوم: الفجر، الظهر، العصر، المغرب، و العشاء."
+    }
+  },
+  {
+    "id": 53,
+    "question": {
+      "es": "¿Cuál fue la primera palabra revelada del Corán al Profeta Muhammad (ﷺ)?",
+      "en": "What was the first word of the Quran revealed to Prophet Muhammad (ﷺ)?",
+      "ma": "أشنو هي أول كلمة نزلت من القرآن على النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Bismillah (En el nombre de Allah)", "Alhamdulillah (Alabado sea Allah)", "Iqra (Lee)", "Qul (Di)"],
+      "en": ["Bismillah (In the name of Allah)", "Alhamdulillah (Praise be to Allah)", "Iqra (Read)", "Qul (Say)"],
+      "ma": ["بسم الله", "الحمد لله", "اقرأ", "قل"]
+    },
+    "correctAnswer": {
+      "es": "Iqra (Lee)",
+      "en": "Iqra (Read)",
+      "ma": "اقرأ"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Los primeros versos revelados, de la Surah Al-Alaq, comenzaron con la orden '¡Iqra!', que significa '¡Lee!'.",
+      "en": "The first verses revealed, from Surah Al-Alaq, began with the command 'Iqra!', meaning 'Read!'.",
+      "ma": "أول آيات نزلت، من سورة العلق، بدات بالأمر 'اقرأ!'."
+    }
+  },
+  {
+    "id": 54,
+    "question": {
+      "es": "¿En qué dirección rezan los musulmanes (Qibla)?",
+      "en": "In which direction do Muslims pray (Qibla)?",
+      "ma": "فأشمن اتجاه كيصليو المسلمين (القبلة)؟"
+    },
+    "options": {
+      "es": ["Hacia Jerusalén", "Hacia Medina", "Hacia la Kaaba en La Meca", "Hacia el Este"],
+      "en": ["Towards Jerusalem", "Towards Medina", "Towards the Kaaba in Mecca", "Towards the East"],
+      "ma": ["اتجاه القدس", "اتجاه المدينة", "اتجاه الكعبة فمكة", "اتجاه الشرق"]
+    },
+    "correctAnswer": {
+      "es": "Hacia la Kaaba en La Meca",
+      "en": "Towards the Kaaba in Mecca",
+      "ma": "اتجاه الكعبة فمكة"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La Qibla para los musulmanes de todo el mundo es la Kaaba, el edificio cúbico en el centro de la Gran Mezquita de La Meca.",
+      "en": "The Qibla for Muslims worldwide is the Kaaba, the cubic building at the center of the Grand Mosque in Mecca.",
+      "ma": "القبلة ديال المسلمين فالعالم كامل هي الكعبة، البناية المكعبة اللي كاينة فوسط المسجد الحرام فمكة."
+    }
+  },
+  {
+    "id": 55,
+    "question": {
+      "es": "¿Qué Surah del Corán es la única que no comienza con la frase 'Bismillah ar-Rahman ar-Rahim'?",
+      "en": "Which Surah of the Quran is the only one that does not begin with the phrase 'Bismillah ar-Rahman ar-Rahim'?",
+      "ma": "أشنو هي السورة الوحيدة فالقرآن اللي ما كتبداش بـ'بسم الله الرحمن الرحيم'؟"
+    },
+    "options": {
+      "es": ["Surah Al-Fatihah", "Surah At-Tawbah", "Surah Yasin", "Surah Al-Mulk"],
+      "en": ["Surah Al-Fatihah", "Surah At-Tawbah", "Surah Yasin", "Surah Al-Mulk"],
+      "ma": ["سورة الفاتحة", "سورة التوبة", "سورة يس", "سورة الملك"]
+    },
+    "correctAnswer": {
+      "es": "Surah At-Tawbah",
+      "en": "Surah At-Tawbah",
+      "ma": "سورة التوبة"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "La Surah At-Tawbah (El Arrepentimiento) es única porque no comienza con la Basmala. Los eruditos han dado varias razones, una de las cuales es que se trata de un tema de advertencia y castigo.",
+      "en": "Surah At-Tawbah (The Repentance) is unique because it does not begin with the Basmala. Scholars have given various reasons, one being that it deals with a theme of warning and punishment.",
+      "ma": "سورة التوبة هي الوحيدة اللي ما كتبداش بالبسملة. العلماء عطاو بزاف ديال الأسباب، واحد منهم هو أنها كتهضر على موضوع ديال التحذير و العقاب."
+    }
+  },
+  {
+    "id": 56,
+    "question": {
+      "es": "¿Cómo se llama el agua sagrada del pozo en La Meca?",
+      "en": "What is the name of the sacred water from the well in Mecca?",
+      "ma": "أشنو سميت الما المقدس ديال البير اللي فمكة؟"
+    },
+    "options": {
+      "es": ["Salsabil", "Kevser", "Zamzam", "Tasnim"],
+      "en": ["Salsabil", "Kevser", "Zamzam", "Tasnim"],
+      "ma": ["سلسبيل", "كوثر", "زمزم", "تسنيم"]
+    },
+    "correctAnswer": {
+      "es": "Zamzam",
+      "en": "Zamzam",
+      "ma": "زمزم"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El agua de Zamzam es del pozo de Zamzam, ubicado en la Masjid al-Haram en La Meca, que milagrosamente brotó para Hajar y su hijo Ismail.",
+      "en": "Zamzam water is from the Well of Zamzam, located in the Masjid al-Haram in Mecca, which miraculously sprang forth for Hajar and her son Ismail.",
+      "ma": "ما ديال زمزم هو من بير زمزم، اللي كاين فالمسجد الحرام فمكة، و اللي نبع بمعجزة لهاجر و ولدها إسماعيل."
+    }
+  },
+  {
+    "id": 57,
+    "question": {
+      "es": "¿Qué es 'Tayammum'?",
+      "en": "What is 'Tayammum'?",
+      "ma": "أشنو هو 'التيمم'؟"
+    },
+    "options": {
+      "es": ["La ablución menor con agua (Wudu)", "El baño completo (Ghusl)", "La ablución seca con tierra limpia", "Una oración voluntaria"],
+      "en": ["The minor ablution with water (Wudu)", "The full bath (Ghusl)", "The dry ablution with clean earth", "A voluntary prayer"],
+      "ma": ["الوضوء الصغير بالما", "الغسل الكبير", "الوضوء الناشف بالتراب النقي", "صلاة نافلة"]
+    },
+    "correctAnswer": {
+      "es": "La ablución seca con tierra limpia",
+      "en": "The dry ablution with clean earth",
+      "ma": "الوضوء الناشف بالتراب النقي"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Tayammum es una ablución ritual seca que se realiza con arena o polvo limpio cuando no se dispone de agua, permitiendo al musulmán realizar sus oraciones.",
+      "en": "Tayammum is a ritual dry ablution performed with clean sand or dust when water is not available, allowing a Muslim to perform prayers.",
+      "ma": "التيمم هو وضوء ناشف كيدار بالرملة أو التراب النقي فاش ما كايكونش الما، و كيخلي المسلم يصلي."
+    }
+  },
+  {
+    "id": 58,
+    "question": {
+      "es": "¿Qué dos Surahs se conocen como 'Al-Mu'awwidhatayn' (las suras del refugio)?",
+      "en": "Which two Surahs are known as 'Al-Mu'awwidhatayn' (the surahs of refuge)?",
+      "ma": "أشمن جوج سورات معروفين بـ'المعوذتين'؟"
+    },
+    "options": {
+      "es": ["Al-Fatihah y Al-Baqarah", "Al-Asr y Al-Ikhlas", "Al-Falaq y An-Nas", "Al-Kafirun y An-Nasr"],
+      "en": ["Al-Fatihah and Al-Baqarah", "Al-Asr and Al-Ikhlas", "Al-Falaq and An-Nas", "Al-Kafirun and An-Nasr"],
+      "ma": ["الفاتحة و البقرة", "العصر و الإخلاص", "الفلق و الناس", "الكافرون و النصر"]
+    },
+    "correctAnswer": {
+      "es": "Al-Falaq y An-Nas",
+      "en": "Al-Falaq and An-Nas",
+      "ma": "الفلق و الناس"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Las dos últimas suras del Corán, Al-Falaq (El Alba) y An-Nas (La Humanidad), se recitan para buscar la protección de Allah contra diversos males.",
+      "en": "The last two surahs of the Quran, Al-Falaq (The Daybreak) and An-Nas (Mankind), are recited to seek protection from Allah against various evils.",
+      "ma": "آخر جوج سورات فالقرآن، الفلق و الناس، كيتقراو باش نطلبو الحماية من الله ضد بزاف ديال الشرور."
+    }
+  },
+  {
+    "id": 59,
+    "question": {
+      "es": "¿Qué festividad marca el final del mes de ayuno de Ramadán?",
+      "en": "Which festival marks the end of the fasting month of Ramadan?",
+      "ma": "أشمن عيد كيمثل النهاية ديال شهر الصيام رمضان؟"
+    },
+    "options": {
+      "es": ["Eid al-Adha", "Laylat al-Qadr", "Eid al-Fitr", "Año Nuevo Islámico"],
+      "en": ["Eid al-Adha", "Laylat al-Qadr", "Eid al-Fitr", "Islamic New Year"],
+      "ma": ["عيد الأضحى", "ليلة القدر", "عيد الفطر", "رأس السنة الهجرية"]
+    },
+    "correctAnswer": {
+      "es": "Eid al-Fitr",
+      "en": "Eid al-Fitr",
+      "ma": "عيد الفطر"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Eid al-Fitr, la 'Fiesta de la Ruptura del Ayuno', es una importante festividad religiosa celebrada por los musulmanes de todo el mundo que marca el final del Ramadán.",
+      "en": "Eid al-Fitr, the 'Festival of Breaking the Fast', is a major religious holiday celebrated by Muslims worldwide that marks the end of Ramadan.",
+      "ma": "عيد الفطر، هو عيد ديني كبير كيحتافلو بيه المسلمين فالعالم كامل و كيمثل النهاية ديال رمضان."
+    }
+  },
+  {
+    "id": 60,
+    "question": {
+      "es": "¿Qué es un 'Mihrab' en una mezquita?",
+      "en": "What is a 'Mihrab' in a mosque?",
+      "ma": "أشنو هو 'المحراب' فالجامع؟"
+    },
+    "options": {
+      "es": ["El púlpito donde el Imam da el sermón (Minbar)", "Un nicho en la pared que indica la dirección de la oración (Qibla)", "La torre desde donde se llama a la oración (Minarete)", "El patio de la mezquita"],
+      "en": ["The pulpit where the Imam gives the sermon (Minbar)", "A niche in the wall indicating the direction of prayer (Qibla)", "The tower from where the call to prayer is made (Minaret)", "The courtyard of the mosque"],
+      "ma": ["المنبر فين كيدير الإمام الخطبة", "قوس فالساس كيبين اتجاه الصلاة (القبلة)", "الصومعة منين كيتأذن", "الصحن ديال الجامع"]
+    },
+    "correctAnswer": {
+      "es": "Un nicho en la pared que indica la dirección de la oración (Qibla)",
+      "en": "A niche in the wall indicating the direction of prayer (Qibla)",
+      "ma": "قوس فالساس كيبين اتجاه الصلاة (القبلة)"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Mihrab es una característica arquitectónica semicircular en la pared de una mezquita que indica la Qibla, la dirección de la Kaaba en La Meca.",
+      "en": "The Mihrab is a semicircular architectural feature in the wall of a mosque that indicates the Qibla, the direction of the Kaaba in Mecca.",
+      "ma": "المحراب هو واحد القوس معماري كيكون فالساس ديال الجامع و كيبين القبلة، الاتجاه ديال الكعبة فمكة."
+    }
+  },
+  {
+    "id": 61,
+    "question": {
+      "es": "¿Cuál es el significado de 'Asma al-Husna'?",
+      "en": "What is the meaning of 'Asma al-Husna'?",
+      "ma": "أشنو هو المعنى ديال 'أسماء الحسنى'؟"
+    },
+    "options": {
+      "es": ["Los Pilares del Islam", "Los Profetas de Allah", "Los 99 Nombres Más Bellos de Allah", "Los Libros Sagrados"],
+      "en": ["The Pillars of Islam", "The Prophets of Allah", "The 99 Most Beautiful Names of Allah", "The Holy Books"],
+      "ma": ["أركان الإسلام", "أنبياء الله", "أسماء الله الحسنى الـ99", "الكتب المقدسة"]
+    },
+    "correctAnswer": {
+      "es": "Los 99 Nombres Más Bellos de Allah",
+      "en": "The 99 Most Beautiful Names of Allah",
+      "ma": "أسماء الله الحسنى الـ99"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Se refiere a los 99 nombres o atributos de Allah, que los musulmanes estudian y con los que le suplican.",
+      "en": "It refers to the 99 names or attributes of Allah, which Muslims study and use to supplicate to Him.",
+      "ma": "كتشير لـ99 اسم أو صفة ديال الله، اللي المسلمين كيدرسوها و كيدعيو بها."
+    }
+  },
+  {
+    "id": 62,
+    "question": {
+      "es": "¿Cuál es el saludo islámico tradicional y qué significa?",
+      "en": "What is the traditional Islamic greeting and what does it mean?",
+      "ma": "أشنو هي التحية الإسلامية التقليدية و أشنو كتعني؟"
+    },
+    "options": {
+      "es": ["'Bismillah' (En el nombre de Allah)", "'Allahu Akbar' (Allah es el más grande)", "'As-salamu alaykum' (La paz sea contigo)", "'Insha'Allah' (Si Allah quiere)"],
+      "en": ["'Bismillah' (In the name of Allah)", "'Allahu Akbar' (Allah is the greatest)", "'As-salamu alaykum' (Peace be upon you)", "'Insha'Allah' (If Allah wills)"],
+      "ma": ["'بسم الله'", "'الله أكبر'", "'السلام عليكم'", "'إن شاء الله'"]
+    },
+    "correctAnswer": {
+      "es": "'As-salamu alaykum' (La paz sea contigo)",
+      "en": "'As-salamu alaykum' (Peace be upon you)",
+      "ma": "'السلام عليكم'"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Es el saludo estándar entre musulmanes, una oración por la paz y el bienestar del otro.",
+      "en": "It is the standard greeting among Muslims, a prayer for the peace and well-being of the other.",
+      "ma": "هي التحية العادية بين المسلمين، دعاء بالسلام و الخير للآخر."
+    }
+  },
+  {
+    "id": 63,
+    "question": {
+      "es": "En la ciencia del hadiz, ¿qué es el 'isnad'?",
+      "en": "In the science of hadith, what is the 'isnad'?",
+      "ma": "فعلم الحديث، أشنو هو 'الإسناد'؟"
+    },
+    "options": {
+      "es": ["El texto del hadiz (matn)", "La clasificación del hadiz (sahih, hasan, da'if)", "La cadena de narradores", "El libro donde se recopila el hadiz"],
+      "en": ["The text of the hadith (matn)", "The classification of the hadith (sahih, hasan, da'if)", "The chain of narrators", "The book where the hadith is collected"],
+      "ma": ["المتن ديال الحديث", "التصنيف ديال الحديث (صحيح، حسن، ضعيف)", "سلسلة الرواة", "الكتاب اللي مجموع فيه الحديث"]
+    },
+    "correctAnswer": {
+      "es": "La cadena de narradores",
+      "en": "The chain of narrators",
+      "ma": "سلسلة الرواة"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El isnad es la lista de autoridades que han transmitido un hadiz de generación en generación, lo que es crucial para determinar su autenticidad.",
+      "en": "The isnad is the list of authorities who have transmitted a hadith from generation to generation, which is crucial for determining its authenticity.",
+      "ma": "الإسناد هو اللائحة ديال الناس اللي نقلو حديث من جيل لجيل، و هو مهم بزاف باش نعرفو الصحة ديال الحديث."
+    }
+  },
+  {
+    "id": 64,
+    "question": {
+      "es": "¿Cuál era el apodo del Profeta Muhammad (ﷺ) en su juventud por su carácter confiable?",
+      "en": "What was Prophet Muhammad's (ﷺ) nickname in his youth for his trustworthy character?",
+      "ma": "أشنو كان اللقب ديال النبي محمد (ﷺ) فشبابو بسبب الأمانة ديالو؟"
+    },
+    "options": {
+      "es": ["As-Sadiq (El Veraz)", "Al-Faruq (El que distingue)", "Al-Amin (El Confiable)", "Dhu'n-Nurayn (El de las dos luces)"],
+      "en": ["As-Sadiq (The Truthful)", "Al-Faruq (The Distinguisher)", "Al-Amin (The Trustworthy)", "Dhu'n-Nurayn (The Possessor of Two Lights)"],
+      "ma": ["الصادق", "الفاروق", "الأمين", "ذو النورين"]
+    },
+    "correctAnswer": {
+      "es": "Al-Amin (El Confiable)",
+      "en": "Al-Amin (The Trustworthy)",
+      "ma": "الأمين"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Antes de su profecía, era conocido en toda La Meca por su excepcional honestidad e integridad, lo que le valió el título de Al-Amin.",
+      "en": "Before his prophethood, he was known throughout Mecca for his exceptional honesty and integrity, which earned him the title Al-Amin.",
+      "ma": "قبل النبوة، كان معروف فمكة كلها بالصدق و النزاهة ديالو الاستثنائية، و داكشي علاش خدا لقب الأمين."
+    }
+  },
+  {
+    "id": 65,
+    "question": {
+      "es": "¿Qué edad tenía el Profeta Muhammad (ﷺ) cuando recibió la primera revelación en la cueva de Hira?",
+      "en": "How old was Prophet Muhammad (ﷺ) when he received the first revelation in the cave of Hira?",
+      "ma": "شحال كان فالعمر ديال النبي محمد (ﷺ) فاش جاه أول وحي فغار حراء؟"
+    },
+    "options": {
+      "es": ["25", "35", "40", "50"],
+      "en": ["25", "35", "40", "50"],
+      "ma": ["25", "35", "40", "50"]
+    },
+    "correctAnswer": {
+      "es": "40",
+      "en": "40",
+      "ma": "40"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "A la edad de 40 años, mientras meditaba en la cueva de Hira, el ángel Jibril se le apareció con los primeros versos del Corán.",
+      "en": "At the age of 40, while meditating in the cave of Hira, the angel Jibril appeared to him with the first verses of the Quran.",
+      "ma": "فاش كان عندو 40 عام، و هو كيتأمل فغار حراء، بان ليه الملاك جبريل و عطاه أول آيات من القرآن."
+    }
+  },
+  {
+    "id": 66,
+    "question": {
+      "es": "¿Qué compañero era famoso por su hermosa recitación del Corán, haciendo que el Profeta (ﷺ) dijera que se le había dado una 'flauta de las flautas de David'?",
+      "en": "Which companion was famous for his beautiful recitation of the Quran, causing the Prophet (ﷺ) to say he was given a 'flute from the flutes of David'?",
+      "ma": "أشمن صحابي كان مشهور بالتلاوة الزوينة ديالو للقرآن، لدرجة أن النبي (ﷺ) قال عليه تعطى ليه 'مزمار من مزامير داوود'؟"
+    },
+    "options": {
+      "es": ["Abdullah ibn Mas'ud", "Ubayy ibn Ka'b", "Abu Musa al-Ash'ari", "Zayd ibn Thabit"],
+      "en": ["Abdullah ibn Mas'ud", "Ubayy ibn Ka'b", "Abu Musa al-Ash'ari", "Zayd ibn Thabit"],
+      "ma": ["عبد الله بن مسعود", "أبي بن كعب", "أبو موسى الأشعري", "زيد بن ثابت"]
+    },
+    "correctAnswer": {
+      "es": "Abu Musa al-Ash'ari",
+      "en": "Abu Musa al-Ash'ari",
+      "ma": "أبو موسى الأشعري"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Abu Musa al-Ash'ari tenía una voz extraordinariamente melodiosa al recitar el Corán, lo que llevó al Profeta a elogiarlo de esta manera.",
+      "en": "Abu Musa al-Ash'ari had an extraordinarily melodious voice when reciting the Quran, which led the Prophet to praise him in this manner.",
+      "ma": "أبو موسى الأشعري كان عندو واحد الصوت زوين بزاف فاش كان كيقرا القرآن، و داكشي اللي خلى النبي يمدحو بهاد الطريقة."
+    }
+  },
+  {
+    "id": 67,
+    "question": {
+      "es": "¿A qué ciudad emigró el Profeta (ﷺ) durante la Hégira, marcando el inicio del calendario islámico?",
+      "en": "To which city did the Prophet (ﷺ) migrate during the Hijra, marking the beginning of the Islamic calendar?",
+      "ma": "لأشمن مدينة هاجر النبي (ﷺ) فالهجرة، اللي كانت بداية التقويم الإسلامي؟"
+    },
+    "options": {
+      "es": ["Ta'if", "Jerusalén", "Yathrib (Medina)", "Damasco"],
+      "en": ["Ta'if", "Jerusalem", "Yathrib (Medina)", "Damascus"],
+      "ma": ["الطائف", "القدس", "يثرب (المدينة)", "دمشق"]
+    },
+    "correctAnswer": {
+      "es": "Yathrib (Medina)",
+      "en": "Yathrib (Medina)",
+      "ma": "يثرب (المدينة)"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La migración (Hégira) de La Meca a la ciudad de Yathrib, que luego se conoció como Medina, fue un evento fundamental en la historia islámica.",
+      "en": "The migration (Hijra) from Mecca to the city of Yathrib, which later became known as Medina, was a pivotal event in Islamic history.",
+      "ma": "الهجرة من مكة لمدينة يثرب، اللي من بعد تسمات المدينة، كانت حدث أساسي فالتاريخ الإسلامي."
+    }
+  },
+  {
+    "id": 68,
+    "question": {
+      "es": "¿Dónde pronunció el Profeta Muhammad (ﷺ) su Sermón de Despedida?",
+      "en": "Where did Prophet Muhammad (ﷺ) deliver his Farewell Sermon?",
+      "ma": "فين دار النبي محمد (ﷺ) خطبة الوداع ديالو؟"
+    },
+    "options": {
+      "es": ["En la Kaaba", "En Masjid an-Nabawi", "En el Monte Arafat", "En el Monte Uhud"],
+      "en": ["At the Kaaba", "At Masjid an-Nabawi", "On Mount Arafat", "On Mount Uhud"],
+      "ma": ["فالكعبة", "فالمسجد النبوي", "فجبل عرفات", "فجبل أحد"]
+    },
+    "correctAnswer": {
+      "es": "En el Monte Arafat",
+      "en": "On Mount Arafat",
+      "ma": "جبل عرفات"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Durante su última peregrinación (Hajj), el Profeta pronunció un sermón final histórico en el Monte Arafat, resumiendo las enseñanzas esenciales del Islam.",
+      "en": "During his final pilgrimage (Hajj), the Prophet delivered a historic final sermon on Mount Arafat, summarizing the essential teachings of Islam.",
+      "ma": "فالحجة الأخيرة ديالو، النبي دار خطبة تاريخية أخيرة فجبل عرفات، و لخص فيها التعاليم الأساسية ديال الإسلام."
+    }
+  },
+  {
+    "id": 69,
+    "question": {
+      "es": "En la Batalla de Uhud, ¿qué error táctico de algunos compañeros provocó un revés para los musulmanes?",
+      "en": "In the Battle of Uhud, what tactical mistake by some companions led to a setback for the Muslims?",
+      "ma": "فمعركة أحد، أشنو هو الخطأ التكتيكي اللي دارو شي صحابة و تسبب فانتكاسة للمسلمين؟"
+    },
+    "options": {
+      "es": ["Retirarse demasiado pronto", "Dejar sus puestos en una colina para recoger botín", "Atacar sin la orden del Profeta", "No llevar suficientes armas"],
+      "en": ["Retreating too early", "Leaving their posts on a hill to collect spoils", "Attacking without the Prophet's order", "Not carrying enough weapons"],
+      "ma": ["الانسحاب بكري بزاف", "خلاو البلايص ديالهم فواحد التلة باش يجمعو الغنائم", "الهجوم بلا أمر من النبي", "ما جابوش سلاح كافي"]
+    },
+    "correctAnswer": {
+      "es": "Dejar sus puestos en una colina para recoger botín",
+      "en": "Leaving their posts on a hill to collect spoils",
+      "ma": "خلاو البلايص ديالهم فواحد التلة باش يجمعو الغنائم"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Un grupo de arqueros a quienes se les ordenó permanecer en una colina abandonaron su puesto para recoger el botín de guerra, permitiendo que la caballería enemiga atacara por la retaguardia.",
+      "en": "A group of archers who were ordered to stay on a hill left their post to collect war spoils, allowing the enemy cavalry to attack from the rear.",
+      "ma": "واحد المجموعة ديال الرماة اللي تعطاتهم الأوامر يبقاو فواحد التلة خلاو بلاصتهم باش يجمعو الغنائم، و داكشي خلى الخيالة ديال العدو يهجمو من اللور."
+    }
+  },
+  {
+    "id": 70,
+    "question": {
+      "es": "¿Quién fue el abuelo del Profeta (ﷺ) que lo cuidó después de la muerte de su madre?",
+      "en": "Who was the Prophet's (ﷺ) grandfather who took care of him after his mother's death?",
+      "ma": "شكون هو جد النبي (ﷺ) اللي تهلا فيه من بعد ما ماتت مو؟"
+    },
+    "options": {
+      "es": ["Abu Talib", "Abdullah", "Abd al-Muttalib", "Hamza"],
+      "en": ["Abu Talib", "Abdullah", "Abd al-Muttalib", "Hamza"],
+      "ma": ["أبو طالب", "عبد الله", "عبد المطلب", "حمزة"]
+    },
+    "correctAnswer": {
+      "es": "Abd al-Muttalib",
+      "en": "Abd al-Muttalib",
+      "ma": "عبد المطلب"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Después de la muerte de su madre Aminah, el joven Muhammad fue puesto bajo el cuidado de su abuelo, Abd al-Muttalib.",
+      "en": "After the death of his mother Aminah, the young Muhammad was placed under the care of his grandfather, Abd al-Muttalib.",
+      "ma": "من بعد الموت ديال مو آمنة، محمد الصغير خداه جدو عبد المطلب باش يتهلا فيه."
+    }
+  },
+  {
+    "id": 71,
+    "question": {
+      "es": "La violación de qué tratado por parte de los Quraysh y sus aliados llevó directamente a la Conquista de La Meca?",
+      "en": "The violation of which treaty by the Quraysh and their allies led directly to the Conquest of Mecca?",
+      "ma": "الخرق ديال أشمن صلح من طرف قريش و الحلفاء ديالهم أدى مباشرة لفتح مكة؟"
+    },
+    "options": {
+      "es": ["Pacto de Medina", "Juramento de Aqaba", "Tratado de Hudaybiyyah", "Pacto de los Virtuosos"],
+      "en": ["Pact of Medina", "Pledge of Aqaba", "Treaty of Hudaybiyyah", "Pact of the Virtuous"],
+      "ma": ["ميثاق المدينة", "بيعة العقبة", "صلح الحديبية", "حلف الفضول"]
+    },
+    "correctAnswer": {
+      "es": "Tratado de Hudaybiyyah",
+      "en": "Treaty of Hudaybiyyah",
+      "ma": "صلح الحديبية"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Una tribu aliada de los Quraysh atacó a una tribu aliada de los musulmanes, rompiendo los términos del tratado de paz de 10 años y dando a los musulmanes una causa justa para marchar sobre La Meca.",
+      "en": "A tribe allied with the Quraysh attacked a tribe allied with the Muslims, breaking the terms of the 10-year peace treaty and giving the Muslims a just cause to march on Mecca.",
+      "ma": "واحد القبيلة حليفة ديال قريش هجمات على قبيلة حليفة ديال المسلمين، و هرسو الشروط ديال صلح العشر سنين و عطاو للمسلمين سبب عادل باش يمشيو لمكة."
+    }
+  },
+  {
+    "id": 72,
+    "question": {
+      "es": "El esposo de Umm Salamah murió a causa de las heridas de qué batalla, lo que llevó al Profeta (ﷺ) a casarse con ella?",
+      "en": "Umm Salamah's husband died from wounds in which battle, leading the Prophet (ﷺ) to marry her?",
+      "ma": "راجل أم سلمة مات بالجروح ديالو فأشمن معركة، و داكشي اللي خلى النبي (ﷺ) يتزوج بها؟"
+    },
+    "options": {
+      "es": ["Badr", "Uhud", "La Trinchera", "Hunayn"],
+      "en": ["Badr", "Uhud", "The Trench", "Hunayn"],
+      "ma": ["بدر", "أحد", "الخندق", "حنين"]
+    },
+    "correctAnswer": {
+      "es": "Uhud",
+      "en": "Uhud",
+      "ma": "أحد"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Después de que su esposo Abu Salamah muriera por las heridas de la Batalla de Uhud, el Profeta (ﷺ) se casó con Umm Salamah, asumiendo la responsabilidad de ella y su familia.",
+      "en": "After her husband Abu Salamah died from his wounds from the Battle of Uhud, the Prophet (ﷺ) married Umm Salamah, taking on the responsibility for her and her family.",
+      "ma": "من بعد ما مات راجلها أبو سلمة بالجروح ديالو فمعركة أحد، النبي (ﷺ) تزوج بأم سلمة، و تحمل المسؤولية ديالها و ديال عائلتها."
+    }
+  },
+  {
+    "id": 73,
+    "question": {
+      "es": "¿Cuál fue la primera mezquita construida en el Islam?",
+      "en": "What was the first mosque built in Islam?",
+      "ma": "أشنو هو أول جامع تبنى فالإسلام؟"
+    },
+    "options": {
+      "es": ["La Kaaba", "Masjid al-Aqsa", "Masjid an-Nabawi", "Mezquita de Quba"],
+      "en": ["The Kaaba", "Masjid al-Aqsa", "Masjid an-Nabawi", "Quba Mosque"],
+      "ma": ["الكعبة", "المسجد الأقصى", "المسجد النبوي", "مسجد قباء"]
+    },
+    "correctAnswer": {
+      "es": "Mezquita de Quba",
+      "en": "Quba Mosque",
+      "ma": "مسجد قباء"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "A su llegada a las afueras de Medina durante la Hégira, la primera acción del Profeta fue establecer la Mezquita de Quba.",
+      "en": "Upon his arrival on the outskirts of Medina during the Hijra, the Prophet's first action was to establish the Quba Mosque.",
+      "ma": "فاش وصل لضواحي المدينة فالهجرة، أول حاجة دارها النبي هي بنا مسجد قباء."
+    }
+  },
+  {
+    "id": 74,
+    "question": {
+      "es": "Qué compañero era tan rico y generoso que compró un pozo (el Pozo de Ruma) para que los musulmanes tuvieran acceso gratuito al agua?",
+      "en": "Which companion was so wealthy and generous that he bought a well (the Well of Ruma) so that Muslims could have free access to water?",
+      "ma": "أشمن صحابي كان غني و كريم لدرجة أنه شرى بير (بير رومان) باش المسلمين ياخدو الما فابور؟"
+    },
+    "options": {
+      "es": ["Abd al-Rahman ibn Awf", "Uthman ibn Affan", "Abu Bakr Al-Siddiq", "Talha ibn Ubaydullah"],
+      "en": ["Abd al-Rahman ibn Awf", "Uthman ibn Affan", "Abu Bakr Al-Siddiq", "Talha ibn Ubaydullah"],
+      "ma": ["عبد الرحمن بن عوف", "عثمان بن عفان", "أبو بكر الصديق", "طلحة بن عبيد الله"]
+    },
+    "correctAnswer": {
+      "es": "Uthman ibn Affan",
+      "en": "Uthman ibn Affan",
+      "ma": "عثمان بن عفان"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Cuando los musulmanes en Medina necesitaban agua, Uthman ibn Affan compró el Pozo de Ruma a su dueño judío y lo dedicó como un waqf (donación) para la comunidad.",
+      "en": "When the Muslims in Medina were in need of water, Uthman ibn Affan purchased the Well of Ruma from its Jewish owner and dedicated it as a waqf (endowment) for the community.",
+      "ma": "فاش كانو المسلمين فالمدينة محتاجين الما، عثمان بن عفان شرى بير رومان من عند مولاه اليهودي و حبسو كوقف للجماعة."
+    }
+  },
+  {
+    "id": 75,
+    "question": {
+      "es": "Durante la Hégira, ¿quién arriesgó su vida al dormir en la cama del Profeta (ﷺ) para engañar a los Quraysh que planeaban asesinarlo?",
+      "en": "During the Hijra, who risked his life by sleeping in the Prophet's (ﷺ) bed to deceive the Quraysh who were plotting to assassinate him?",
+      "ma": "فالهجرة، شكون اللي خاطر بحياتو و نعس ففراش النبي (ﷺ) باش يخدع قريش اللي كانت كتخطط تقتلو؟"
+    },
+    "options": {
+      "es": ["Abu Bakr Al-Siddiq", "Umar ibn Al-Khattab", "Ali ibn Abi Talib", "Zayd ibn Harithah"],
+      "en": ["Abu Bakr Al-Siddiq", "Umar ibn Al-Khattab", "Ali ibn Abi Talib", "Zayd ibn Harithah"],
+      "ma": ["أبو بكر الصديق", "عمر بن الخطاب", "علي بن أبي طالب", "زيد بن حارثة"]
+    },
+    "correctAnswer": {
+      "es": "Ali ibn Abi Talib",
+      "en": "Ali ibn Abi Talib",
+      "ma": "علي بن أبي طالب"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El joven primo del Profeta, Ali, mostró una valentía increíble al ocupar el lugar del Profeta en la cama, permitiendo que el Profeta y Abu Bakr escaparan de La Meca sin ser detectados.",
+      "en": "The Prophet's young cousin, Ali, showed incredible bravery by taking the Prophet's place in bed, allowing the Prophet and Abu Bakr to escape Mecca undetected.",
+      "ma": "ولد عم النبي الصغير، علي، بين على شجاعة خيالية فاش خدا بلاصة النبي فالفراش، و خلى النبي و أبو بكر يهربو من مكة بلا ما يعيق بهم حد."
+    }
+  },
+  {
+    "id": 76,
+    "question": {
+      "es": "¿Cuántos hijos e hijas tuvo el Profeta Muhammad (ﷺ)?",
+      "en": "How many sons and daughters did Prophet Muhammad (ﷺ) have?",
+      "ma": "شحال من ولد و بنت كانو عند النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["2 hijos, 2 hijas", "3 hijos, 4 hijas", "4 hijos, 3 hijas", "No tuvo hijos"],
+      "en": ["2 sons, 2 daughters", "3 sons, 4 daughters", "4 sons, 3 daughters", "He had no children"],
+      "ma": ["جوج ولاد، جوج بنات", "ثلاثة ولاد، أربع بنات", "أربع ولاد، ثلاثة بنات", "ما كانوش عندو ولاد"]
+    },
+    "correctAnswer": {
+      "es": "3 hijos, 4 hijas",
+      "en": "3 sons, 4 daughters",
+      "ma": "ثلاثة ولاد، أربع بنات"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Tuvo tres hijos (Al-Qasim, Abdullah, Ibrahim) que murieron en la infancia, y cuatro hijas (Zainab, Ruqayyah, Umm Kulthum, Fatimah).",
+      "en": "He had three sons (Al-Qasim, Abdullah, Ibrahim) who died in infancy, and four daughters (Zainab, Ruqayyah, Umm Kulthum, Fatimah).",
+      "ma": "كانو عندو ثلاثة ديال الولاد (القاسم، عبد الله، إبراهيم) اللي ماتو صغار، و أربع بنات (زينب، رقية، أم كلثوم، فاطمة)."
+    }
+  },
+  {
+    "id": 77,
+    "question": {
+      "es": "¿Qué profeta habló con Dios directamente sin intermediarios?",
+      "en": "Which prophet spoke to God directly without any intermediary?",
+      "ma": "أشمن نبي هضر مع الله مباشرة بلا وسيط؟"
+    },
+    "options": {
+      "es": ["Profeta Ibrahim (Abraham)", "Profeta Muhammad (ﷺ)", "Profeta Musa (Moisés)", "Profeta Isa (Jesús)"],
+      "en": ["Prophet Ibrahim (Abraham)", "Prophet Muhammad (ﷺ)", "Prophet Musa (Moses)", "Prophet Isa (Jesus)"],
+      "ma": ["النبي إبراهيم", "النبي محمد (ﷺ)", "النبي موسى", "النبي عيسى"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Musa (Moisés)",
+      "en": "Prophet Musa (Moses)",
+      "ma": "النبي موسى"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Al Profeta Musa se le otorgó el título de 'Kalimullah' (Aquel que habló con Allah) porque Allah le habló directamente en el Monte Sinaí.",
+      "en": "Prophet Musa was given the title 'Kalimullah' (The one who spoke to Allah) because Allah spoke to him directly on Mount Sinai.",
+      "ma": "النبي موسى تعطاه لقب 'كليم الله' حيت الله هضر معاه مباشرة فجبل سيناء."
+    }
+  },
+  {
+    "id": 78,
+    "question": {
+      "es": "¿Qué profeta fue puesto a prueba con una inmensa pérdida pero permaneció paciente, convirtiéndose en un símbolo de perseverancia?",
+      "en": "Which prophet was tested with immense loss but remained patient, becoming a symbol of perseverance?",
+      "ma": "أشمن نبي تبلى بخسارة كبيرة و لكن بقا صابر، و ولا رمز للصبر؟"
+    },
+    "options": {
+      "es": ["Profeta Yaqub (Jacob)", "Profeta Ayyub (Job)", "Profeta Yunus (Jonás)", "Profeta Zakariya (Zacarías)"],
+      "en": ["Prophet Yaqub (Jacob)", "Prophet Ayyub (Job)", "Prophet Yunus (Jonah)", "Prophet Zakariya (Zechariah)"],
+      "ma": ["النبي يعقوب", "النبي أيوب", "النبي يونس", "النبي زكريا"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Ayyub (Job)",
+      "en": "Prophet Ayyub (Job)",
+      "ma": "النبي أيوب"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La historia del Profeta Ayyub es una lección poderosa sobre la paciencia (sabr) ante una enfermedad grave, la pérdida de la familia y la riqueza.",
+      "en": "The story of Prophet Ayyub is a powerful lesson in patience (sabr) in the face of severe illness, loss of family, and wealth.",
+      "ma": "القصة ديال النبي أيوب هي درس كبير فالصبر قدام المرض الخايب، و فقدان العائلة و الثروة."
+    }
+  },
+  {
+    "id": 79,
+    "question": {
+      "es": "¿A qué profeta se le dio el 'Zabur' (Salmos)?",
+      "en": "To which prophet was the 'Zabur' (Psalms) given?",
+      "ma": "لأشمن نبي تعطى 'الزبور' (المزامير)؟"
+    },
+    "options": {
+      "es": ["Profeta Isa (Jesús)", "Profeta Dawud (David)", "Profeta Musa (Moisés)", "Profeta Ibrahim (Abraham)"],
+      "en": ["Prophet Isa (Jesus)", "Prophet Dawud (David)", "Prophet Musa (Moses)", "Prophet Ibrahim (Abraham)"],
+      "ma": ["النبي عيسى", "النبي داوود", "النبي موسى", "النبي إبراهيم"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Dawud (David)",
+      "en": "Prophet Dawud (David)",
+      "ma": "النبي داوود"
+    },
+    "category": "Profetas",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El Corán menciona que al Profeta Dawud se le dio una escritura sagrada llamada el Zabur, que corresponde a los Salmos.",
+      "en": "The Quran mentions that Prophet Dawud was given a holy scripture called the Zabur, which corresponds to the Psalms.",
+      "ma": "القرآن كيذكر أن النبي داوود تعطاه كتاب مقدس سميتو الزبور، اللي هو المزامير."
+    }
+  },
+  {
+    "id": 80,
+    "question": {
+      "es": "¿Quién es considerado el padre de la humanidad en el Islam?",
+      "en": "Who is considered the father of humanity in Islam?",
+      "ma": "شكون كيتعتبر أبو البشرية فالإسلام؟"
+    },
+    "options": {
+      "es": ["Profeta Nuh (Noé)", "Profeta Ibrahim (Abraham)", "Profeta Adam", "Profeta Muhammad (ﷺ)"],
+      "en": ["Prophet Nuh (Noah)", "Prophet Ibrahim (Abraham)", "Prophet Adam", "Prophet Muhammad (ﷺ)"],
+      "ma": ["النبي نوح", "النبي إبراهيم", "النبي آدم", "النبي محمد (ﷺ)"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Adam",
+      "en": "Prophet Adam",
+      "ma": "النبي آدم"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El Profeta Adam fue el primer ser humano creado por Allah y el primer profeta.",
+      "en": "Prophet Adam was the first human being created by Allah and the first prophet.",
+      "ma": "النبي آدم كان هو أول إنسان خلقو الله و أول نبي."
+    }
+  },
+  {
+    "id": 81,
+    "question": {
+      "es": "¿Qué profeta fue enviado a la gente de Madián, quienes eran conocidos por su deshonestidad en los negocios?",
+      "en": "Which prophet was sent to the people of Madyan, who were known for their dishonesty in business?",
+      "ma": "أشمن نبي ترسل لقوم مدين، اللي كانو معروفين بالغش فالتجارة؟"
+    },
+    "options": {
+      "es": ["Profeta Hud", "Profeta Saleh", "Profeta Lut", "Profeta Shuaib"],
+      "en": ["Prophet Hud", "Prophet Saleh", "Prophet Lut", "Prophet Shuaib"],
+      "ma": ["النبي هود", "النبي صالح", "النبي لوط", "النبي شعيب"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Shuaib",
+      "en": "Prophet Shuaib",
+      "ma": "النبي شعيب"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "El Profeta Shuaib predicó contra las prácticas fraudulentas, como hacer trampa en el peso y la medida, que eran comunes entre su pueblo.",
+      "en": "Prophet Shuaib preached against fraudulent practices, such as cheating in weight and measure, which were common among his people.",
+      "ma": "النبي شعيب دعا ضد الممارسات ديال الغش، بحال النقصان فالميزان و العبار، اللي كانت شايعة بين القوم ديالو."
+    }
+  },
+  {
+    "id": 82,
+    "question": {
+      "es": "¿Qué dos profetas levantaron los cimientos de la Kaaba en La Meca por orden de Allah?",
+      "en": "Which two prophets raised the foundations of the Kaaba in Mecca by Allah's command?",
+      "ma": "أشمن جوج أنبياء رفعو القواعد ديال الكعبة فمكة بأمر من الله؟"
+    },
+    "options": {
+      "es": ["Adam y Seth", "Nuh y Sem", "Ibrahim e Ismail", "Musa y Harun"],
+      "en": ["Adam and Seth", "Nuh and Shem", "Ibrahim and Ismail", "Musa and Harun"],
+      "ma": ["آدم و شيث", "نوح و سام", "إبراهيم و إسماعيل", "موسى و هارون"]
+    },
+    "correctAnswer": {
+      "es": "Ibrahim e Ismail",
+      "en": "Ibrahim and Ismail",
+      "ma": "إبراهيم و إسماعيل"
+    },
+    "category": "Profetas",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "El Corán describe cómo el Profeta Ibrahim y su hijo Ismail trabajaron juntos para reconstruir la Casa Sagrada como un centro de monoteísmo.",
+      "en": "The Quran describes how Prophet Ibrahim and his son Ismail worked together to rebuild the Sacred House as a center for monotheism.",
+      "ma": "القرآن كيوصف كيفاش النبي إبراهيم و ولدو إسماعيل خدمو بجوج باش يعاودو يبنيو البيت الحرام كمركز للتوحيد."
+    }
+  },
+  {
+    "id": 83,
+    "question": {
+      "es": "¿Qué profeta fue arrojado a un fuego por su pueblo, pero Allah lo hizo 'fresco y pacífico' para él?",
+      "en": "Which prophet was thrown into a fire by his people, but Allah made it 'cool and peaceful' for him?",
+      "ma": "أشمن نبي تلاح فالعافية من طرف القوم ديالو، و لكن الله جعلها 'بردا و سلاما' عليه؟"
+    },
+    "options": {
+      "es": ["Profeta Yusuf (José)", "Profeta Yunus (Jonás)", "Profeta Ibrahim (Abraham)", "Profeta Lut"],
+      "en": ["Prophet Yusuf (Joseph)", "Prophet Yunus (Jonah)", "Prophet Ibrahim (Abraham)", "Prophet Lut"],
+      "ma": ["النبي يوسف", "النبي يونس", "النبي إبراهيم", "النبي لوط"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Ibrahim (Abraham)",
+      "en": "Prophet Ibrahim (Abraham)",
+      "ma": "النبي إبراهيم"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Cuando el Profeta Ibrahim desafió la idolatría de su pueblo, intentaron quemarlo, pero Allah intervino milagrosamente para salvarlo.",
+      "en": "When Prophet Ibrahim challenged his people's idolatry, they attempted to burn him, but Allah miraculously intervened to save him.",
+      "ma": "فاش تحدى النبي إبراهيم عبادة الأصنام ديال القوم ديالو، حاولو يحرقوه، و لكن الله تدخل بمعجزة و نجاه."
+    }
+  },
+  {
+    "id": 84,
+    "question": {
+      "es": "¿Cuál es el nombre del padre del Profeta Yusuf (José), quien también era profeta?",
+      "en": "What is the name of Prophet Yusuf's (Joseph's) father, who was also a prophet?",
+      "ma": "أشنو سميت الأب ديال النبي يوسف، اللي كان حتى هو نبي؟"
+    },
+    "options": {
+      "es": ["Profeta Ishaq (Isaac)", "Profeta Ibrahim (Abraham)", "Profeta Yaqub (Jacob)", "Profeta Ismail (Ismael)"],
+      "en": ["Prophet Ishaq (Isaac)", "Prophet Ibrahim (Abraham)", "Prophet Yaqub (Jacob)", "Prophet Ismail (Ishmael)"],
+      "ma": ["النبي إسحاق", "النبي إبراهيم", "النبي يعقوب", "النبي إسماعيل"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Yaqub (Jacob)",
+      "en": "Prophet Yaqub (Jacob)",
+      "ma": "النبي يعقوب"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "El Profeta Yaqub es el padre de los doce hijos que se convirtieron en los patriarcas de las Doce Tribus de Israel, siendo Yusuf uno de ellos.",
+      "en": "Prophet Yaqub is the father of the twelve sons who became the patriarchs of the Twelve Tribes of Israel, with Yusuf being one of them.",
+      "ma": "النبي يعقوب هو الأب ديال الولاد الإثني عشر اللي ولاو هما الأسباط ديال بني إسرائيل، و يوسف واحد منهم."
+    }
+  },
+  {
+    "id": 85,
+    "question": {
+      "es": "¿Qué profeta pidió a Allah verle directamente, lo que resultó en que la montaña se desmoronara en polvo?",
+      "en": "Which prophet asked Allah to see Him directly, which resulted in the mountain crumbling to dust?",
+      "ma": "أشمن نبي طلب من الله يشوفو مباشرة، و النتيجة كانت أن الجبل تفتت و ولا غبرة؟"
+    },
+    "options": {
+      "es": ["Profeta Isa (Jesús)", "Profeta Ibrahim (Abraham)", "Profeta Muhammad (ﷺ)", "Profeta Musa (Moisés)"],
+      "en": ["Prophet Isa (Jesus)", "Prophet Ibrahim (Abraham)", "Prophet Muhammad (ﷺ)", "Prophet Musa (Moses)"],
+      "ma": ["النبي عيسى", "النبي إبراهيم", "النبي محمد (ﷺ)", "النبي موسى"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Musa (Moisés)",
+      "en": "Prophet Musa (Moses)",
+      "ma": "النبي موسى"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Esta historia en el Corán ilustra que ninguna creación puede soportar la manifestación directa de la majestuosidad de Allah en este mundo.",
+      "en": "This story in the Quran illustrates that no creation can withstand the direct manifestation of Allah's majesty in this world.",
+      "ma": "هاد القصة فالقرآن كتبين أن حتى شي مخلوق ما يقدر يتحمل التجلي المباشر ديال عظمة الله فهاد الدنيا."
+    }
+  },
+  {
+    "id": 86,
+    "question": {
+      "es": "¿Quiénes son los 'Ulul 'Azm' o 'Los Poseedores de Firme Determinación' entre los mensajeros?",
+      "en": "Who are the 'Ulul 'Azm' or 'The Possessors of Firm Resolve' among the messengers?",
+      "ma": "شكون هوما 'أولو العزم' من الرسل؟"
+    },
+    "options": {
+      "es": ["Adam, Ibrahim, Musa, Isa, Muhammad", "Nuh, Ibrahim, Musa, Isa, Muhammad", "Dawud, Sulaiman, Yusuf, Musa, Muhammad", "Todos los profetas"],
+      "en": ["Adam, Ibrahim, Musa, Isa, Muhammad", "Nuh, Ibrahim, Musa, Isa, Muhammad", "Dawud, Sulaiman, Yusuf, Musa, Muhammad", "All the prophets"],
+      "ma": ["آدم، إبراهيم، موسى، عيسى، محمد", "نوح، إبراهيم، موسى، عيسى، محمد", "داوود، سليمان، يوسف، موسى، محمد", "كاع الأنبياء"]
+    },
+    "correctAnswer": {
+      "es": "Nuh, Ibrahim, Musa, Isa, Muhammad",
+      "en": "Nuh, Ibrahim, Musa, Isa, Muhammad",
+      "ma": "نوح، إبراهيم، موسى، عيسى، محمد"
+    },
+    "category": "Profetas",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Estos cinco profetas son destacados por su extraordinaria perseverancia y paciencia al transmitir el mensaje de Allah a pesar de una inmensa oposición.",
+      "en": "These five prophets are noted for their extraordinary perseverance and patience in delivering Allah's message despite immense opposition.",
+      "ma": "هاد الخمسة ديال الأنبياء كيتميزو بالصبر و الثبات الاستثنائي ديالهم فتبليغ رسالة الله واخا كانت معارضة كبيرة."
+    }
+  },
+  {
+    "id": 87,
+    "question": {
+      "es": "¿Por qué otro nombre se conoce al Profeta Yunus (Jonás) en el Corán?",
+      "en": "By what other name is Prophet Yunus (Jonah) known in the Quran?",
+      "ma": "بأشمن سمية خرى معروف النبي يونس فالقرآن؟"
+    },
+    "options": {
+      "es": ["Kalimullah (El que habló con Allah)", "Khalilullah (El amigo de Allah)", "Dhu'n-Nun (El del Pez)", "Ruhullah (El espíritu de Allah)"],
+      "en": ["Kalimullah (The one who spoke to Allah)", "Khalilullah (The friend of Allah)", "Dhu'n-Nun (The one of the Fish)", "Ruhullah (The spirit from Allah)"],
+      "ma": ["كليم الله", "خليل الله", "ذو النون", "روح الله"]
+    },
+    "correctAnswer": {
+      "es": "Dhu'n-Nun (El del Pez)",
+      "en": "Dhu'n-Nun (The one of the Fish)",
+      "ma": "ذو النون"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Se le llama así en referencia al evento en el que fue tragado por un gran pez como una prueba de Allah.",
+      "en": "He is called this in reference to the event where he was swallowed by a large fish as a test from Allah.",
+      "ma": "تسمى بهاد السمية إشارة للحدث اللي سرطاتو فيه حوتة كبيرة كابتلاء من عند الله."
+    }
+  },
+  {
+    "id": 88,
+    "question": {
+      "es": "¿Qué profeta fue puesto a prueba con la orden de sacrificar a su amado hijo?",
+      "en": "Which prophet was tested with the command to sacrifice his beloved son?",
+      "ma": "أشمن نبي تبلى بالأمر أنه يضحي بولدو العزيز؟"
+    },
+    "options": {
+      "es": ["Profeta Adam", "Profeta Nuh (Noé)", "Profeta Ibrahim (Abraham)", "Profeta Zakariya (Zacarías)"],
+      "en": ["Prophet Adam", "Prophet Nuh (Noah)", "Prophet Ibrahim (Abraham)", "Prophet Zakariya (Zechariah)"],
+      "ma": ["النبي آدم", "النبي نوح", "النبي إبراهيم", "النبي زكريا"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Ibrahim (Abraham)",
+      "en": "Prophet Ibrahim (Abraham)",
+      "ma": "النبي إبراهيم"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La disposición del Profeta Ibrahim y su hijo Ismail para someterse a la orden de Allah es un acto supremo de fe conmemorado en el festival de Eid al-Adha.",
+      "en": "The willingness of Prophet Ibrahim and his son Ismail to submit to Allah's command is a supreme act of faith commemorated in the festival of Eid al-Adha.",
+      "ma": "الاستعداد ديال النبي إبراهيم و ولدو إسماعيل باش يخضعو لأمر الله هو أسمى عمل إيماني كيتحتافل به فعيد الأضحى."
+    }
+  },
+  {
+    "id": 89,
+    "question": {
+      "es": "¿Qué profeta era conocido por su sabiduría y a menudo se le menciona junto a su hijo, Sulaiman (Salomón)?",
+      "en": "Which prophet was known for his wisdom and is often mentioned alongside his son, Sulaiman (Solomon)?",
+      "ma": "أشمن نبي كان معروف بالحكمة ديالو و غالبا كيتذكر مع ولدو سليمان؟"
+    },
+    "options": {
+      "es": ["Profeta Yaqub (Jacob)", "Profeta Dawud (David)", "Profeta Shu'ayb", "Profeta Ayyub (Job)"],
+      "en": ["Prophet Yaqub (Jacob)", "Prophet Dawud (David)", "Prophet Shu'ayb", "Prophet Ayyub (Job)"],
+      "ma": ["النبي يعقوب", "النبي داوود", "النبي شعيب", "النبي أيوب"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Dawud (David)",
+      "en": "Prophet Dawud (David)",
+      "ma": "النبي داوود"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Al Profeta Dawud se le concedió sabiduría, juicio y el libro sagrado de los Salmos (Zabur), y su hijo Sulaiman heredó su profecía y su reino.",
+      "en": "Prophet Dawud was granted wisdom, judgment, and the holy book of Psalms (Zabur), and his son Sulaiman inherited his prophethood and kingdom.",
+      "ma": "النبي داوود تعطاتو الحكمة، و الحكم، و الكتاب المقدس الزبور، و ولدو سليمان ورث منو النبوة و المملكة."
+    }
+  },
+  {
+    "id": 90,
+    "question": {
+      "es": "Surah Maryam lleva el nombre de la madre del Profeta...",
+      "en": "Surah Maryam is named after the mother of Prophet...",
+      "ma": "سورة مريم تسمات على الأم ديال النبي..."
+    },
+    "options": {
+      "es": ["Musa (Moisés)", "Ibrahim (Abraham)", "Yahya (Juan el Bautista)", "Isa (Jesús)"],
+      "en": ["Musa (Moses)", "Ibrahim (Abraham)", "Yahya (John the Baptist)", "Isa (Jesus)"],
+      "ma": ["موسى", "إبراهيم", "يحيى", "عيسى"]
+    },
+    "correctAnswer": {
+      "es": "Isa (Jesús)",
+      "en": "Isa (Jesus)",
+      "ma": "عيسى"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La Surah 19 del Corán detalla el nacimiento milagroso del Profeta Isa de su madre virgen, Maryam, y es la única sura que lleva el nombre de una mujer.",
+      "en": "Surah 19 of the Quran details the miraculous birth of Prophet Isa from his virgin mother, Maryam, and is the only surah named after a woman.",
+      "ma": "السورة 19 فالقرآن كتفصل الولادة المعجزة ديال النبي عيسى من مو العذراء مريم، و هي السورة الوحيدة اللي تسمات على سميت مرا."
+    }
+  },
+  {
+    "id": 91,
+    "question": {
+      "es": "¿A qué pariente famoso visitó el Profeta Muhammad (ﷺ) en la ciudad de Ta'if en busca de apoyo?",
+      "en": "Which famous relative did Prophet Muhammad (ﷺ) visit in the city of Ta'if seeking support?",
+      "ma": "أشمن قريب مشهور زارو النبي محمد (ﷺ) فمدينة الطائف كيطلب الدعم؟"
+    },
+    "options": {
+      "es": ["Su tío Abu Lahab", "Su primo Ali ibn Abi Talib", "Los líderes de la tribu Thaqif", "Su tío Hamza"],
+      "en": ["His uncle Abu Lahab", "His cousin Ali ibn Abi Talib", "The leaders of the Thaqif tribe", "His uncle Hamza"],
+      "ma": ["عمو أبو لهب", "ولد عمو علي بن أبي طالب", "زعماء قبيلة ثقيف", "عمو حمزة"]
+    },
+    "correctAnswer": {
+      "es": "Los líderes de la tribu Thaqif",
+      "en": "The leaders of the Thaqif tribe",
+      "ma": "زعماء قبيلة ثقيف"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Después del Año de la Tristeza, el Profeta viajó a Ta'if con la esperanza de que su gente aceptara el Islam, pero en cambio fue recibido con una hostilidad y un rechazo extremos.",
+      "en": "After the Year of Sorrow, the Prophet traveled to Ta'if hoping its people would accept Islam, but he was met with extreme hostility and rejection instead.",
+      "ma": "من بعد عام الحزن، النبي سافر للطائف على أمل أن الناس ديالها يسلمو، و لكن لقا منهم عداوة و رفض شديد."
+    }
+  },
+  {
+    "id": 92,
+    "question": {
+      "es": "¿Cuál es el nombre de la primera esposa del Profeta (ﷺ), que fue una exitosa mujer de negocios?",
+      "en": "What is the name of the Prophet's (ﷺ) first wife, who was a successful businesswoman?",
+      "ma": "أشنو سميت أول زوجة للنبي (ﷺ)، اللي كانت سيدة أعمال ناجحة؟"
+    },
+    "options": {
+      "es": ["Aisha", "Hafsa", "Khadijah", "Sawda"],
+      "en": ["Aisha", "Hafsa", "Khadijah", "Sawda"],
+      "ma": ["عائشة", "حفصة", "خديجة", "سودة"]
+    },
+    "correctAnswer": {
+      "es": "Khadijah",
+      "en": "Khadijah",
+      "ma": "خديجة"
+    },
+    "category": "Seerah",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Khadijah bint Khuwaylid fue la primera esposa del Profeta y la primera persona en convertirse al Islam. Fue una gran fuente de apoyo para él.",
+      "en": "Khadijah bint Khuwaylid was the Prophet's first wife and the first person to convert to Islam. She was a great source of support for him.",
+      "ma": "خديجة بنت خويلد كانت هي أول زوجة للنبي و أول وحدة دخلات للإسلام. كانت سند كبير ليه."
+    }
+  },
+  {
+    "id": 93,
+    "question": {
+      "es": "El concepto de 'Tawhid' en el Islam se refiere a...",
+      "en": "The concept of 'Tawhid' in Islam refers to...",
+      "ma": "المفهوم ديال 'التوحيد' فالإسلام كيشير ل..."
+    },
+    "options": {
+      "es": ["La peregrinación a La Meca", "La creencia en los ángeles", "La unicidad y unidad de Allah", "La caridad obligatoria"],
+      "en": ["The pilgrimage to Mecca", "The belief in angels", "The oneness and unity of Allah", "The obligatory charity"],
+      "ma": ["الحج لمكة", "الإيمان بالملائكة", "وحدانية الله", "الزكاة المفروضة"]
+    },
+    "correctAnswer": {
+      "es": "La unicidad y unidad de Allah",
+      "en": "The oneness and unity of Allah",
+      "ma": "وحدانية الله"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Tawhid es el principio central y más importante del Islam, que declara que no hay más dios que Allah y que Él es uno e indivisible.",
+      "en": "Tawhid is the central and most important principle of Islam, declaring that there is no god but Allah and that He is one and indivisible.",
+      "ma": "التوحيد هو المبدأ المركزي و الأهم فالإسلام، اللي كيعلن أنه لا إله إلا الله و أنه واحد لا يتجزأ."
+    }
+  },
+  {
+    "id": 94,
+    "question": {
+      "es": "¿Cómo se llama el 'ángel de la muerte' en la tradición islámica?",
+      "en": "What is the name of the 'angel of death' in Islamic tradition?",
+      "ma": "أشنو سميت 'ملك الموت' فالتقاليد الإسلامية؟"
+    },
+    "options": {
+      "es": ["Jibril (Gabriel)", "Mikail (Miguel)", "Israfil", "Azrail"],
+      "en": ["Jibril (Gabriel)", "Mikail (Michael)", "Israfil", "Azrail"],
+      "ma": ["جبريل", "ميكائيل", "إسرافيل", "عزرائيل"]
+    },
+    "correctAnswer": {
+      "es": "Azrail",
+      "en": "Azrail",
+      "ma": "عزرائيل"
+    },
+    "category": "Corán y General",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Aunque no se menciona explícitamente por su nombre en el Corán, la tradición islámica se refiere al ángel encargado de tomar las almas en el momento de la muerte como Azrail.",
+      "en": "Although not explicitly mentioned by name in the Quran, Islamic tradition refers to the angel tasked with taking souls at the time of death as Azrail.",
+      "ma": "وخا ما مذكورش بالسمية فالقرآن، التقاليد الإسلامية كتشير للملاك المكلف بقبض الأرواح وقت الموت بـ'عزرائيل'."
+    }
+  },
+  {
+    "id": 95,
+    "question": {
+      "es": "¿Qué profeta fue enviado a los Ninivitas, quienes inicialmente lo rechazaron pero luego se arrepintieron en masa?",
+      "en": "Which prophet was sent to the Ninevites, who initially rejected him but later repented en masse?",
+      "ma": "أشمن نبي ترسل لأهل نينوى، اللي فاللول رفضوه و لكن من بعد تابو كاملين؟"
+    },
+    "options": {
+      "es": ["Profeta Hud", "Profeta Lut", "Profeta Yunus (Jonás)", "Profeta Shuaib"],
+      "en": ["Prophet Hud", "Prophet Lut", "Prophet Yunus (Jonah)", "Prophet Shuaib"],
+      "ma": ["النبي هود", "النبي لوط", "النبي يونس", "النبي شعيب"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Yunus (Jonás)",
+      "en": "Prophet Yunus (Jonah)",
+      "ma": "النبي يونس"
+    },
+    "category": "Profetas",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Después de que Yunus los dejó y fue salvado del pez, regresó a su pueblo y los encontró arrepentidos, convirtiéndose en el único pueblo que evitó el castigo de Allah después de que se había decretado.",
+      "en": "After Yunus left them and was saved from the fish, he returned to his people and found them repentant, becoming the only people to avert Allah's punishment after it had been decreed.",
+      "ma": "من بعد ما خلاهم يونس و نجاه الله من الحوت، رجع عند القوم ديالو و لقاهم تابو، و ولاو هوما القوم الوحيد اللي تفادى عقاب الله من بعد ما كان تقرر عليهم."
+    }
+  },
+  {
+    "id": 96,
+    "question": {
+      "es": "¿Quién fue el compañero conocido como 'el traductor del Profeta' por su habilidad con los idiomas?",
+      "en": "Which companion was known as 'the translator of the Prophet' for his skill with languages?",
+      "ma": "شكون هو الصحابي اللي كان معروف بـ'ترجمان النبي' بسبب المهارة ديالو فاللغات؟"
+    },
+    "options": {
+      "es": ["Salman al-Farisi", "Abdullah ibn Abbas", "Zayd ibn Thabit", "Mu'adh ibn Jabal"],
+      "en": ["Salman al-Farisi", "Abdullah ibn Abbas", "Zayd ibn Thabit", "Mu'adh ibn Jabal"],
+      "ma": ["سلمان الفارسي", "عبد الله بن عباس", "زيد بن ثابت", "معاذ بن جبل"]
+    },
+    "correctAnswer": {
+      "es": "Zayd ibn Thabit",
+      "en": "Zayd ibn Thabit",
+      "ma": "زيد بن ثابت"
+    },
+    "category": "Seerah",
+    "difficulty": "hard",
+    "explanation": {
+      "es": "Zayd ibn Thabit fue el principal escriba del Profeta (ﷺ) y aprendió varios idiomas, incluido el siríaco y el hebreo, para comunicarse con diferentes comunidades.",
+      "en": "Zayd ibn Thabit was the Prophet's (ﷺ) primary scribe and learned several languages, including Syriac and Hebrew, to communicate with different communities.",
+      "ma": "زيد بن ثابت كان هو الكاتب الرئيسي ديال النبي (ﷺ) و تعلم بزاف ديال اللغات، بحال السريانية و العبرية، باش يتواصل مع مجتمعات مختلفة."
+    }
+  },
+  {
+    "id": 97,
+    "question": {
+      "es": "¿Qué oración voluntaria se realiza a altas horas de la noche, especialmente durante el Ramadán?",
+      "en": "What voluntary prayer is performed late at night, especially during Ramadan?",
+      "ma": "أشنو هي الصلاة النافلة اللي كتصلى فوقت متأخر من الليل، خصوصا فرمضان؟"
+    },
+    "options": {
+      "es": ["Salat al-Duha", "Salat al-Ishraq", "Tahajjud (Qiyam al-Layl)", "Salat al-Awwabin"],
+      "en": ["Salat al-Duha", "Salat al-Ishraq", "Tahajjud (Qiyam al-Layl)", "Salat al-Awwabin"],
+      "ma": ["صلاة الضحى", "صلاة الإشراق", "التهجد (قيام الليل)", "صلاة الأوابين"]
+    },
+    "correctAnswer": {
+      "es": "Tahajjud (Qiyam al-Layl)",
+      "en": "Tahajjud (Qiyam al-Layl)",
+      "ma": "التهجد (قيام الليل)"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "La oración Tahajjud es una oración nocturna muy recomendada que los musulmanes realizan para acercarse más a Allah.",
+      "en": "The Tahajjud prayer is a highly recommended night prayer that Muslims perform to draw closer to Allah.",
+      "ma": "صلاة التهجد هي صلاة ليل مستحبة بزاف كيديروها المسلمين باش يتقربو أكثر من الله."
+    }
+  },
+  {
+    "id": 98,
+    "question": {
+      "es": "¿Cuál es el término para un dicho, acción o aprobación tácita del Profeta Muhammad (ﷺ)?",
+      "en": "What is the term for a saying, action, or tacit approval of the Prophet Muhammad (ﷺ)?",
+      "ma": "أشنو هو المصطلح اللي كيعني قول أو فعل أو تقرير ديال النبي محمد (ﷺ)؟"
+    },
+    "options": {
+      "es": ["Corán", "Hadiz", "Fiqh", "Tafsir"],
+      "en": ["Quran", "Hadith", "Fiqh", "Tafsir"],
+      "ma": ["قرآن", "حديث", "فقه", "تفسير"]
+    },
+    "correctAnswer": {
+      "es": "Hadiz",
+      "en": "Hadith",
+      "ma": "حديث"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Los hadices son las tradiciones proféticas que sirven como una fuente principal de guía religiosa después del Corán.",
+      "en": "Hadiths are the prophetic traditions that serve as a primary source of religious guidance after the Quran.",
+      "ma": "الأحاديث هي التقاليد النبوية اللي كتعتبر مصدر رئيسي للتوجيه الديني من بعد القرآن."
+    }
+  },
+  {
+    "id": 99,
+    "question": {
+      "es": "¿Qué profeta es conocido por haber dividido el Mar Rojo con su bastón por orden de Allah?",
+      "en": "Which prophet is known for splitting the Red Sea with his staff by Allah's command?",
+      "ma": "أشمن نبي معروف بأنه شق البحر الأحمر بالعصا ديالو بأمر من الله؟"
+    },
+    "options": {
+      "es": ["Profeta Nuh (Noé)", "Profeta Isa (Jesús)", "Profeta Musa (Moisés)", "Profeta Sulaiman (Salomón)"],
+      "en": ["Prophet Nuh (Noah)", "Prophet Isa (Jesus)", "Prophet Musa (Moses)", "Prophet Sulaiman (Solomon)"],
+      "ma": ["النبي نوح", "النبي عيسى", "النبي موسى", "النبي سليمان"]
+    },
+    "correctAnswer": {
+      "es": "Profeta Musa (Moisés)",
+      "en": "Prophet Musa (Moses)",
+      "ma": "النبي موسى"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "Este milagro permitió a los Hijos de Israel escapar del Faraón y su ejército, que luego fueron ahogados cuando el mar volvió a su estado normal.",
+      "en": "This miracle allowed the Children of Israel to escape from the Pharaoh and his army, who were then drowned when the sea returned to its normal state.",
+      "ma": "هاد المعجزة خلات بني إسرائيل يهربو من فرعون و الجيش ديالو، اللي من بعد غرقو فاش رجع البحر كيف كان."
+    }
+  },
+  {
+    "id": 100,
+    "question": {
+      "es": "¿Cuál es la frase que los musulmanes dicen antes de comenzar cualquier tarea?",
+      "en": "What is the phrase Muslims say before beginning any task?",
+      "ma": "أشنو هي العبارة اللي كيقولو المسلمين قبل ما يبداو أي حاجة؟"
+    },
+    "options": {
+      "es": ["Alhamdulillah", "Allahu Akbar", "SubhanAllah", "Bismillah"],
+      "en": ["Alhamdulillah", "Allahu Akbar", "SubhanAllah", "Bismillah"],
+      "ma": ["الحمد لله", "الله أكبر", "سبحان الله", "بسم الله"]
+    },
+    "correctAnswer": {
+      "es": "Bismillah",
+      "en": "Bismillah",
+      "ma": "بسم الله"
+    },
+    "category": "Corán y General",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "'Bismillah ar-Rahman ar-Rahim' significa 'En el nombre de Allah, el Más Clemente, el Más Misericordioso', y se dice para buscar la bendición de Allah.",
+      "en": "'Bismillah ar-Rahman ar-Rahim' means 'In the name of Allah, the Most Gracious, the Most Merciful', and it is said to seek Allah's blessing.",
+      "ma": "'بسم الله الرحمن الرحيم' كتعني 'باسم الله، الرحمن، الرحيم'، وكتتقال باش نطلبو البركة من عند الله."
+    }
+  },
+  {
+    "id": 101,
+    "question": {
+      "es": "¿Qué arcángel se cree que tocará la trompeta en el Día del Juicio?",
+      "en": "Which archangel is believed to blow the trumpet on the Day of Judgment?",
+      "ma": "شكون هو رئيس الملائكة اللي كيتعتاقد أنه غينفخ فالصور يوم القيامة؟"
+    },
+    "options": {
+      "es": ["Jibril", "Mikail", "Israfil", "Azrail"],
+      "en": ["Jibril", "Mikail", "Israfil", "Azrail"],
+      "ma": ["جبريل", "ميكائيل", "إسرافيل", "عزرائيل"]
+    },
+    "correctAnswer": {
+      "es": "Israfil",
+      "en": "Israfil",
+      "ma": "إسرافيل"
+    },
+    "category": "Corán y General",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Israfil es el ángel a quien se le confía la tarea de tocar la trompeta para señalar el comienzo del Día del Juicio.",
+      "en": "Israfil is the angel who is entrusted with the task of blowing the trumpet to signal the start of the Day of Judgment.",
+      "ma": "إسرافيل هو الملاك المكلف بالنفخ فالصور باش يعلن بداية يوم القيامة."
+    }
+  },
+  {
+    "id": 102,
+    "question": {
+      "es": "¿A cuál de los primeros califas se le dio el título de 'Al-Faruq' (El que distingue entre el bien y el mal)?",
+      "en": "Which of the early Caliphs was given the title 'Al-Faruq' (The one who distinguishes between right and wrong)?",
+      "ma": "شكون من الخلفاء الراشدين تعطاه لقب 'الفاروق' (اللي كيفرق بين الحق و الباطل)؟"
+    },
+    "options": {
+      "es": ["Abu Bakr Al-Siddiq", "Umar ibn Al-Khattab", "Uthman ibn Affan", "Ali ibn Abi Talib"],
+      "en": ["Abu Bakr Al-Siddiq", "Umar ibn Al-Khattab", "Uthman ibn Affan", "Ali ibn Abi Talib"],
+      "ma": ["أبو بكر الصديق", "عمر بن الخطاب", "عثمان بن عفان", "علي بن أبي طالب"]
+    },
+    "correctAnswer": {
+      "es": "Umar ibn Al-Khattab",
+      "en": "Umar ibn Al-Khattab",
+      "ma": "عمر بن الخطاب"
+    },
+    "category": "Seerah",
+    "difficulty": "medium",
+    "explanation": {
+      "es": "Umar ibn Al-Khattab era conocido por su fuerte sentido de la justicia y su capacidad para distinguir claramente entre lo correcto y lo incorrecto, lo que le valió este título.",
+      "en": "Umar ibn Al-Khattab was known for his strong sense of justice and his ability to clearly distinguish between right and wrong, earning him this title.",
+      "ma": "عمر بن الخطاب كان معروف بالحس العالي ديالو بالعدل و القدرة ديالو باش يفرق بوضوح بين الصح و الغلط، وداكشي علاش خدا هاد اللقب."
+    }
+  },
+  {
+    "id": 103,
+    "question": {
+      "es": "¿Qué hijo de Adán mató a su hermano por celos?",
+      "en": "Which son of Adam killed his brother out of jealousy?",
+      "ma": "شكون من ولاد آدم قتل خوه بسبب الغيرة؟"
+    },
+    "options": {
+      "es": ["No se mencionan nombres", "Habil (Abel)", "Qabil (Caín)", "Seth"],
+      "en": ["No names mentioned", "Habil (Abel)", "Qabil (Cain)", "Seth"],
+      "ma": ["ما تذكروش السماوات", "هابيل", "قابيل", "شيث"]
+    },
+    "correctAnswer": {
+      "es": "Qabil (Caín)",
+      "en": "Qabil (Cain)",
+      "ma": "قابيل"
+    },
+    "category": "Profetas",
+    "difficulty": "easy",
+    "explanation": {
+      "es": "La historia de los dos hijos de Adán, Habil y Qabil, se menciona en el Corán como una lección sobre los peligros de la envidia y la arrogancia.",
+      "en": "The story of Adam's two sons, Habil and Qabil, is mentioned in the Quran as a lesson about the dangers of envy and arrogance.",
+      "ma": "القصة ديال ولاد آدم بجوج، هابيل و قابيل، مذكورة فالقرآن كدرس على مخاطر الحسد و التكبر."
+    }
+  }
+]
