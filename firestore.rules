@@ -17,20 +17,28 @@ service cloud.firestore {
     }
 
     // ──────────────────────────────────────────────────────────
-    // Tabla de clasificación
+    // Tabla de clasificación (Musafir)
     // - Cualquiera puede leer (incluso sin sesión)
     // - Solo el propio usuario puede escribir su propia entrada
-    // - El score solo puede subir (protección anti-trampa básica)
+    // - totalScore solo puede subir (anti-trampa)
+    // - bestScore es el mejor individual (0-100)
     // ──────────────────────────────────────────────────────────
     match /leaderboard/{uid} {
       allow read: if true;
+
       allow create: if request.auth != null
                     && request.auth.uid == uid
+                    && request.resource.data.totalScore is int
+                    && request.resource.data.totalScore >= 0
                     && request.resource.data.bestScore is int
                     && request.resource.data.bestScore >= 0
                     && request.resource.data.bestScore <= 100;
+
       allow update: if request.auth != null
                     && request.auth.uid == uid
+                    // totalScore solo puede crecer (anti-trampa)
+                    && request.resource.data.totalScore >= resource.data.totalScore
+                    // bestScore solo puede mantenerse o mejorar
                     && request.resource.data.bestScore >= resource.data.bestScore;
     }
   }
