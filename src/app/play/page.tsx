@@ -146,16 +146,30 @@ function PlayPage() {
       const initQuestions = async () => {
         let gameQuestions: Question[];
 
+        // Optimización: Si hay usuario, intentamos usar SRS, pero con límites
         if (user) {
-          // Usuario autenticado → usar muestreo SRS ponderado
-          const allIds = questionPool.map(q => q.id);
-          const weights = await getQuestionWeights(user.uid, allIds);
-          gameQuestions = weightedSample(questionPool, weights, QUESTIONS_PER_SOLO_GAME);
-          // Si SRS no devuelve suficientes, complementar con aleatorias
-          if (gameQuestions.length < QUESTIONS_PER_SOLO_GAME) {
-            const used = new Set(gameQuestions.map(q => q.id));
-            const remaining = shuffleArray(questionPool.filter(q => !used.has(q.id)));
-            gameQuestions = [...gameQuestions, ...remaining].slice(0, QUESTIONS_PER_SOLO_GAME);
+          try {
+            // 1. Seleccionar un pool de candidatos aleatorios (ej. 60) para no leer 600 docs
+            // Esto evita saturar la red/CPU en móviles con cientos de lecturas simultáneas
+            const candidates = shuffleArray(questionPool).slice(0, 60);
+            const candidateIds = candidates.map(q => q.id);
+
+            // 2. Obtener pesos solo para estos candidatos
+            const weights = await getQuestionWeights(user.uid, candidateIds);
+
+            // 3. Muestreo ponderado sobre los candidatos
+            gameQuestions = weightedSample(candidates, weights, QUESTIONS_PER_SOLO_GAME);
+
+            // 4. Relleno de seguridad si SRS devolvió pocas (raro con 60 candidatos)
+            if (gameQuestions.length < QUESTIONS_PER_SOLO_GAME) {
+              const used = new Set(gameQuestions.map(q => q.id));
+              const remaining = candidates.filter(q => !used.has(q.id));
+              gameQuestions = [...gameQuestions, ...remaining].slice(0, QUESTIONS_PER_SOLO_GAME);
+            }
+          } catch (error) {
+            console.error('Error cargando SRS, usando modo aleatorio:', error);
+            // Fallback: aleatorio simple si falla Firestore
+            gameQuestions = shuffleArray(questionPool).slice(0, QUESTIONS_PER_SOLO_GAME);
           }
         } else {
           // Sin sesión → aleatorio normal
@@ -164,10 +178,11 @@ function PlayPage() {
 
         setQuestions(gameQuestions);
         setLives(3);
-        const maxPts = gameQuestions.reduce(
-          (sum, q) => sum + DIFFICULTY_WEIGHT[q.difficulty as Difficulty],
-          0
-        );
+        // Calcular puntos máximos basado en las preguntas seleccionadas
+        const maxPts = gameQuestions.length > 0
+          ? gameQuestions.reduce((sum, q) => sum + DIFFICULTY_WEIGHT[q.difficulty as Difficulty], 0)
+          : 0;
+
         setMaxPossiblePoints(maxPts);
       };
 
