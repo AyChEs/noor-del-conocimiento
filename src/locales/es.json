@@ -46,6 +46,13 @@
                 "title": "Saltar Pregunta (Hégira)",
                 "description": "Pasa a la siguiente pregunta sin perder vidas. Tienes 1 uso por partida (solo en dificultad Media y Difícil)."
             }
+        },
+        "scoring": {
+            "title": "Sistema de Puntuación",
+            "difficulty": "Multiplicador por Dificultad: Fácil (1.0x), Medio (1.5x), Difícil (2.0x)",
+            "category": "Multiplicador por Categoría: Seerah (1.2x), Profetas (1.1x), Corán y General (1.0x)",
+            "timeBonus": "Bono de Tiempo: Hasta un 30% extra según lo rápido que respondas.",
+            "accumulation": "Progreso Global: Todos tus puntos se acumulan en la Tabla de Clasificación."
         }
     },
     "setup": {
@@ -93,7 +100,13 @@
         "score": "Puntuación",
         "round": "Ronda",
         "turnOf": "Turno de",
-        "readyButton": "¡Estoy listo!"
+        "readyButton": "¡Estoy listo!",
+        "exit": "Salir",
+        "exitAria": "Salir de la partida",
+        "exitTitle": "¿Salir de la partida?",
+        "exitDescription": "Tu progreso en esta partida se perderá. ¿Estás seguro de que quieres salir?",
+        "exitCancel": "Seguir jugando",
+        "exitConfirm": "Sí, salir"
     },
     "playerStatus": {
         "pts": "pts",

@@ -106,6 +106,15 @@ function RulesContent() {
           </li>
         </ul>
       </div>
+      <div className="pt-2">
+        <h5 className="font-bold text-lg text-primary mb-2">{t('rules.scoring.title')}</h5>
+        <ul className="text-sm text-muted-foreground list-disc ps-5 mt-1 space-y-2">
+          <li>{t('rules.scoring.difficulty')}</li>
+          <li>{t('rules.scoring.category')}</li>
+          <li>{t('rules.scoring.timeBonus')}</li>
+          <li>{t('rules.scoring.accumulation')}</li>
+        </ul>
+      </div>
     </div>
   );
 }
@@ -155,7 +164,7 @@ function ModeSelection() {
 function HomePage() {
   const searchParams = useSearchParams();
   const { t, setLanguage, language } = useTranslation();
-  
+
   const [step, setStep] = useState<'language' | 'intro' | 'rules' | 'setup'>('language');
   const [rulesScrolled, setRulesScrolled] = useState(false);
 
@@ -173,7 +182,7 @@ function HomePage() {
       setRulesScrolled(true);
     }
   };
-  
+
   const handleSelectLanguage = (lang: 'es' | 'en' | 'ma') => {
     setLanguage(lang);
     setStep('intro');
@@ -197,12 +206,12 @@ function HomePage() {
           <CardContent className="p-8">
             {step === 'language' && (
               <div className="text-center space-y-4">
-                 <h3 className="font-headline text-2xl font-semibold mb-6">Choose your language</h3>
-                 <div className="flex flex-col space-y-3">
-                    <Button onClick={() => handleSelectLanguage('es')} size="lg" className="w-full h-14 text-lg">Español</Button>
-                    <Button onClick={() => handleSelectLanguage('en')} size="lg" className="w-full h-14 text-lg">English</Button>
-                    <Button onClick={() => handleSelectLanguage('ma')} size="lg" className="w-full h-14 text-lg font-arabic text-2xl">العربية (الدارجة)</Button>
-                 </div>
+                <h3 className="font-headline text-2xl font-semibold mb-6">Choose your language</h3>
+                <div className="flex flex-col space-y-3">
+                  <Button onClick={() => handleSelectLanguage('es')} size="lg" className="w-full h-14 text-lg">Español</Button>
+                  <Button onClick={() => handleSelectLanguage('en')} size="lg" className="w-full h-14 text-lg">English</Button>
+                  <Button onClick={() => handleSelectLanguage('ma')} size="lg" className="w-full h-14 text-lg font-arabic text-2xl">العربية (الدارجة)</Button>
+                </div>
               </div>
             )}
 

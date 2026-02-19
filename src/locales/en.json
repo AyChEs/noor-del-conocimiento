@@ -46,6 +46,13 @@
                 "title": "Skip Question (Hijrah)",
                 "description": "Moves to the next question without losing lives. You have 1 use per game (only in Medium and Hard difficulty)."
             }
+        },
+        "scoring": {
+            "title": "Scoring System",
+            "difficulty": "Difficulty Multiplier: Easy (1.0x), Medium (1.5x), Hard (2.0x)",
+            "category": "Category Multiplier: Seerah (1.2x), Prophets (1.1x), Quran & General (1.0x)",
+            "timeBonus": "Time Bonus: Up to 30% extra based on how fast you answer.",
+            "accumulation": "Global Progress: All your points accumulate on the Leaderboard."
         }
     },
     "setup": {
@@ -93,7 +100,13 @@
         "score": "Score",
         "round": "Round",
         "turnOf": "Turn of",
-        "readyButton": "I'm ready!"
+        "readyButton": "I'm ready!",
+        "exit": "Exit",
+        "exitAria": "Exit game",
+        "exitTitle": "Exit Game?",
+        "exitDescription": "Your progress in this game will be lost. Are you sure you want to exit?",
+        "exitCancel": "Keep playing",
+        "exitConfirm": "Yes, exit"
     },
     "playerStatus": {
         "pts": "pts",

@@ -18,6 +18,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
@@ -97,6 +98,7 @@ function PlayPage() {
   const [isFeedbackLoading, setIsFeedbackLoading] = useState(false);
   const [lifelines, setLifelines] = useState({ fiftyFifty: 2, extraTime: 2, skip: 1 });
   const [showExitDialog, setShowExitDialog] = useState(false);
+  const [showScoringInfo, setShowScoringInfo] = useState(false);
 
   // Refs para cleanup
   const pendingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -514,10 +516,10 @@ function PlayPage() {
                 <button
                   onClick={() => setShowExitDialog(true)}
                   className="flex items-center gap-1 px-2 py-1 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors text-xs"
-                  aria-label="Salir de la partida"
+                  aria-label={t('play.exitAria')}
                 >
                   <LogOut className="w-4 h-4" />
-                  <span className="hidden sm:inline">Salir</span>
+                  <span className="hidden sm:inline">{t('play.exit')}</span>
                 </button>
               </div>
 
@@ -578,20 +580,25 @@ function PlayPage() {
           </CardHeader>
 
           <CardContent className="p-4 sm:p-8 text-center">
-            {/* Badge de categoría */}
+            {/* Badge de categoría clickable */}
             <div className="flex justify-center mb-4">
-              <span className={cn(
-                'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border',
-                catTheme.color, catTheme.border,
-                `bg-gradient-to-r ${catTheme.bg} to-transparent`
-              )}>
+              <button
+                onClick={() => setShowScoringInfo(true)}
+                className={cn(
+                  'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border transition-transform hover:scale-105 active:scale-95',
+                  catTheme.color, catTheme.border,
+                  `bg-gradient-to-r ${catTheme.bg} to-transparent`
+                )}
+                title="Ver sistema de puntuación"
+              >
                 <span>{catTheme.emoji}</span>
                 {categoryTranslations[currentQuestion.category] || currentQuestion.category}
                 {/* Multiplicador visible */}
                 {CATEGORY_MULTIPLIER[currentQuestion.category] && CATEGORY_MULTIPLIER[currentQuestion.category] > 1.0 && (
                   <span className="opacity-70">×{CATEGORY_MULTIPLIER[currentQuestion.category].toFixed(1)}</span>
                 )}
-              </span>
+                <HelpCircle className="w-3 h-3 ms-1 opacity-50" />
+              </button>
             </div>
 
             <div className="mb-6 min-h-[100px]">
@@ -630,19 +637,19 @@ function PlayPage() {
           <AlertDialogHeader>
             <AlertDialogTitle className="flex items-center gap-2">
               <LogOut className="h-5 w-5 text-destructive" />
-              ¿Salir de la partida?
+              {t('play.exitTitle')}
             </AlertDialogTitle>
             <AlertDialogDescription>
-              Tu progreso en esta partida se perderá. ¿Estás seguro de que quieres salir?
+              {t('play.exitDescription')}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Seguir jugando</AlertDialogCancel>
+            <AlertDialogCancel>{t('play.exitCancel')}</AlertDialogCancel>
             <AlertDialogAction
               onClick={() => router.push('/')}
               className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
             >
-              Sí, salir
+              {t('play.exitConfirm')}
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
@@ -674,6 +681,40 @@ function PlayPage() {
           <Button onClick={handleContinueAfterFeedback} className="mt-4">
             {t('feedback.continue')}
           </Button>
+        </DialogContent>
+      </Dialog>
+
+      {/* Diálogo de Información de Puntuación */}
+      <Dialog open={showScoringInfo} onOpenChange={setShowScoringInfo}>
+        <DialogContent className="max-w-sm sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-primary">
+              <Star className="w-5 h-5" />
+              {t('rules.scoring.title')}
+            </DialogTitle>
+            <DialogDescription>
+              {t('rules.rulesScrollPrompt')}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 py-2">
+            <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
+              <h4 className="font-bold text-sm mb-2">{t('rules.scoring.title')}</h4>
+              <ul className="text-xs space-y-2 text-muted-foreground list-disc ps-4">
+                <li>{t('rules.scoring.difficulty')}</li>
+                <li>{t('rules.scoring.category')}</li>
+                <li>{t('rules.scoring.timeBonus')}</li>
+                <li>{t('rules.scoring.accumulation')}</li>
+              </ul>
+            </div>
+            <div className="text-xs text-muted-foreground italic bg-muted/30 p-3 rounded-lg">
+              Tip: ¡Responde rápido y elige categorías difíciles para maximizar tus puntos!
+            </div>
+          </div>
+          <DialogFooter>
+            <Button onClick={() => setShowScoringInfo(false)} className="w-full">
+              {t('feedback.continue')}
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </main>
