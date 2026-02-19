@@ -35,18 +35,38 @@ export const DIFFICULTY_WEIGHT: Record<'easy' | 'medium' | 'hard', number> = {
 };
 
 /**
+ * Multiplicador de puntuación por categoría.
+ * Categorías más específicas/difíciles valen más.
+ */
+export const CATEGORY_MULTIPLIER: Record<string, number> = {
+  'Corán y General': 1.0,
+  'Profetas': 1.1,
+  'Seerah': 1.2,
+};
+
+/** Devuelve el multiplicador de una categoría (1.0 por defecto si no se reconoce). */
+export const getCategoryMultiplier = (category: string): number =>
+  CATEGORY_MULTIPLIER[category] ?? 1.0;
+
+/**
  * Calcula la puntuación parcial de una pregunta individual.
- * Devuelve un valor entre 0 y el peso de la dificultad.
- * El bonus de tiempo representa hasta el 30% del peso.
+ * Aplica peso por dificultad + bonus de tiempo + multiplicador por categoría.
+ *
+ * @param difficulty  - Dificultad de la pregunta
+ * @param timeLeft    - Segundos restantes
+ * @param totalTime   - Tiempo total asignado
+ * @param category    - Categoría de la pregunta (para multiplicador)
  */
 export const calculateQuestionScore = (
   difficulty: 'easy' | 'medium' | 'hard',
   timeLeft: number,
-  totalTime: number
+  totalTime: number,
+  category = 'Corán y General'
 ): number => {
   const weight = DIFFICULTY_WEIGHT[difficulty];
+  const catMult = getCategoryMultiplier(category);
   const timeBonus = weight * 0.3 * (timeLeft / totalTime);
-  return weight * 0.7 + timeBonus;
+  return (weight * 0.7 + timeBonus) * catMult;
 };
 
 /**

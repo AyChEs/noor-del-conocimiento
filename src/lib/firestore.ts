@@ -36,7 +36,8 @@ export interface QuestionHistoryEntry {
 export interface LeaderboardEntry {
     uid: string;
     displayName: string;
-    bestScore: number;
+    totalScore: number;    // Suma acumulada de todas las partidas Musafir
+    bestScore: number;     // Mejor partida individual (referencia)
     gamesPlayed: number;
     updatedAt: Timestamp;
 }
@@ -210,7 +211,7 @@ export async function saveGameResult(
         ? (profileSnap.data().bestScore as number) ?? 0
         : 0;
 
-    // Actualizar perfil
+    // Actualizar perfil — siempre sumar partida, actualizar best si mejora
     await updateDoc(profileRef, {
         totalGamesPlayed: increment(1),
         ...(score > currentBest && {
@@ -219,29 +220,24 @@ export async function saveGameResult(
         }),
     });
 
-    // Actualizar leaderboard solo si mejora el record
-    if (score > currentBest) {
-        const lbRef = doc(db, 'leaderboard', uid);
-        const lbSnap = await getDoc(lbRef);
-        await setDoc(
-            lbRef,
-            {
-                uid,
-                displayName,
-                bestScore: score,
-                gamesPlayed: lbSnap.exists() ? lbSnap.data().gamesPlayed + 1 : 1,
-                updatedAt: serverTimestamp(),
-            },
-            { merge: true }
-        );
-    } else {
-        // Incrementar contador aunque no sea record
-        const lbRef = doc(db, 'leaderboard', uid);
-        const lbSnap = await getDoc(lbRef);
-        if (lbSnap.exists()) {
-            await updateDoc(lbRef, { gamesPlayed: increment(1) });
-        }
-    }
+    // Actualizar leaderboard — siempre sumar al totalScore acumulado
+    const lbRef = doc(db, 'leaderboard', uid);
+    const lbSnap = await getDoc(lbRef);
+    const currentTotal = lbSnap.exists() ? (lbSnap.data().totalScore as number) ?? 0 : 0;
+    const currentLbBest = lbSnap.exists() ? (lbSnap.data().bestScore as number) ?? 0 : 0;
+
+    await setDoc(
+        lbRef,
+        {
+            uid,
+            displayName,
+            totalScore: currentTotal + score,           // Acumulado — base del ranking
+            bestScore: Math.max(currentLbBest, score),  // Mejor individual — referencia
+            gamesPlayed: increment(1),
+            updatedAt: serverTimestamp(),
+        },
+        { merge: true }
+    );
 }
 
 /**
@@ -250,7 +246,7 @@ export async function saveGameResult(
 export async function getLeaderboard(topN = 10): Promise<LeaderboardEntry[]> {
     const q = query(
         collection(db, 'leaderboard'),
-        orderBy('bestScore', 'desc'),
+        orderBy('totalScore', 'desc'),  // Ordenar por puntuación acumulada total
         limit(topN)
     );
     const snap = await getDocs(q);

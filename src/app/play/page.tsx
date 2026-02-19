@@ -31,6 +31,7 @@ import {
   getTimerDuration,
   shuffleArray,
   DIFFICULTY_WEIGHT,
+  CATEGORY_MULTIPLIER,
 } from '@/lib/gameLogic';
 import {
   getQuestionWeights,
@@ -343,7 +344,8 @@ function PlayPage() {
       const questionScore = calculateQuestionScore(
         currentQuestion.difficulty,
         timer,
-        questionTimerDuration
+        questionTimerDuration,
+        currentQuestion.category  // Multiplicador por categoría
       );
 
       if (isMajlis && currentPlayer) {
@@ -477,17 +479,37 @@ function PlayPage() {
     mix: t('category.mix'),
   };
 
+  // — Visual theme per category —
+  const CATEGORY_THEME: Record<string, { emoji: string; color: string; border: string; bg: string }> = {
+    'Seerah': { emoji: '🕌', color: 'text-emerald-500', border: 'border-emerald-500/30', bg: 'from-emerald-500/5' },
+    'Profetas': { emoji: '⭐', color: 'text-amber-500', border: 'border-amber-500/30', bg: 'from-amber-500/5' },
+    'Corán y General': { emoji: '📖', color: 'text-blue-500', border: 'border-blue-500/30', bg: 'from-blue-500/5' },
+  };
+  const catTheme = CATEGORY_THEME[currentQuestion?.category] ?? { emoji: '✨', color: 'text-primary', border: 'border-primary/20', bg: 'from-primary/5' };
+
+  // Barra de tiempo: verde → amarillo → rojo
+  const timerPct = (timer / questionTimerDuration) * 100;
+  const timerColor = timerPct > 50 ? 'bg-emerald-500' : timerPct > 25 ? 'bg-yellow-400' : 'bg-red-500';
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <main className="flex min-h-screen flex-col items-center justify-center p-3 sm:p-6">
       <div className="w-full max-w-4xl">
-        <Card className="shadow-2xl">
-          <CardHeader className="p-4 bg-card-foreground/5">
-            <div className="flex justify-between items-center text-foreground/80">
+        <Card className={`shadow-2xl border-2 ${catTheme.border} overflow-hidden`}>
+          {/* Banda de color por categoría */}
+          <div className={`h-1 w-full bg-gradient-to-r ${timerColor} transition-all duration-1000`}
+            style={{ width: `${timerPct}%`, height: '4px' }} />
+
+          <CardHeader className="p-3 sm:p-4 bg-gradient-to-b from-card to-card/90">
+            <div className="flex justify-between items-center">
               {/* Vidas + botón salir */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <div className="flex items-center gap-1">
-                  <Heart className="w-6 h-6 text-destructive" />
-                  <span className="text-xl font-bold">{displayLives}</span>
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <Heart key={i} className={cn(
+                      'w-5 h-5 transition-all',
+                      i < (displayLives ?? 0) ? 'text-red-500 fill-red-500' : 'text-muted-foreground/30'
+                    )} />
+                  ))}
                 </div>
                 <button
                   onClick={() => setShowExitDialog(true)}
@@ -498,80 +520,82 @@ function PlayPage() {
                   <span className="hidden sm:inline">Salir</span>
                 </button>
               </div>
+
+              {/* Puntuación central */}
               {isMajlis ? (
                 <div className="text-center">
-                  <p className="font-bold text-primary text-xl">{currentPlayer?.name}</p>
-                  <p className="font-semibold text-lg">{currentPlayer?.score} {t('playerStatus.pts')}</p>
+                  <p className="font-bold text-primary text-lg leading-none">{currentPlayer?.name}</p>
+                  <p className="font-semibold text-base">{currentPlayer?.score} {t('playerStatus.pts')}</p>
                 </div>
               ) : (
                 <div className="text-center">
-                  <p className="font-bold text-primary text-xl">{t('play.score')}</p>
-                  <p className="font-semibold text-lg">
-                    <span className="text-2xl">{displayScore}</span>
-                    <span className="text-sm text-muted-foreground">/100</span>
+                  <p className="text-xs text-muted-foreground uppercase tracking-widest">{t('play.score')}</p>
+                  <p className="font-bold text-2xl leading-none">
+                    {displayScore}<span className="text-sm text-muted-foreground font-normal">/100</span>
                   </p>
                 </div>
               )}
-              <div className="flex items-center gap-2 sm:gap-4">
-                <button
-                  onClick={() => handleLifeline('fiftyFifty')}
-                  disabled={!displayLifelines || displayLifelines.fiftyFifty <= 0 || isAnswered}
-                  className="flex flex-col items-center gap-1 p-1 rounded-lg transition-colors disabled:opacity-40 disabled:cursor-not-allowed enabled:hover:bg-primary/10"
-                  aria-label={t('lifeline.fiftyFifty')}
-                >
-                  <div className="relative">
-                    <div className="p-2 bg-primary/20 rounded-full">
-                      <HelpCircle className="w-5 h-5 text-primary" />
+
+              {/* Comodines */}
+              <div className="flex items-center gap-1 sm:gap-2">
+                {[
+                  { type: 'fiftyFifty' as const, icon: <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />, label: '50/50' },
+                  { type: 'extraTime' as const, icon: <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />, label: '+15s' },
+                  { type: 'skip' as const, icon: <SkipForward className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />, label: 'Skip', hidden: difficulty === 'easy' },
+                ].map(({ type, icon, label, hidden }) => (
+                  <button
+                    key={type}
+                    onClick={() => handleLifeline(type)}
+                    disabled={!displayLifelines || displayLifelines[type] <= 0 || isAnswered || hidden}
+                    className="flex flex-col items-center gap-0.5 p-1 rounded-xl transition-all disabled:opacity-30 disabled:cursor-not-allowed enabled:hover:bg-primary/10 enabled:active:scale-95"
+                    aria-label={label}
+                  >
+                    <div className="relative">
+                      <div className="p-1.5 bg-primary/15 rounded-full">{icon}</div>
+                      <Badge variant="secondary" className="absolute -top-2 -right-2 h-4 w-4 p-0 justify-center text-primary font-bold text-xs">
+                        {displayLifelines?.[type]}
+                      </Badge>
                     </div>
-                    <Badge variant="secondary" className="absolute -top-2 -right-2 h-5 w-5 p-0 justify-center text-primary font-bold">
-                      {displayLifelines?.fiftyFifty}
-                    </Badge>
-                  </div>
-                  <span className="text-xs font-semibold hidden sm:inline">50/50</span>
-                </button>
-                <button
-                  onClick={() => handleLifeline('extraTime')}
-                  disabled={!displayLifelines || displayLifelines.extraTime <= 0 || isAnswered}
-                  className="flex flex-col items-center gap-1 p-1 rounded-lg transition-colors disabled:opacity-40 disabled:cursor-not-allowed enabled:hover:bg-primary/10"
-                  aria-label={t('lifeline.extraTime')}
-                >
-                  <div className="relative">
-                    <div className="p-2 bg-primary/20 rounded-full">
-                      <Clock className="w-5 h-5 text-primary" />
-                    </div>
-                    <Badge variant="secondary" className="absolute -top-2 -right-2 h-5 w-5 p-0 justify-center text-primary font-bold">
-                      {displayLifelines?.extraTime}
-                    </Badge>
-                  </div>
-                  <span className="text-xs font-semibold hidden sm:inline">+15s</span>
-                </button>
-                <button
-                  onClick={() => handleLifeline('skip')}
-                  disabled={!displayLifelines || displayLifelines.skip <= 0 || isAnswered || difficulty === 'easy'}
-                  className="flex flex-col items-center gap-1 p-1 rounded-lg transition-colors disabled:opacity-40 disabled:cursor-not-allowed enabled:hover:bg-primary/10"
-                  aria-label={t('lifeline.skip')}
-                >
-                  <div className="relative">
-                    <div className="p-2 bg-primary/20 rounded-full">
-                      <SkipForward className="w-5 h-5 text-primary" />
-                    </div>
-                    <Badge variant="secondary" className="absolute -top-2 -right-2 h-5 w-5 p-0 justify-center text-primary font-bold">
-                      {displayLifelines?.skip}
-                    </Badge>
-                  </div>
-                  <span className="text-xs font-semibold hidden sm:inline">{t('lifeline.skip')}</span>
-                </button>
+                    <span className="text-[10px] font-semibold hidden sm:inline">{label}</span>
+                  </button>
+                ))}
               </div>
             </div>
-            <Progress value={(timer / questionTimerDuration) * 100} className="w-full h-2 mt-2" />
+
+            {/* Timer bar */}
+            <div className="mt-3 h-2 bg-muted/30 rounded-full overflow-hidden relative">
+              <div
+                className={cn('h-full rounded-full transition-all duration-1000', timerColor)}
+                style={{ width: `${timerPct}%` }}
+              />
+              <span className={cn(
+                'absolute right-0 top-1/2 -translate-y-1/2 text-[10px] font-bold px-1 rounded',
+                timerPct <= 25 ? 'text-red-500' : 'text-muted-foreground'
+              )}>
+                {timer}s
+              </span>
+            </div>
           </CardHeader>
-          <CardContent className="p-8 text-center">
-            <div className="mb-8 min-h-[120px]">
-              <p className="text-sm text-primary font-medium mb-2 flex items-center justify-center gap-2">
-                <BookOpen className="w-4 h-4" />
+
+          <CardContent className="p-4 sm:p-8 text-center">
+            {/* Badge de categoría */}
+            <div className="flex justify-center mb-4">
+              <span className={cn(
+                'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border',
+                catTheme.color, catTheme.border,
+                `bg-gradient-to-r ${catTheme.bg} to-transparent`
+              )}>
+                <span>{catTheme.emoji}</span>
                 {categoryTranslations[currentQuestion.category] || currentQuestion.category}
-              </p>
-              <p className="text-2xl md:text-3xl font-headline font-semibold">
+                {/* Multiplicador visible */}
+                {CATEGORY_MULTIPLIER[currentQuestion.category] && CATEGORY_MULTIPLIER[currentQuestion.category] > 1.0 && (
+                  <span className="opacity-70">×{CATEGORY_MULTIPLIER[currentQuestion.category].toFixed(1)}</span>
+                )}
+              </span>
+            </div>
+
+            <div className="mb-6 min-h-[100px]">
+              <p className="text-xl sm:text-2xl md:text-3xl font-headline font-semibold leading-snug">
                 {currentQuestion.question[language]}
               </p>
               {currentQuestion.arabicVerse && (
@@ -580,7 +604,8 @@ function PlayPage() {
                 </p>
               )}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {currentQuestion.options[language].map(option => (
                 <Button
                   key={option}
@@ -588,7 +613,7 @@ function PlayPage() {
                   onClick={() => handleAnswer(option)}
                   disabled={isAnswered || disabledOptions.includes(option)}
                   className={cn(
-                    'h-auto min-h-16 p-4 text-lg whitespace-normal break-words transition-all duration-300',
+                    'h-auto min-h-14 p-4 text-base sm:text-lg whitespace-normal break-words transition-all duration-300 rounded-2xl',
                     getButtonClass(option)
                   )}
                 >
