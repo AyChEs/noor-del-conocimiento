@@ -5,6 +5,16 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from '@/components/ui/alert-dialog';
+import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -13,6 +23,7 @@ import {
 } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
 import { useTranslation } from '@/context/LanguageProvider';
+import { useAuth } from '@/context/AuthProvider';
 import questionsData from '@/data/questions.json';
 import {
   calculateQuestionScore,
@@ -21,6 +32,12 @@ import {
   shuffleArray,
   DIFFICULTY_WEIGHT,
 } from '@/lib/gameLogic';
+import {
+  getQuestionWeights,
+  weightedSample,
+  recordQuestionAnswer,
+  saveGameResult,
+} from '@/lib/firestore';
 import type { Difficulty, GameMode, Question, Player } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import {
@@ -30,6 +47,7 @@ import {
   Clock,
   Heart,
   HelpCircle,
+  LogOut,
   SkipForward,
   Star,
   User,
@@ -45,6 +63,7 @@ function PlayPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { t, language } = useTranslation();
+  const { user } = useAuth();
 
   // Game settings
   const gameMode = searchParams.get('mode') as 'musafir' | 'majlis' | null;
@@ -55,7 +74,7 @@ function PlayPage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  // Musafir State — puntuación acumulada como fracción ponderada
+  // Musafir State
   const [earnedPoints, setEarnedPoints] = useState(0);
   const [maxPossiblePoints, setMaxPossiblePoints] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
@@ -67,7 +86,7 @@ function PlayPage() {
   const [round, setRound] = useState(1);
   const [turnState, setTurnState] = useState<'playing' | 'transition'>('playing');
 
-  // Common UI State
+  // UI State
   const [timer, setTimer] = useState(30);
   const [isAnswered, setIsAnswered] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -76,10 +95,10 @@ function PlayPage() {
   const [feedbackText, setFeedbackText] = useState('');
   const [isFeedbackLoading, setIsFeedbackLoading] = useState(false);
   const [lifelines, setLifelines] = useState({ fiftyFifty: 2, extraTime: 2, skip: 1 });
+  const [showExitDialog, setShowExitDialog] = useState(false);
 
-  // Ref para cleanup de setTimeout — previene memory leaks
+  // Refs para cleanup
   const pendingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // Ref para saber si el componente sigue montado
   const isMountedRef = useRef(true);
 
   useEffect(() => {
@@ -107,7 +126,7 @@ function PlayPage() {
   // Puntuación final sobre 100 (solo modo Musafir)
   const displayScore = calculateFinalScore(earnedPoints, maxPossiblePoints);
 
-  // Initialization
+  // Initialization — usa SRS si el usuario está autenticado
   useEffect(() => {
     if (!gameMode) {
       router.push('/');
@@ -124,15 +143,35 @@ function PlayPage() {
     }
 
     if (gameMode === 'musafir') {
-      const gameQuestions = shuffleArray(questionPool).slice(0, QUESTIONS_PER_SOLO_GAME);
-      setQuestions(gameQuestions);
-      setLives(3);
-      // Calcular el máximo posible de puntos para esta partida
-      const maxPts = gameQuestions.reduce(
-        (sum, q) => sum + DIFFICULTY_WEIGHT[q.difficulty as Difficulty],
-        0
-      );
-      setMaxPossiblePoints(maxPts);
+      const initQuestions = async () => {
+        let gameQuestions: Question[];
+
+        if (user) {
+          // Usuario autenticado → usar muestreo SRS ponderado
+          const allIds = questionPool.map(q => q.id);
+          const weights = await getQuestionWeights(user.uid, allIds);
+          gameQuestions = weightedSample(questionPool, weights, QUESTIONS_PER_SOLO_GAME);
+          // Si SRS no devuelve suficientes, complementar con aleatorias
+          if (gameQuestions.length < QUESTIONS_PER_SOLO_GAME) {
+            const used = new Set(gameQuestions.map(q => q.id));
+            const remaining = shuffleArray(questionPool.filter(q => !used.has(q.id)));
+            gameQuestions = [...gameQuestions, ...remaining].slice(0, QUESTIONS_PER_SOLO_GAME);
+          }
+        } else {
+          // Sin sesión → aleatorio normal
+          gameQuestions = shuffleArray(questionPool).slice(0, QUESTIONS_PER_SOLO_GAME);
+        }
+
+        setQuestions(gameQuestions);
+        setLives(3);
+        const maxPts = gameQuestions.reduce(
+          (sum, q) => sum + DIFFICULTY_WEIGHT[q.difficulty as Difficulty],
+          0
+        );
+        setMaxPossiblePoints(maxPts);
+      };
+
+      initQuestions();
     } else if (gameMode === 'majlis') {
       const playersParam = searchParams.get('players');
       if (playersParam) {
@@ -150,7 +189,7 @@ function PlayPage() {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gameMode, category, difficulty]);
+  }, [gameMode, category, difficulty, user]);
 
   const goToNextQuestion = useCallback(() => {
     if (currentQuestionIndex + 1 < questions.length) {
@@ -160,11 +199,14 @@ function PlayPage() {
       setDisabledOptions([]);
       setShowFeedback(false);
     } else {
-      // Fin del juego — pasar score final sobre 100
+      // Fin del juego — guardar resultado si hay sesión
       const finalScore = calculateFinalScore(earnedPoints, maxPossiblePoints);
+      if (user) {
+        saveGameResult(user.uid, user.displayName ?? 'Usuario', finalScore).catch(console.error);
+      }
       router.push(`/game-over?score=${finalScore}&correct=${correctCount}&total=${questions.length}`);
     }
-  }, [currentQuestionIndex, questions.length, router, earnedPoints, maxPossiblePoints, correctCount]);
+  }, [currentQuestionIndex, questions.length, router, earnedPoints, maxPossiblePoints, correctCount, user]);
 
   const handleNextTurn = useCallback((currentPlayers: Player[]) => {
     // Recibe el estado actualizado de players para evitar race condition
@@ -277,6 +319,11 @@ function PlayPage() {
 
     const isCorrect = answer.trim() === currentQuestion.correctAnswer[language].trim();
 
+    // Registrar en historial SRS si hay sesión activa (modo Musafir)
+    if (user && !isMajlis) {
+      recordQuestionAnswer(user.uid, currentQuestion.id, isCorrect).catch(console.error);
+    }
+
     if (isCorrect) {
       const questionScore = calculateQuestionScore(
         currentQuestion.difficulty,
@@ -285,7 +332,6 @@ function PlayPage() {
       );
 
       if (isMajlis && currentPlayer) {
-        // En Majlis, el score del jugador es la suma de puntos de pregunta (no sobre 100)
         setPlayers(prev => {
           const updated = prev.map(p =>
             p.id === currentPlayer.id ? { ...p, score: p.score + Math.round(questionScore * 10) } : p
@@ -422,9 +468,20 @@ function PlayPage() {
         <Card className="shadow-2xl">
           <CardHeader className="p-4 bg-card-foreground/5">
             <div className="flex justify-between items-center text-foreground/80">
-              <div className="flex items-center gap-2">
-                <Heart className="w-6 h-6 text-destructive" />
-                <span className="text-xl font-bold">{displayLives}</span>
+              {/* Vidas + botón salir */}
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1">
+                  <Heart className="w-6 h-6 text-destructive" />
+                  <span className="text-xl font-bold">{displayLives}</span>
+                </div>
+                <button
+                  onClick={() => setShowExitDialog(true)}
+                  className="flex items-center gap-1 px-2 py-1 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors text-xs"
+                  aria-label="Salir de la partida"
+                >
+                  <LogOut className="w-4 h-4" />
+                  <span className="hidden sm:inline">Salir</span>
+                </button>
               </div>
               {isMajlis ? (
                 <div className="text-center">
@@ -527,6 +584,30 @@ function PlayPage() {
           </CardContent>
         </Card>
       </div>
+      {/* Diálogo de confirmación para salir */}
+      <AlertDialog open={showExitDialog} onOpenChange={setShowExitDialog}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle className="flex items-center gap-2">
+              <LogOut className="h-5 w-5 text-destructive" />
+              ¿Salir de la partida?
+            </AlertDialogTitle>
+            <AlertDialogDescription>
+              Tu progreso en esta partida se perderá. ¿Estás seguro de que quieres salir?
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Seguir jugando</AlertDialogCancel>
+            <AlertDialogAction
+              onClick={() => router.push('/')}
+              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+            >
+              Sí, salir
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+
       <Dialog open={showFeedback} onOpenChange={setShowFeedback}>
         <DialogContent>
           <DialogHeader>

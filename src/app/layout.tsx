@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import { LanguageProvider } from '@/context/LanguageProvider';
+import { AuthProvider } from '@/context/AuthProvider';
+import { UserMenu } from '@/components/auth/UserMenu';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
@@ -26,10 +28,16 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <Suspense fallback={<div />}>
-          <LanguageProvider>
-            {children}
-            <Toaster />
-          </LanguageProvider>
+          <AuthProvider>
+            <LanguageProvider>
+              {/* Cabecera global con menú de usuario */}
+              <header className="fixed top-0 right-0 z-50 p-3">
+                <UserMenu />
+              </header>
+              {children}
+              <Toaster />
+            </LanguageProvider>
+          </AuthProvider>
         </Suspense>
       </body>
     </html>
