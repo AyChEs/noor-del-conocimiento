@@ -450,9 +450,9 @@ function PlayPage() {
   const getButtonClass = (option: string) => {
     if (!isAnswered) return 'bg-background/80 text-foreground hover:bg-primary/10';
     if (option.trim() === currentQuestion.correctAnswer[language].trim())
-      return 'bg-accent text-accent-foreground animate-correct-pulse';
-    if (option === selectedAnswer) return 'bg-destructive text-destructive-foreground animate-gentle-shake';
-    return 'bg-card/50 text-foreground/50';
+      return 'bg-emerald-500 text-white font-bold border-transparent'; // Removida la animación que puede causar bug visual y contraste fuerte
+    if (option === selectedAnswer) return 'bg-destructive text-destructive-foreground font-bold border-transparent animate-gentle-shake';
+    return 'bg-card/30 text-foreground/50 border-dashed';
   };
 
   if (!gameMode || !currentQuestion) {
