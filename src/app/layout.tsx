@@ -5,6 +5,7 @@ import { LanguageProvider } from '@/context/LanguageProvider';
 import { AuthProvider } from '@/context/AuthProvider';
 import { UserMenu } from '@/components/auth/UserMenu';
 import { Suspense } from 'react';
+import { Mail, Send } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Trivia Luz del Saber',
@@ -59,8 +60,15 @@ export default function RootLayout({
               {children}
               {/* Pie de página con contacto de soporte */}
               <div className="fixed bottom-0 w-full p-2 text-center z-50 pointer-events-none">
-                <div className="pointer-events-auto inline-block bg-background/80 backdrop-blur-sm px-4 py-1 rounded-full border shadow-sm text-xs text-muted-foreground">
-                  ¿Tienes problemas o sugerencias? <a href="mailto:tucorreo@gmail.com" className="text-primary hover:underline font-medium">Contáctanos por Email</a> o <a href="https://t.me/TuUsernameDeTelegram" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Telegram</a>
+                <div className="pointer-events-auto inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-4 py-1.5 rounded-full border shadow-sm text-xs text-muted-foreground">
+                  <span>¿Tienes problemas o sugerencias?</span>
+                  <a href="mailto:luzdelsaber.juego@gmail.com" className="text-primary hover:underline font-medium inline-flex items-center gap-1.5">
+                    <Mail className="w-3.5 h-3.5" /> Email
+                  </a>
+                  <span>o</span>
+                  <a href="https://t.me/LuzDelSaberSoporte" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium inline-flex items-center gap-1.5">
+                    <Send className="w-3.5 h-3.5 -mt-0.5" /> Telegram
+                  </a>
                 </div>
               </div>
               <Toaster />
