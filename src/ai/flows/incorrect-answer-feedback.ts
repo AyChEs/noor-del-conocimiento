@@ -30,7 +30,7 @@ export async function incorrectAnswerFeedback(input: IncorrectAnswerFeedbackInpu
 
 const prompt = ai.definePrompt({
   name: 'incorrectAnswerFeedbackPrompt',
-  model: 'googleai/gemini-1.5-flash',
+  model: 'googleai/gemini-2.5-flash',
   input: { schema: IncorrectAnswerFeedbackInputSchema },
   output: { schema: IncorrectAnswerFeedbackOutputSchema },
   prompt: `You are an AI assistant that provides supportive feedback for incorrect trivia answers.
