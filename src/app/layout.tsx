@@ -60,7 +60,7 @@ export default function RootLayout({
               {/* Pie de página con contacto de soporte */}
               <div className="fixed bottom-0 w-full p-2 text-center z-50 pointer-events-none">
                 <div className="pointer-events-auto inline-block bg-background/80 backdrop-blur-sm px-4 py-1 rounded-full border shadow-sm text-xs text-muted-foreground">
-                  ¿Tienes problemas o sugerencias? <a href="mailto:soporte@luzdelsaber.com" className="text-primary hover:underline font-medium">Contáctanos por Email</a> o <a href="https://t.me/luzdelsaber_support" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Telegram</a>
+                  ¿Tienes problemas o sugerencias? <a href="mailto:tucorreo@gmail.com" className="text-primary hover:underline font-medium">Contáctanos por Email</a> o <a href="https://t.me/TuUsernameDeTelegram" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Telegram</a>
                 </div>
               </div>
               <Toaster />
