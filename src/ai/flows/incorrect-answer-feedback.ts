@@ -8,8 +8,8 @@
  * - IncorrectAnswerFeedbackOutput - The return type for the incorrectAnswerFeedback function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'genkit';
 
 const IncorrectAnswerFeedbackInputSchema = z.object({
   question: z.string().describe('The trivia question that was answered incorrectly.'),
@@ -30,8 +30,9 @@ export async function incorrectAnswerFeedback(input: IncorrectAnswerFeedbackInpu
 
 const prompt = ai.definePrompt({
   name: 'incorrectAnswerFeedbackPrompt',
-  input: {schema: IncorrectAnswerFeedbackInputSchema},
-  output: {schema: IncorrectAnswerFeedbackOutputSchema},
+  model: 'googleai/gemini-1.5-flash',
+  input: { schema: IncorrectAnswerFeedbackInputSchema },
+  output: { schema: IncorrectAnswerFeedbackOutputSchema },
   prompt: `You are an AI assistant that provides supportive feedback for incorrect trivia answers.
   Generate a concise, one-sentence explanation about the correct answer, being understanding and encouraging. The response must be in the following language: {{{language}}}.
 
@@ -49,7 +50,15 @@ const incorrectAnswerFeedbackFlow = ai.defineFlow(
     outputSchema: IncorrectAnswerFeedbackOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    return output!;
+    try {
+      const { output } = await prompt(input);
+      if (!output) {
+        throw new Error("Llamada a IA devolvió vacío");
+      }
+      return output;
+    } catch (e: any) {
+      console.error("Genkit Error in incorrectAnswerFeedbackFlow:", e.message || e);
+      throw e;
+    }
   }
 );

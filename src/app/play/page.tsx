@@ -392,7 +392,14 @@ function PlayPage() {
         if (isMountedRef.current) setFeedbackText(feedbackResult.explanation);
       } catch (error) {
         console.error('Failed to get AI feedback:', error);
-        if (isMountedRef.current) setFeedbackText(t('feedback.error'));
+        // Fallback friendly support text on failure
+        if (isMountedRef.current) {
+          setFeedbackText(
+            language === 'es' ? 'Sigue intentándolo, ¡cada error es una oportunidad de aprender!' :
+              language === 'en' ? 'Keep trying, every mistake is an opportunity to learn!' :
+                'استمر في المحاولة، كل خطأ هو فرصة للتعلم!'
+          );
+        }
       } finally {
         if (isMountedRef.current) setIsFeedbackLoading(false);
       }
@@ -655,7 +662,14 @@ function PlayPage() {
         </AlertDialogContent>
       </AlertDialog>
 
-      <Dialog open={showFeedback} onOpenChange={setShowFeedback}>
+      <Dialog
+        open={showFeedback}
+        onOpenChange={(open) => {
+          if (!open) {
+            handleContinueAfterFeedback();
+          }
+        }}
+      >
         <DialogContent>
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
