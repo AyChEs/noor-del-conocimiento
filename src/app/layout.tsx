@@ -9,6 +9,28 @@ import { Suspense } from 'react';
 export const metadata: Metadata = {
   title: 'Trivia Luz del Saber',
   description: 'Un juego de trivia islámico para iluminar la mente y el alma.',
+  openGraph: {
+    title: 'Trivia Luz del Saber | Ponte a prueba',
+    description: '¿Cuánto sabes de la historia del Islam? ¡Ponte a prueba en este juego de preguntas!',
+    url: 'https://luzdelsaber.com', // Se reemplazará por el dominio real cuando se despliegue
+    siteName: 'Luz del Saber',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Trivia Luz del Saber - Fondo oasis y farol dorado',
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Trivia Luz del Saber',
+    description: '¿Cuánto sabes de la historia del Islam? ¡Ponte a prueba en este juego de preguntas!',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +57,12 @@ export default function RootLayout({
                 <UserMenu />
               </header>
               {children}
+              {/* Pie de página con contacto de soporte */}
+              <div className="fixed bottom-0 w-full p-2 text-center z-50 pointer-events-none">
+                <div className="pointer-events-auto inline-block bg-background/80 backdrop-blur-sm px-4 py-1 rounded-full border shadow-sm text-xs text-muted-foreground">
+                  ¿Tienes problemas o sugerencias? <a href="mailto:soporte@luzdelsaber.com" className="text-primary hover:underline font-medium">Contáctanos por Email</a> o <a href="https://t.me/luzdelsaber_support" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Telegram</a>
+                </div>
+              </div>
               <Toaster />
             </LanguageProvider>
           </AuthProvider>
