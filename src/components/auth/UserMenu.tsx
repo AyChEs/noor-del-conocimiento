@@ -58,13 +58,14 @@ export function UserMenu() {
         return (
             <>
                 <Button
-                    variant="ghost"
+                    variant="outline"
                     size="sm"
                     onClick={openLogin}
-                    className="gap-2"
+                    className="gap-2 rounded-full border-primary/30 bg-background/50 hover:bg-primary/10 text-primary font-medium shadow-sm transition-all"
                     id="user-menu-login-btn"
                 >
-                    <LogIn className="h-4 w-4" />
+                    <User className="h-4 w-4" />
+                    <span className="inline sm:hidden text-xs">Entrar</span>
                     <span className="hidden sm:inline">Iniciar sesión</span>
                 </Button>
                 <AuthModal
