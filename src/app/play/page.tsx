@@ -450,9 +450,9 @@ function PlayPage() {
   const getButtonClass = (option: string) => {
     if (!isAnswered) return 'bg-background/80 text-foreground hover:bg-primary/10';
     if (option.trim() === currentQuestion.correctAnswer[language].trim())
-      return 'bg-emerald-500 text-white font-bold border-transparent'; // Removida la animación que puede causar bug visual y contraste fuerte
-    if (option === selectedAnswer) return 'bg-destructive text-destructive-foreground font-bold border-transparent animate-gentle-shake';
-    return 'bg-card/30 text-foreground/50 border-dashed';
+      return '!bg-emerald-500 !text-white font-bold border-emerald-600 shadow-md transform scale-[1.02]'; // Forzamos el color para evitar el override del hover de iOS/shadcn
+    if (option === selectedAnswer) return '!bg-destructive !text-white font-bold border-red-700 shadow-md animate-gentle-shake';
+    return 'bg-card/20 text-foreground/40 border-dashed opacity-70';
   };
 
   if (!gameMode || !currentQuestion) {
