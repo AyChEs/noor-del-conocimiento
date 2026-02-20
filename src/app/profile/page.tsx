@@ -10,6 +10,8 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Trophy, Star, Gamepad2, ArrowLeft, Trophy as TrophyIcon } from 'lucide-react';
+import { getRank } from '@/lib/gameLogic';
+import { useTranslation } from '@/context/LanguageProvider';
 
 function ProfileSkeleton() {
     return (
@@ -27,6 +29,7 @@ function ProfileSkeleton() {
 }
 
 export default function ProfilePage() {
+    const { t } = useTranslation();
     const { user, loading: authLoading } = useAuth();
     const [profile, setProfile] = useState<UserProfile | null>(null);
     const [loadingProfile, setLoadingProfile] = useState(true);
@@ -100,10 +103,15 @@ export default function ProfilePage() {
                                     </div>
                                     <div className="flex flex-col items-center p-3 rounded-xl bg-primary/10 text-center">
                                         <Star className="h-5 w-5 text-primary mb-1" />
-                                        <span className="text-2xl font-bold">
-                                            {profile.bestScore >= 80 ? '🥇' : profile.bestScore >= 60 ? '🥈' : profile.bestScore >= 40 ? '🥉' : '📚'}
-                                        </span>
-                                        <span className="text-xs text-muted-foreground">Rango</span>
+                                        <div className="flex flex-col items-center">
+                                            <span className="text-xl font-bold">
+                                                {profile.bestScore >= 80 ? '🥇' : profile.bestScore >= 60 ? '🥈' : profile.bestScore >= 40 ? '🥉' : '📚'}
+                                            </span>
+                                            <span className="text-[10px] font-bold text-primary uppercase leading-tight">
+                                                {t(getRank(profile.bestScore).titleKey)}
+                                            </span>
+                                        </div>
+                                        <span className="text-[10px] text-muted-foreground mt-1">Rango</span>
                                     </div>
                                 </div>
 
