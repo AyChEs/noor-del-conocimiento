@@ -20,7 +20,7 @@ const IncorrectAnswerFeedbackInputSchema = z.object({
 export type IncorrectAnswerFeedbackInput = z.infer<typeof IncorrectAnswerFeedbackInputSchema>;
 
 const IncorrectAnswerFeedbackOutputSchema = z.object({
-  explanation: z.string().describe('A supportive, one-sentence explanation of the correct answer.'),
+  explanation: z.string().describe('A supportive, educational explanation of the correct answer and context (approx 2 sentences).'),
 });
 export type IncorrectAnswerFeedbackOutput = z.infer<typeof IncorrectAnswerFeedbackOutputSchema>;
 
@@ -33,8 +33,8 @@ const prompt = ai.definePrompt({
   model: 'googleai/gemini-2.5-flash',
   input: { schema: IncorrectAnswerFeedbackInputSchema },
   output: { schema: IncorrectAnswerFeedbackOutputSchema },
-  prompt: `You are an AI assistant that provides supportive feedback for incorrect trivia answers.
-  Generate a concise, one-sentence explanation about the correct answer, being understanding and encouraging. The response must be in the following language: {{{language}}}.
+  prompt: `You are an Islamic trivia teacher providing feedback for incorrect answers.
+  Generate a brief, educational lesson (2-3 sentences max) explaining WHY the correct answer is correct and briefly contextualizing the user's mistake. Be understanding but focus on teaching. The response must be in the following language: {{{language}}}.
 
   Question: {{{question}}}
   Correct Answer: {{{correctAnswer}}}
