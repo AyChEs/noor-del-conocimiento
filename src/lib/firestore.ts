@@ -12,6 +12,7 @@ import {
     limit,
     Timestamp,
 } from 'firebase/firestore';
+import { updateProfile, User } from 'firebase/auth';
 import { db } from './firebase';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -77,6 +78,22 @@ export async function updateDisplayName(uid: string, displayName: string): Promi
     await updateDoc(doc(db, 'leaderboard', uid), { displayName }).catch(() => {
         // Si no existe entrada en leaderboard todavía, ignorar error
     });
+}
+
+export async function updateUserProfileData(
+    user: User,
+    displayName: string,
+    photoURL: string
+): Promise<void> {
+    // 1. Update Firebase Auth Object
+    await updateProfile(user, { displayName, photoURL: photoURL || null });
+
+    // 2. Update Firestore User Profile
+    const updateData = { displayName, photoURL: photoURL || null };
+    await updateDoc(doc(db, 'users', user.uid), updateData).catch(console.error);
+
+    // 3. Update Leaderboard Entry (keep names in sync)
+    await updateDoc(doc(db, 'leaderboard', user.uid), { displayName, photoURL: photoURL || null }).catch(() => { });
 }
 
 // ─── Question History & SRS ───────────────────────────────────────────────────

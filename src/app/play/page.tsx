@@ -33,6 +33,8 @@ import {
   shuffleArray,
   DIFFICULTY_WEIGHT,
   CATEGORY_MULTIPLIER,
+  getPlayedQuestions,
+  addPlayedQuestions,
 } from '@/lib/gameLogic';
 import {
   getQuestionWeights,
@@ -149,12 +151,20 @@ function PlayPage() {
       const initQuestions = async () => {
         let gameQuestions: Question[];
 
+        // Filtro de Memoria de Sesión (evita repetidas)
+        const playedIds = getPlayedQuestions();
+        let unplayedPool = questionPool.filter(q => !playedIds.includes(q.id));
+
+        // Si no quedan suficientes nuevas, reiniciamos el pool para esta ronda
+        if (unplayedPool.length < QUESTIONS_PER_SOLO_GAME) {
+          unplayedPool = questionPool;
+        }
+
         // Optimización: Si hay usuario, intentamos usar SRS, pero con límites
         if (user) {
           try {
-            // 1. Seleccionar un pool de candidatos aleatorios (ej. 60) para no leer 600 docs
-            // Esto evita saturar la red/CPU en móviles con cientos de lecturas simultáneas
-            const candidates = shuffleArray(questionPool).slice(0, 60);
+            // 1. Seleccionar un pool de candidatos aleatorios (ej. 60) priorizando nuevas
+            const candidates = shuffleArray(unplayedPool).slice(0, 60);
             const candidateIds = candidates.map(q => q.id);
 
             // 2. Obtener pesos solo para estos candidatos
@@ -163,7 +173,7 @@ function PlayPage() {
             // 3. Muestreo ponderado sobre los candidatos
             gameQuestions = weightedSample(candidates, weights, QUESTIONS_PER_SOLO_GAME);
 
-            // 4. Relleno de seguridad si SRS devolvió pocas (raro con 60 candidatos)
+            // 4. Relleno de seguridad si SRS devolvió pocas
             if (gameQuestions.length < QUESTIONS_PER_SOLO_GAME) {
               const used = new Set(gameQuestions.map(q => q.id));
               const remaining = candidates.filter(q => !used.has(q.id));
@@ -171,15 +181,15 @@ function PlayPage() {
             }
           } catch (error) {
             console.error('Error cargando SRS, usando modo aleatorio:', error);
-            // Fallback: aleatorio simple si falla Firestore
-            gameQuestions = shuffleArray(questionPool).slice(0, QUESTIONS_PER_SOLO_GAME);
+            gameQuestions = shuffleArray(unplayedPool).slice(0, QUESTIONS_PER_SOLO_GAME);
           }
         } else {
-          // Sin sesión → aleatorio normal
-          gameQuestions = shuffleArray(questionPool).slice(0, QUESTIONS_PER_SOLO_GAME);
+          // Sin sesión → aleatorio entre las no jugadas
+          gameQuestions = shuffleArray(unplayedPool).slice(0, QUESTIONS_PER_SOLO_GAME);
         }
 
         setQuestions(gameQuestions);
+        addPlayedQuestions(gameQuestions.map(q => q.id));
         setLives(3);
         // Calcular puntos máximos basado en las preguntas seleccionadas
         const maxPts = gameQuestions.length > 0
@@ -197,7 +207,15 @@ function PlayPage() {
           const decodedPlayers = JSON.parse(decodeURIComponent(playersParam));
           setPlayers(decodedPlayers);
           const questionsNeeded = decodedPlayers.length * MAX_ROUNDS_MAJLIS;
-          setQuestions(shuffleArray(questionPool).slice(0, questionsNeeded));
+
+          let unplayedPool = questionPool.filter(q => !getPlayedQuestions().includes(q.id));
+          if (unplayedPool.length < questionsNeeded) {
+            unplayedPool = questionPool;
+          }
+
+          const selected = shuffleArray(unplayedPool).slice(0, questionsNeeded);
+          setQuestions(selected);
+          addPlayedQuestions(selected.map(q => q.id));
           setTurnState('transition');
         } catch {
           router.push('/');

@@ -110,3 +110,28 @@ export const getMajlisRankings = (players: Player[]) => {
     return b.score - a.score;
   });
 };
+
+const SESSION_MEMORY_KEY = 'noor_played_questions_memory';
+const MAX_MEMORY_SIZE = 150; // Guardamos registro de las últimas 150 para asegurar frescura de las 559.
+
+export const getPlayedQuestions = (): number[] => {
+  if (typeof window === 'undefined') return [];
+  try {
+    const data = localStorage.getItem(SESSION_MEMORY_KEY);
+    return data ? JSON.parse(data) : [];
+  } catch {
+    return [];
+  }
+};
+
+export const addPlayedQuestions = (ids: number[]) => {
+  if (typeof window === 'undefined') return;
+  try {
+    const memory = getPlayedQuestions();
+    const newMemory = Array.from(new Set([...memory, ...ids]));
+    if (newMemory.length > MAX_MEMORY_SIZE) {
+      newMemory.splice(0, newMemory.length - MAX_MEMORY_SIZE);
+    }
+    localStorage.setItem(SESSION_MEMORY_KEY, JSON.stringify(newMemory));
+  } catch { }
+};

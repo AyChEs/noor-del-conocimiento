@@ -9,9 +9,12 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Trophy, Star, Gamepad2, ArrowLeft, Trophy as TrophyIcon } from 'lucide-react';
+import { Trophy, Star, Gamepad2, ArrowLeft, Trophy as TrophyIcon, Edit2, Loader2 } from 'lucide-react';
 import { getRank } from '@/lib/gameLogic';
 import { useTranslation } from '@/context/LanguageProvider';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogTrigger } from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 function ProfileSkeleton() {
     return (
@@ -34,12 +37,38 @@ export default function ProfilePage() {
     const [profile, setProfile] = useState<UserProfile | null>(null);
     const [loadingProfile, setLoadingProfile] = useState(true);
 
+    const [isEditing, setIsEditing] = useState(false);
+    const [editName, setEditName] = useState('');
+    const [editPhoto, setEditPhoto] = useState('');
+    const [saving, setSaving] = useState(false);
+
     useEffect(() => {
         if (!user) { setLoadingProfile(false); return; }
         getUserProfile(user.uid)
             .then(setProfile)
             .finally(() => setLoadingProfile(false));
     }, [user]);
+
+    const handleEditOpen = () => {
+        setEditName(user?.displayName || '');
+        setEditPhoto(user?.photoURL || '');
+        setIsEditing(true);
+    };
+
+    const handleSaveProfile = async () => {
+        if (!user) return;
+        setSaving(true);
+        try {
+            const { updateUserProfileData } = await import('@/lib/firestore');
+            await updateUserProfileData(user, editName, editPhoto);
+            setIsEditing(false);
+            if (profile) setProfile({ ...profile, displayName: editName });
+        } catch (error) {
+            console.error("Error updating profile", error);
+        } finally {
+            setSaving(false);
+        }
+    };
 
     const isLoading = authLoading || loadingProfile;
 
@@ -73,15 +102,20 @@ export default function ProfilePage() {
                                 <ProfileSkeleton />
                             ) : (
                                 <>
-                                    <Avatar className="h-24 w-24 mx-auto border-4 border-background shadow-lg">
-                                        <AvatarImage src={user?.photoURL ?? undefined} />
-                                        <AvatarFallback className="bg-primary/20 text-primary font-bold text-2xl">
+                                    <Avatar className="h-24 w-24 mx-auto border-4 border-background shadow-lg text-4xl">
+                                        <AvatarImage src={user?.photoURL ?? undefined} className="object-cover" />
+                                        <AvatarFallback className="bg-primary/20 text-primary font-bold">
                                             {initials}
                                         </AvatarFallback>
                                     </Avatar>
-                                    <CardTitle className="text-2xl font-headline mt-3">
-                                        {user?.displayName ?? 'Usuario'}
-                                    </CardTitle>
+                                    <div className="flex items-center justify-center gap-2 mt-4 text-center">
+                                        <CardTitle className="text-2xl font-headline">
+                                            {user?.displayName ?? 'Usuario'}
+                                        </CardTitle>
+                                        <Button variant="ghost" size="icon" className="h-7 w-7 rounded-full opacity-60 hover:opacity-100" onClick={handleEditOpen}>
+                                            <Edit2 className="h-3 w-3" />
+                                        </Button>
+                                    </div>
                                     <p className="text-sm text-muted-foreground">{user?.email}</p>
                                 </>
                             )}
@@ -144,6 +178,45 @@ export default function ProfilePage() {
                     </Card>
                 )}
             </div>
+
+            <Dialog open={isEditing} onOpenChange={setIsEditing}>
+                <DialogContent className="sm:max-w-md w-[95vw] rounded-2xl p-6">
+                    <DialogHeader>
+                        <DialogTitle className="text-xl">Editar Perfil</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-5 py-2">
+                        <div className="space-y-2">
+                            <Label htmlFor="name" className="text-sm">Nombre de usuario</Label>
+                            <Input
+                                id="name"
+                                value={editName}
+                                onChange={e => setEditName(e.target.value)}
+                                placeholder="Escribe tu nuevo nombre"
+                                maxLength={25}
+                                className="h-11"
+                            />
+                        </div>
+                        <div className="space-y-2">
+                            <Label htmlFor="photo" className="text-sm">Link de Avatar (Opcional)</Label>
+                            <Input
+                                id="photo"
+                                value={editPhoto}
+                                onChange={e => setEditPhoto(e.target.value)}
+                                placeholder="https://..."
+                                className="h-11"
+                            />
+                            <p className="text-xs text-muted-foreground pt-1">Pega una URL a una imagen (ej. imgur, avatar.cc) para usar de Avatar.</p>
+                        </div>
+                    </div>
+                    <DialogFooter className="flex-col sm:flex-row gap-2 mt-2">
+                        <Button variant="outline" className="w-full sm:w-auto h-11" onClick={() => setIsEditing(false)}>Cancelar</Button>
+                        <Button className="w-full sm:w-auto h-11" onClick={handleSaveProfile} disabled={saving || !editName.trim()}>
+                            {saving ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : <Edit2 className="h-4 w-4 mr-2" />}
+                            Guardar Cambios
+                        </Button>
+                    </DialogFooter>
+                </DialogContent>
+            </Dialog>
         </main>
     );
 }
