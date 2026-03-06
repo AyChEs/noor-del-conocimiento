@@ -138,33 +138,65 @@ function PlayPage() {
       return;
     }
 
+    // Pool ampliado: usa toda la categoría (no filtrado por dificultad)
+    // La dificultad se usa como PESO de prioridad, no como filtro duro.
+    // Resultado: en vez de ~50 preguntas, el pool es de ~150-537 preguntas.
     let questionPool: Question[];
+    let priorityPool: Question[];   // 70% — nivel exacto pedido
+    let fillPool: Question[];       // 30% — otros niveles (amplía frescura)
+
     if (category === 'mix') {
-      questionPool = questionsData.filter(q => q.difficulty === difficulty) as Question[];
+      // Modo mix: toda la base de datos, priorizando la dificultad elegida
+      priorityPool = questionsData.filter(q => q.difficulty === difficulty) as Question[];
+      fillPool = questionsData.filter(q => q.difficulty !== difficulty) as Question[];
+      questionPool = [...priorityPool, ...fillPool]; // Pool completo para fallback
     } else {
-      questionPool = questionsData.filter(
-        q => q.category === category && q.difficulty === difficulty
-      ) as Question[];
+      // Modo categoría: dentro de la categoría, priorizar dificultad elegida
+      const categoryAll = questionsData.filter(q => q.category === category) as Question[];
+      priorityPool = categoryAll.filter(q => q.difficulty === difficulty);
+      fillPool = categoryAll.filter(q => q.difficulty !== difficulty);
+      questionPool = [...priorityPool, ...fillPool]; // Pool completo = toda la categoría
     }
 
     if (gameMode === 'musafir') {
       const initQuestions = async () => {
         let gameQuestions: Question[];
 
-        // Filtro de Memoria de Sesión (evita repetidas)
+        // Aplicar memoria de sesión a cada sub-pool
         const playedIds = getPlayedQuestions();
-        let unplayedPool = questionPool.filter(q => !playedIds.includes(q.id));
+        const filterPlayed = (pool: Question[]) => pool.filter(q => !playedIds.includes(q.id));
 
-        // Si no quedan suficientes nuevas, reiniciamos el pool para esta ronda
+        let unplayedPriority = filterPlayed(priorityPool);
+        let unplayedFill = filterPlayed(fillPool);
+
+        // Si se agotaron las de prioridad, resetear ese sub-pool
+        if (unplayedPriority.length < Math.ceil(QUESTIONS_PER_SOLO_GAME * 0.7)) {
+          unplayedPriority = shuffleArray(priorityPool);
+        }
+        if (unplayedFill.length < Math.floor(QUESTIONS_PER_SOLO_GAME * 0.3)) {
+          unplayedFill = shuffleArray(fillPool);
+        }
+
+        // Elección ponderada: 70% del nivel pedido + 30% de variedad
+        const nPriority = Math.min(Math.ceil(QUESTIONS_PER_SOLO_GAME * 0.7), unplayedPriority.length);
+        const nFill = QUESTIONS_PER_SOLO_GAME - nPriority;
+
+        const pickedPriority = shuffleArray(unplayedPriority).slice(0, nPriority);
+        const pickedFill = shuffleArray(unplayedFill).slice(0, Math.min(nFill, unplayedFill.length));
+        let unplayedPool = shuffleArray([...pickedPriority, ...pickedFill]);
+
+        // Seguridad: si por alguna razón quedan menos de 10, completar del pool total
         if (unplayedPool.length < QUESTIONS_PER_SOLO_GAME) {
-          unplayedPool = questionPool;
+          const usedIds = new Set(unplayedPool.map(q => q.id));
+          const extra = shuffleArray(questionPool.filter(q => !usedIds.has(q.id)));
+          unplayedPool = [...unplayedPool, ...extra].slice(0, QUESTIONS_PER_SOLO_GAME);
         }
 
         // Optimización: Si hay usuario, intentamos usar SRS, pero con límites
         if (user) {
           try {
-            // 1. Seleccionar un pool de candidatos aleatorios (ej. 60) priorizando nuevas
-            const candidates = shuffleArray(unplayedPool).slice(0, 60);
+            // 1. Seleccionar un pool de candidatos aleatorios priorizando nuevas
+            const candidates = unplayedPool.slice(0, 60);
             const candidateIds = candidates.map(q => q.id);
 
             // 2. Obtener pesos solo para estos candidatos
@@ -181,11 +213,11 @@ function PlayPage() {
             }
           } catch (error) {
             console.error('Error cargando SRS, usando modo aleatorio:', error);
-            gameQuestions = shuffleArray(unplayedPool).slice(0, QUESTIONS_PER_SOLO_GAME);
+            gameQuestions = unplayedPool.slice(0, QUESTIONS_PER_SOLO_GAME);
           }
         } else {
-          // Sin sesión → aleatorio entre las no jugadas
-          gameQuestions = shuffleArray(unplayedPool).slice(0, QUESTIONS_PER_SOLO_GAME);
+          // Sin sesión → aleatorio entre las no jugadas con proporción 70/30
+          gameQuestions = unplayedPool.slice(0, QUESTIONS_PER_SOLO_GAME);
         }
 
         setQuestions(gameQuestions);
